@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>小铃铛 LymBell · 淋巴瘤工作台 v0.2.0</title>
+<link rel="icon" type="image/png" sizes="96x96" href="assets/brand/lymbell-mark-96.png">
+<link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">跳到主要内容</a>
+<div class="workspace">
+  <aside class="sidebar" aria-label="小铃铛业务导航">
+    <div class="brand"><img id="brand-mark" src="assets/brand/lymbell-mark-192.png" srcset="assets/brand/lymbell-mark-192.png 2x" width="48" height="48" alt="小铃铛 LymBell 品牌标识：紫色铃铛形小球与橙色爱心"><div><strong>小铃铛</strong><span>LymBell · 分型先弄清</span></div></div>
+    <button class="profile profile-btn" id="profile-btn" data-action="profiles" aria-label="切换档案，当前为周先生">
+      <div class="avatar" id="profile-avatar" aria-hidden="true">周</div>
+      <div><b id="profile-name">周先生的资料</b><span id="profile-meta">38 岁 · DLBCL NOS</span></div>
+      <span class="profile-caret" aria-hidden="true">⌄</span>
+    </button>
+    <nav id="nav" aria-label="一级导航"></nav>
+    <div class="sidebar-bottom"><span class="eyebrow">小 X 宝家族</span><p>分型先弄清，<br>治疗才不慌。</p><button class="text-button" data-action="help">操作说明 ↗</button></div>
+  </aside>
+  <div class="work-area">
+    <header class="topbar">
+      <div class="breadcrumb">小铃铛工作台 <span>/</span> <b id="breadcrumb">看板</b></div>
+      <div class="top-actions">
+        <button class="status" id="ready-store" data-action="open-store" aria-label="资料目录：已激活"><i></i><span>资料目录</span><b>已激活</b></button>
+        <button class="status" id="ready-session" data-action="start-session" aria-label="对话：未进入激活"><i class="grey"></i><span>对话</span><b>未进入激活</b></button>
+        <button data-action="settings" aria-label="打开设置：工作区目录、文档解析、临床数据库">设置</button>
+        <button id="font-toggle" aria-pressed="false" title="切换大字">大字 Aa</button>
+        <button class="ver-chip" id="ver-chip" data-action="about" aria-label="关于小铃铛：查看版本号与构建信息">v0.2.0</button>
+      </div>
+    </header>
+    <main id="main" tabindex="-1"></main>
+    <footer class="footer">小铃铛 · 与淋巴瘤患者和照护者一起整理、理解、准备沟通 <span class="ver-line"><b id="app-version">v0.2.0</b><em id="app-build">2026-10-17</em></span></footer>
+  </div>
+  <aside id="agent-panel" class="agent-panel" hidden aria-label="小铃铛助手：原生会话窗口">
+    <div class="agent-drag" id="agent-drag" title="拖拽调整会话窗口宽度"></div>
+    <div class="agent-head">
+      <div class="agent-head-title"><b>小铃铛助手</b><span id="agent-state">未连接</span></div>
+      <button class="icon-button" id="agent-close" aria-label="关闭会话窗口">×</button>
+    </div>
+    <div class="agent-body" id="agent-body"></div>
+  </aside>
+</div>
+<dialog id="dialog" aria-labelledby="dialog-title">
+  <div class="dialog-head"><div><span class="eyebrow" id="dialog-eyebrow">小铃铛</span><h2 id="dialog-title"></h2></div><button class="icon-button" data-action="close" aria-label="关闭弹窗">×</button></div>
+  <div id="dialog-body" class="dialog-body"></div>
+  <div id="dialog-foot" class="dialog-foot"></div>
+</dialog>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script src="app.js"></script>
+<script type="module" src="agent.js"></script>
+</body>
+</html>

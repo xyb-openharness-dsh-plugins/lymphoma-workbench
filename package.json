@@ -1,0 +1,44 @@
+{
+  "name": "@lymbell-dsh/lymphoma-workbench",
+  "version": "0.2.0",
+  "description": "小铃铛 LymBell：本机优先的淋巴瘤分型整理、疗效回顾与就诊准备工作台",
+  "private": true,
+  "type": "module",
+  "main": "./dsh/index.js",
+  "exports": {
+    ".": "./dsh/index.js",
+    "./client": "./lib/client.js",
+    "./version": "./lib/version.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "assets",
+    "dsh",
+    "lib",
+    "schema",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build:version": "LYMBELL_CHANNEL=beta node scripts/build-version.mjs",
+    "check:version": "node scripts/check-version.mjs",
+    "check:schema": "node scripts/check-schema.mjs",
+    "check:wording": "node scripts/check-wording.mjs",
+    "test": "node --disable-warning=ExperimentalWarning --test test/*.test.mjs",
+    "probe:render": "node scripts/probe-render.mjs",
+    "kb:build": "node --disable-warning=ExperimentalWarning knowledge/build.mjs",
+    "kb:query": "node --disable-warning=ExperimentalWarning knowledge/query.mjs",
+    "kb:check": "node --disable-warning=ExperimentalWarning knowledge/query.mjs --check",
+    "kb:trials": "node --disable-warning=ExperimentalWarning knowledge/query.mjs --trials",
+    "kb:trials:collect": "node knowledge/trials/collect.mjs",
+    "check": "LYMBELL_CHANNEL=beta node scripts/build-version.mjs --check && node scripts/check-syntax.mjs && node scripts/check-schema.mjs && node scripts/check-wording.mjs && node --disable-warning=ExperimentalWarning --test test/*.test.mjs && node scripts/check-version.mjs",
+    "pack:check": "npm pack --dry-run",
+    "start": "node --disable-warning=ExperimentalWarning scripts/dev-server.mjs",
+    "db:seed": "node --disable-warning=ExperimentalWarning dsh/seed.js",
+    "check:ui-parity": "node --disable-warning=ExperimentalWarning scripts/check-ui-parity.mjs"
+  },
+  "engines": {
+    "node": ">=22.5"
+  },
+  "license": "MIT"
+}

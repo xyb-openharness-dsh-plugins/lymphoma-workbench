@@ -1,0 +1,784 @@
+[
+  {
+    "id": "ptcl-1l",
+    "subtype_id": "ptcl-nos",
+    "title": "外周 T 细胞淋巴瘤（PTCL-NOS）一线",
+    "intent": "回答「T 细胞淋巴瘤和 B 细胞有什么不同、什么时候做移植」。",
+    "scope": "初治 PTCL-NOS，成人",
+    "source_id": "nccn-tcell-2026v2",
+    "verified": 0,
+    "note": "2026.V1 起全面对接 WHO-5/ICC2022，PTCL-NOS 区分 GATA3、TBX21 分子亚型。",
+    "steps": [
+      {
+        "seq": 1,
+        "phase": "诊断",
+        "kind": "action",
+        "title": "CD30 必检，NGS 分亚型",
+        "detail": "CD30 必须检测（决定能否用维布妥昔单抗）；PTCL-NOS 用 NGS 区分 GATA3 与 TBX21 亚型；同时查 TCR 克隆性（TRB、TRG）。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-tcell-2026v2-summary",
+        "locator": "基线诊断与评估（2026.V1 更新）"
+      },
+      {
+        "seq": 2,
+        "phase": "分期",
+        "kind": "action",
+        "title": "PET-CT 首选，骨髓要查",
+        "detail": "FDG-PET-CT 为分期首选；骨髓活检、EBV 定量按亚型加做；怀疑 ATLL 时查 HTLV-1。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-tcell-2026v2-summary",
+        "locator": "分期"
+      },
+      {
+        "seq": 3,
+        "phase": "分层",
+        "kind": "note",
+        "title": "IPI 与 PIT 只记录医生给的值",
+        "detail": "T 细胞淋巴瘤常用 IPI 与 PIT；GATA3 高表达的 PTCL-NOS 生物学行为更差。工作台不复算评分。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-tcell-2026v2-summary",
+        "locator": "风险分层"
+      },
+      {
+        "seq": 4,
+        "phase": "治疗",
+        "kind": "action",
+        "title": "CHOP/CHOEP 为基础",
+        "detail": "一线以 CHOP 或 CHOEP 为基础。CD30 阳性者，中国 2026 版新增维布妥昔单抗 + CHEP（II 级，2A）。",
+        "branch": null,
+        "evidence": "II 级 / 2A（BV+CHEP）",
+        "source_id": "csco-2026-summary",
+        "locator": "初治 PTCL 更新"
+      },
+      {
+        "seq": 5,
+        "phase": "治疗",
+        "kind": "action",
+        "title": "缓解后考虑自体移植巩固",
+        "detail": "适合者在一线达到缓解后考虑自体造血干细胞移植巩固；是否移植由治疗团队按年龄、体能、缓解深度决定。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-tcell-2026v2",
+        "locator": "PTCL 巩固治疗"
+      },
+      {
+        "seq": 6,
+        "phase": "评估",
+        "kind": "checkpoint",
+        "title": "统一用 Lugano 2014",
+        "detail": "T 细胞淋巴瘤的疗效评价统一采用 Lugano 2014 标准，PET-CT 为主。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-tcell-2026v2-summary",
+        "locator": "疗效评价"
+      },
+      {
+        "seq": 7,
+        "phase": "治疗",
+        "kind": "note",
+        "title": "复发后试验优先",
+        "detail": "R/R PTCL 优先进入临床试验。符合移植条件者，中国 2026 版把泽美妥司他列入 II 级推荐（2A）。",
+        "branch": null,
+        "evidence": "II 级 / 2A",
+        "source_id": "csco-2026-summary",
+        "locator": "R/R PTCL 更新"
+      }
+    ]
+  },
+  {
+    "id": "aitl",
+    "subtype_id": "aitl",
+    "title": "血管免疫母细胞性 T 细胞淋巴瘤",
+    "intent": "回答「为什么 AITL 要做分子检测、感染风险为什么高」。",
+    "scope": "初治 AITL / TFH 表型淋巴瘤",
+    "source_id": "nccn-tcell-2026v2",
+    "verified": 0,
+    "note": "WHO-5/ICC2022 把 AITL、滤泡性 T 细胞淋巴瘤、结节 TFH-NOS 归为统一生物学亚型。",
+    "steps": [
+      {
+        "seq": 1,
+        "phase": "诊断",
+        "kind": "action",
+        "title": "TFH 标志物 + 表观遗传基因",
+        "detail": "免疫组化查 PD-1、CXCL13、ICOS 等 TFH 标志物；EBER 原位杂交；NGS 关注 TET2、DNMT3A、IDH2、RHOA G17V。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-tcell-2026v2-summary",
+        "locator": "AITL/TFH 诊断"
+      },
+      {
+        "seq": 2,
+        "phase": "治疗",
+        "kind": "action",
+        "title": "CHOP/CHOEP 为基础，可联合靶向",
+        "detail": "一线仍以 CHOP 或 CHOEP 为基础；是否联合去甲基化药物、西达本胺或其他靶向药，由治疗团队按突变谱与耐受性决定。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-tcell-2026v2-summary",
+        "locator": "AITL 一线"
+      },
+      {
+        "seq": 3,
+        "phase": "支持",
+        "kind": "action",
+        "title": "免疫失调带来的感染风险",
+        "detail": "AITL 常伴免疫球蛋白异常、反复感染与自身免疫现象。治疗期间要盯发热、皮疹与感染指标。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-tcell-2026v2-summary",
+        "locator": "AITL 支持治疗"
+      },
+      {
+        "seq": 4,
+        "phase": "治疗",
+        "kind": "action",
+        "title": "缓解后尽快安排移植",
+        "detail": "适合者在首次缓解后考虑自体移植巩固；具体时机由团队决定。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-tcell-2026v2",
+        "locator": "AITL 巩固治疗"
+      },
+      {
+        "seq": 5,
+        "phase": "评估",
+        "kind": "checkpoint",
+        "title": "按 Lugano 2014 评估",
+        "detail": "PET-CT 为主，注意 AITL 治疗后免疫反应可能造成假阳性，判读结合临床。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "lugano-2014",
+        "locator": "Response assessment"
+      }
+    ]
+  },
+  {
+    "id": "alcl-alk-pos",
+    "subtype_id": "alcl-alk-pos",
+    "title": "ALK 阳性间变性大细胞淋巴瘤",
+    "intent": "回答「ALK 状态为什么先查、CD30 阳性意味着什么」。",
+    "scope": "初治 ALCL，ALK 阳性",
+    "source_id": "nccn-tcell-2026v2",
+    "verified": 0,
+    "note": null,
+    "steps": [
+      {
+        "seq": 1,
+        "phase": "诊断",
+        "kind": "action",
+        "title": "CD30 强阳性 + ALK 检测",
+        "detail": "CD30 必须检测；ALK 用免疫组化或 FISH 确认。两者共同决定亚型与可用药物。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-tcell-2026v2-summary",
+        "locator": "ALCL 诊断"
+      },
+      {
+        "seq": 2,
+        "phase": "治疗",
+        "kind": "action",
+        "title": "CHOP/CHOEP 为基础，可加 BV",
+        "detail": "一线以 CHOP 或 CHOEP 为基础。中国 2026 版对 I–II 期与 III–IV 期均新增维布妥昔单抗 + CHEP（II 级，2A）。",
+        "branch": null,
+        "evidence": "II 级 / 2A",
+        "source_id": "csco-2026-summary",
+        "locator": "初治 ALCL 更新"
+      },
+      {
+        "seq": 3,
+        "phase": "治疗",
+        "kind": "note",
+        "title": "局限期可联合局部放疗",
+        "detail": "局限期在系统治疗基础上可考虑受累部位放疗，由治疗团队按残留与部位决定。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-tcell-2026v2",
+        "locator": "ALCL 局限期"
+      },
+      {
+        "seq": 4,
+        "phase": "评估",
+        "kind": "checkpoint",
+        "title": "PET-CT 判疗效",
+        "detail": "按 Lugano 2014 记录 CR/PR/SD/PD 与 Deauville 分数。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "lugano-2014",
+        "locator": "Response assessment"
+      },
+      {
+        "seq": 5,
+        "phase": "治疗",
+        "kind": "note",
+        "title": "复发后按 R/R PTCL 路径",
+        "detail": "进入二线时优先考虑临床试验；是否移植由团队评估。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-tcell-2026v2",
+        "locator": "R/R ALCL"
+      }
+    ]
+  },
+  {
+    "id": "alcl-alk-neg",
+    "subtype_id": "alcl-alk-neg",
+    "title": "ALK 阴性间变性大细胞淋巴瘤",
+    "intent": "回答「ALK 阴性为什么还要看 DUSP22 和 TP53」。",
+    "scope": "初治 ALCL，ALK 阴性",
+    "source_id": "nccn-tcell-2026v2",
+    "verified": 0,
+    "note": null,
+    "steps": [
+      {
+        "seq": 1,
+        "phase": "诊断",
+        "kind": "action",
+        "title": "ALK 阴性，再看 DUSP22 与 TP53",
+        "detail": "DUSP22 重排的 ALK 阴性 ALCL 生物学行为优于 TP53 异常者；这两个标志物影响风险沟通。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-tcell-2026v2-summary",
+        "locator": "ALK 阴性 ALCL 分子检测"
+      },
+      {
+        "seq": 2,
+        "phase": "治疗",
+        "kind": "action",
+        "title": "CHOP/CHOEP，CD30 阳性可加 BV",
+        "detail": "一线以 CHOP 或 CHOEP 为基础；CD30 阳性者可用维布妥昔单抗 + CHEP（II 级，2A）。",
+        "branch": null,
+        "evidence": "II 级 / 2A",
+        "source_id": "csco-2026-summary",
+        "locator": "初治 PTCL 更新"
+      },
+      {
+        "seq": 3,
+        "phase": "治疗",
+        "kind": "action",
+        "title": "缓解后考虑自体移植",
+        "detail": "适合者在缓解后考虑自体移植巩固，尤其是高风险特征者。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-tcell-2026v2",
+        "locator": "ALCL 巩固"
+      },
+      {
+        "seq": 4,
+        "phase": "评估",
+        "kind": "checkpoint",
+        "title": "PET-CT 评估",
+        "detail": "按 Lugano 2014；治疗结束的 PET 结论要与中期分开记录。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "lugano-2014",
+        "locator": "Response assessment"
+      }
+    ]
+  },
+  {
+    "id": "enktl",
+    "subtype_id": "enktl",
+    "title": "结外 NK/T 细胞淋巴瘤（鼻型）",
+    "intent": "回答「为什么局限期以放疗为主、EBV DNA 为什么反复查」。",
+    "scope": "初治 ENKTL，鼻型",
+    "source_id": "nccn-tcell-2026v2",
+    "verified": 0,
+    "note": "放疗在局限期中的地位、含门冬酰胺酶方案为基础属该亚型常规做法，库内未逐条核对原文。",
+    "steps": [
+      {
+        "seq": 1,
+        "phase": "诊断",
+        "kind": "action",
+        "title": "EBER 是诊断关键",
+        "detail": "鼻内镜取活检，EBER 原位杂交确认 EBV 阳性；查血浆 EBV DNA 作为基线与监测指标。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-tcell-2026v2-summary",
+        "locator": "ENKTL 诊断"
+      },
+      {
+        "seq": 2,
+        "phase": "分期",
+        "kind": "action",
+        "title": "PET-CT 看鼻外受累",
+        "detail": "PET-CT 评估鼻外与远处受累；骨髓活检排除骨髓侵犯；注意嗜血细胞综合征。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-tcell-2026v2-summary",
+        "locator": "ENKTL 分期"
+      },
+      {
+        "seq": 3,
+        "phase": "分层",
+        "kind": "decision",
+        "title": "局限（I/II）还是晚期（III/IV）",
+        "detail": "分期是路径分水岭：局限期与晚期采用不同组合。",
+        "branch": "I/II 期 / III/IV 期",
+        "evidence": null,
+        "source_id": "nccn-tcell-2026v2",
+        "locator": "ENKTL 分层"
+      },
+      {
+        "seq": 4,
+        "phase": "治疗",
+        "kind": "action",
+        "title": "局限期以放疗为核心",
+        "detail": "早期病例以受累部位放疗为核心，常与含门冬酰胺酶的方案联合；具体顺序与剂量由放疗科与血液科共同定。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-tcell-2026v2",
+        "locator": "ENKTL 早期治疗"
+      },
+      {
+        "seq": 5,
+        "phase": "治疗",
+        "kind": "action",
+        "title": "晚期以含门冬酰胺酶方案为基础",
+        "detail": "晚期或复发者以含门冬酰胺酶的联合方案为基础；中国 2026 版新增 PD-1 单抗联合地西他滨或阿扎胞苷（III 级，2B）、替雷利珠单抗联合米托蒽醌脂质体（III 级，2B）。",
+        "branch": null,
+        "evidence": "III 级 / 2B",
+        "source_id": "csco-2026-summary",
+        "locator": "NK/T 更新"
+      },
+      {
+        "seq": 6,
+        "phase": "评估",
+        "kind": "checkpoint",
+        "title": "影像 + EBV DNA 一起看",
+        "detail": "疗效评估用 PET-CT 与 Lugano 标准，同时监测血浆 EBV DNA；两者不同步时要说明，不能只挑一个报。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-tcell-2026v2",
+        "locator": "ENKTL 疗效监测"
+      }
+    ]
+  },
+  {
+    "id": "atll",
+    "subtype_id": "atll",
+    "title": "成人 T 细胞白血病/淋巴瘤",
+    "intent": "回答「HTLV-1 为什么必查、分型为什么决定治疗」。",
+    "scope": "初治 ATLL",
+    "source_id": "nccn-tcell-2026v2",
+    "verified": 0,
+    "note": "本条只搭骨架，方案细节与预后分层未核对原文。",
+    "steps": [
+      {
+        "seq": 1,
+        "phase": "诊断",
+        "kind": "action",
+        "title": "HTLV-1 + 流式 + 临床分型",
+        "detail": "血清 HTLV-1 抗体、流式免疫表型（CD4/CD25 等）、LDH 与钙水平；按急性型、淋巴瘤型、慢性型、冒烟型分型。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-tcell-2026v2-summary",
+        "locator": "ATLL 诊断"
+      },
+      {
+        "seq": 2,
+        "phase": "分层",
+        "kind": "decision",
+        "title": "分型决定治不治、怎么治",
+        "detail": "冒烟型与慢性型部分可观察；急性型、淋巴瘤型与部分慢性型需要系统治疗。",
+        "branch": "惰性型 / 侵袭型",
+        "evidence": null,
+        "source_id": "nccn-tcell-2026v2",
+        "locator": "ATLL 分层"
+      },
+      {
+        "seq": 3,
+        "phase": "治疗",
+        "kind": "note",
+        "title": "试验优先，方案按分型",
+        "detail": "ATLL 治疗选择有限，优先考虑临床试验；是否移植由团队按年龄、体能、缓解深度决定。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-tcell-2026v2",
+        "locator": "ATLL 治疗"
+      },
+      {
+        "seq": 4,
+        "phase": "支持",
+        "kind": "action",
+        "title": "感染与高钙血症",
+        "detail": "ATLL 免疫缺陷导致机会性感染风险高；高钙血症常见，需要监测与处理。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-tcell-2026v2",
+        "locator": "ATLL 支持治疗"
+      }
+    ]
+  },
+  {
+    "id": "hstcl",
+    "subtype_id": "hstcl",
+    "title": "肝脾 T 细胞淋巴瘤",
+    "intent": "回答「为什么这个亚型进展快、移植地位为什么重要」。",
+    "scope": "初治 HSTCL",
+    "source_id": "nccn-tcell-2026v2",
+    "verified": 0,
+    "note": "本条只搭骨架，未核对原文。",
+    "steps": [
+      {
+        "seq": 1,
+        "phase": "诊断",
+        "kind": "action",
+        "title": "肝脾活检 + TCR 克隆性",
+        "detail": "骨髓、肝或脾活检，流式与 TCR 克隆性检测；影像常见肝脾肿大而无明显淋巴结肿大。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-tcell-2026v2",
+        "locator": "HSTCL 诊断"
+      },
+      {
+        "seq": 2,
+        "phase": "治疗",
+        "kind": "action",
+        "title": "化疗后尽快考虑移植",
+        "detail": "诱导化疗后尽早评估移植（自体或异基因），具体由团队按年龄、体能和缓解情况决定。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-tcell-2026v2",
+        "locator": "HSTCL 治疗"
+      },
+      {
+        "seq": 3,
+        "phase": "评估",
+        "kind": "checkpoint",
+        "title": "按 Lugano 评估",
+        "detail": "PET-CT 与骨髓一起判断；肝脾大小变化不能单独作为疗效依据。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "lugano-2014",
+        "locator": "Response assessment"
+      }
+    ]
+  },
+  {
+    "id": "t-lgl-tpll",
+    "subtype_id": "t-lgl-tpll",
+    "title": "T-LGL 与 T-PLL",
+    "intent": "回答「同样是 T 细胞，为什么一个可以等、一个要马上治」。",
+    "scope": "初治 T 细胞大颗粒淋巴细胞白血病 / 幼淋巴细胞白血病",
+    "source_id": "nccn-tcell-2026v2",
+    "verified": 0,
+    "note": "两种疾病生物学差异极大，本条只做并列骨架，细节未核对原文。",
+    "steps": [
+      {
+        "seq": 1,
+        "phase": "诊断",
+        "kind": "action",
+        "title": "流式 + 克隆性 + 遗传学",
+        "detail": "流式免疫表型与 TCR 克隆性确认；T-PLL 需查 ATM、TP53 等异常；T-LGL 常伴自身免疫性血细胞减少。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-tcell-2026v2",
+        "locator": "T-LGL / T-PLL 诊断"
+      },
+      {
+        "seq": 2,
+        "phase": "分层",
+        "kind": "decision",
+        "title": "T-LGL 可观察，T-PLL 要尽快治",
+        "detail": "无症状 T-LGL 可以观察；T-PLL 侵袭性强，确诊后通常需要尽快启动治疗。",
+        "branch": "惰性 / 侵袭",
+        "evidence": null,
+        "source_id": "nccn-tcell-2026v2",
+        "locator": "分层"
+      },
+      {
+        "seq": 3,
+        "phase": "治疗",
+        "kind": "note",
+        "title": "按亚型分别处理",
+        "detail": "T-LGL 以免疫抑制或对症为主；T-PLL 以方案治疗与移植评估为主。具体由治疗团队决定。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-tcell-2026v2",
+        "locator": "治疗"
+      },
+      {
+        "seq": 4,
+        "phase": "评估",
+        "kind": "checkpoint",
+        "title": "血象与流式一起看",
+        "detail": "这类疾病常以血液/骨髓为主，疗效评估不能只用影像。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-tcell-2026v2",
+        "locator": "疗效评估"
+      }
+    ]
+  },
+  {
+    "id": "chl-early",
+    "subtype_id": "chl",
+    "title": "经典型霍奇金：早期（I–II 期）",
+    "intent": "回答「早期要不要放疗、2 周期 PET 之后怎么调」。",
+    "scope": "初治 cHL，I–II 期，成人 18–60 岁",
+    "source_id": "nccn-hl-2026v2",
+    "verified": 0,
+    "note": "早期按有无危险因素分低危/高危两组；2026 版不再一律推荐放疗。",
+    "steps": [
+      {
+        "seq": 1,
+        "phase": "诊断",
+        "kind": "action",
+        "title": "活检 + 免疫表型",
+        "detail": "切除或切开活检优先；CD30 阳性、CD15 可阳性、PAX5 弱阳、CD45 阴性支持 cHL。基线做全身 PET-CT。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-hl-2026v2-summary",
+        "locator": "病理与基线评估"
+      },
+      {
+        "seq": 2,
+        "phase": "分层",
+        "kind": "decision",
+        "title": "按危险因素分两组",
+        "detail": "看有无大肿块（纵隔肿块 ≥ 胸腔最大横径 1/3）、B 症状、ESR 升高、受累淋巴结区域数。有任一高危因素进入高危组。",
+        "branch": "低危组 / 高危组",
+        "evidence": null,
+        "source_id": "nccn-hl-2026v2-summary",
+        "locator": "早期 cHL 分层"
+      },
+      {
+        "seq": 3,
+        "phase": "治疗",
+        "kind": "action",
+        "title": "低危：ABVD×2 + 放疗，或 ABVD×4",
+        "detail": "ABVD 2 周期 + 受累部位放疗，或单纯 ABVD 4 周期（PET 阴性可免放疗）。博来霉素肺损伤高危者可用 Nivo-AVD 替代。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-hl-2026v2-summary",
+        "locator": "早期低危治疗"
+      },
+      {
+        "seq": 4,
+        "phase": "治疗",
+        "kind": "action",
+        "title": "高危：4 周期 ± 放疗",
+        "detail": "ABVD 4 周期 ± ISRT，或 Nivo-AVD 4 周期 ± ISRT。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-hl-2026v2-summary",
+        "locator": "早期高危治疗"
+      },
+      {
+        "seq": 5,
+        "phase": "评估",
+        "kind": "checkpoint",
+        "title": "2 周期后 PET 决定走向",
+        "detail": "Deauville 1–2 分继续原方案；≥3 分考虑升级方案（如 BrECADD）。这个判断由治疗团队做。",
+        "branch": "1–2 分 → 继续；≥3 分 → 考虑升级",
+        "evidence": null,
+        "source_id": "nccn-hl-2026v2-summary",
+        "locator": "中期 PET 评估"
+      },
+      {
+        "seq": 6,
+        "phase": "支持",
+        "kind": "note",
+        "title": "放疗范围在缩小",
+        "detail": "2026 版早期不再一律推荐放疗，是否放疗取决于中期 PET 与残留情况；远期第二肿瘤与心脏风险是讨论的一部分。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-hl-2026v2-summary",
+        "locator": "放疗原则"
+      }
+    ]
+  },
+  {
+    "id": "chl-advanced",
+    "subtype_id": "chl",
+    "title": "经典型霍奇金：晚期（III–IV 期）",
+    "intent": "回答「晚期一线为什么 PD-1 联合方案成为优选」。",
+    "scope": "初治 cHL，III–IV 期，成人",
+    "source_id": "nccn-hl-2026v2",
+    "verified": 0,
+    "note": null,
+    "steps": [
+      {
+        "seq": 1,
+        "phase": "分层",
+        "kind": "note",
+        "title": "IPS 只记录医生值",
+        "detail": "晚期 cHL 常用 IPS 做风险沟通；工作台不复算，也不据此给结论。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-hl-2026v2-summary",
+        "locator": "IPS 与风险分层"
+      },
+      {
+        "seq": 2,
+        "phase": "治疗",
+        "kind": "action",
+        "title": "Nivo-AVD 为一线优选",
+        "detail": "晚期 cHL 一线优选 Nivolumab + AVD。依据 SWOG S1826：≥12 岁 III–IV 期，2 年 EFS 91% vs 81%。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-hl-2026v2-summary",
+        "locator": "晚期 cHL 一线"
+      },
+      {
+        "seq": 3,
+        "phase": "治疗",
+        "kind": "note",
+        "title": "其他推荐方案",
+        "detail": "BV-AVD、ABVD 仍在指南内；选择取决于年龄、肺功能、神经毒性风险与本人意愿。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-hl-2026v2-summary",
+        "locator": "晚期 cHL 其他方案"
+      },
+      {
+        "seq": 4,
+        "phase": "评估",
+        "kind": "checkpoint",
+        "title": "中期 PET 指导后续",
+        "detail": "按方案节点做 PET-CT，Deauville 分数决定继续、升级或缩疗程。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "lugano-2014",
+        "locator": "Response assessment"
+      },
+      {
+        "seq": 5,
+        "phase": "支持",
+        "kind": "action",
+        "title": "免疫相关不良反应要单列",
+        "detail": "含 PD-1 的方案可能出现甲状腺、肺、结肠、肾上腺等免疫相关不良反应；这些记录要与化疗毒性分开。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-hl-2026v2",
+        "locator": "免疫治疗毒性管理"
+      }
+    ]
+  },
+  {
+    "id": "chl-rr",
+    "subtype_id": "chl",
+    "title": "经典型霍奇金：复发 / 难治",
+    "intent": "回答「二线为什么先看 PD-1 暴露、Deauville 4 还能不能移植」。",
+    "scope": "复发或难治 cHL，成人",
+    "source_id": "nccn-hl-2026v1-jnccn",
+    "verified": 0,
+    "note": "JNCCN v1.2026 刊出的复发/难治章节；v2.2026 版本号更高，条文可能微调。",
+    "steps": [
+      {
+        "seq": 1,
+        "phase": "诊断",
+        "kind": "action",
+        "title": "复发必须活检确认",
+        "detail": "任何时间点怀疑复发都应以活检确认，不能只凭影像。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-hl-2026v1-jnccn",
+        "locator": "Suspected relapse"
+      },
+      {
+        "seq": 2,
+        "phase": "治疗",
+        "kind": "action",
+        "title": "二线以 PD-1 为基础",
+        "detail": "未用过 PD-1 且无禁忌者优先 PD-1 联合方案（如 Nivo-ICE、Nivo-BV、Pembro-GVD、替雷利珠单抗-GEMOX）；非 PD-1 方案包括 BV、DHAP、GVD、ICE、IGEV 等。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-hl-2026v1-jnccn",
+        "locator": "Second-line systemic therapy"
+      },
+      {
+        "seq": 3,
+        "phase": "评估",
+        "kind": "checkpoint",
+        "title": "二线后必须 PET 再分期",
+        "detail": "所有患者二线治疗后用 FDG-PET/CT 评估，按 Deauville 分数决定下一步。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-hl-2026v1-jnccn",
+        "locator": "Response assessment after second-line"
+      },
+      {
+        "seq": 4,
+        "phase": "决策",
+        "kind": "decision",
+        "title": "1–3 分进移植；4 分仍可选",
+        "detail": "Deauville 1–3 分进入高剂量化疗 + 自体干细胞 rescue（± 放疗，1 类）；4 分也可选择移植，但移植前 PET 阴性更理想；5 分考虑替代方案或放疗。",
+        "branch": "1–3 → 移植；4 → 移植仍可选；5 → 替代方案",
+        "evidence": "1 类（1–3 分）",
+        "source_id": "nccn-hl-2026v1-jnccn",
+        "locator": "Deauville 处置"
+      },
+      {
+        "seq": 5,
+        "phase": "支持",
+        "kind": "action",
+        "title": "移植后高危者 BV 维持",
+        "detail": "未用过 BV 且属高危（原发难治、首次 CR 持续 <1 年、结外或晚期复发）者，移植后可考虑 BV 维持。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-hl-2026v1-jnccn",
+        "locator": "AETHERA 高危定义"
+      },
+      {
+        "seq": 6,
+        "phase": "治疗",
+        "kind": "note",
+        "title": "影像进展不等于治疗失败",
+        "detail": "用 PD-1 的患者若临床获益，影像进展可能是免疫 flare，不一定要立即停药；这个判断必须由治疗团队做。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-hl-2026v1-jnccn",
+        "locator": "CPI 治疗中的影像进展"
+      }
+    ]
+  },
+  {
+    "id": "nlphl",
+    "subtype_id": "nlphl",
+    "title": "结节性淋巴细胞为主型霍奇金淋巴瘤",
+    "intent": "回答「NLPHL 为什么和 cHL 治法不一样」。",
+    "scope": "初治 NLPHL，成人",
+    "source_id": "nccn-hl-2026v2",
+    "verified": 0,
+    "note": null,
+    "steps": [
+      {
+        "seq": 1,
+        "phase": "诊断",
+        "kind": "action",
+        "title": "CD20 阳性、CD30 阴性",
+        "detail": "典型为爆米花细胞，CD20 阳性、CD30 阴性或弱阳、CD15 阴性。需与富于淋巴细胞的 cHL 及 FL 鉴别。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-hl-2026v2-summary",
+        "locator": "NLPHL 病理"
+      },
+      {
+        "seq": 2,
+        "phase": "治疗",
+        "kind": "action",
+        "title": "局限期以放疗为主",
+        "detail": "NLPHL 生物学偏惰性，局限病灶优先局部放疗；晚期或复发按 B 细胞淋巴瘤方案处理。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-hl-2026v2-summary",
+        "locator": "NLPHL 治疗"
+      },
+      {
+        "seq": 3,
+        "phase": "随访",
+        "kind": "note",
+        "title": "长期随访，注意转化",
+        "detail": "NLPHL 可转化为侵袭性大 B 细胞淋巴瘤，随访中新增快速增大病灶要活检。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-hl-2026v2-summary",
+        "locator": "NLPHL 随访"
+      }
+    ]
+  }
+]

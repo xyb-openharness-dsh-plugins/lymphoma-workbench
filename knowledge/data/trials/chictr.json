@@ -1,0 +1,2891 @@
+{
+ "source_id": "chictr",
+ "label": "ChiCTR 中国临床试验注册中心",
+ "org": "WHO 一级注册机构（中国）",
+ "url": "https://www.chictr.org.cn",
+ "access": "本地 sidecar http://127.0.0.1:8848（curl_cffi + 过盾）",
+ "window": {
+  "disease": "标题含「淋巴瘤」",
+  "basis": "createyear=2026（注册年份）"
+ },
+ "status": "ok",
+ "note": "站点报告 2026 年 82 条（9 页），取回并去重 82 条。ChiCTR 列表页不返回招募状态，故 status 留空；补状态需逐条拉详情。",
+ "counts": {
+  "api_total": 82,
+  "fetched": 82,
+  "total_pages": 9
+ },
+ "records": [
+  {
+   "id": "chictr:ChiCTR2600134590",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600134590",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600134590",
+   "title": "评价PZH2113胶囊治疗以弥漫性大B细胞淋巴瘤为主的复发性/难治性B细胞非霍奇金淋巴瘤受试者的安全性、耐受性、药代动力学特征和初步疗效的开放、多中心、I期临床研究",
+   "brief_title": "评价PZH2113胶囊治疗以弥漫性大B细胞淋巴瘤为主的复发性/难治性B细胞非霍奇金淋巴瘤受试者的安全性、耐受性、药代动力学特征和初步疗效的开放、多中心、I期临床研究",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-10-16",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "中山大学肿瘤防治中心",
+   "study_type": "干预性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "中山大学肿瘤防治中心",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=323804",
+   "raw": {
+    "project_id": "323804",
+    "registration_date": "2026/10/16"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600134410",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600134410",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600134410",
+   "title": "西达本胺、阿扎胞苷联合泼尼松、环磷酰胺、沙利度胺治疗不耐受标准化疗的外周T细胞淋巴瘤（PTCL）的多中心、单臂、开放性临床疗效观察研究",
+   "brief_title": "西达本胺、阿扎胞苷联合泼尼松、环磷酰胺、沙利度胺治疗不耐受标准化疗的外周T细胞淋巴瘤（PTCL）的多中心、单臂、开放性临床疗效观察研究",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-10-14",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "南京医科大学第一附属医院",
+   "study_type": "干预性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "南京医科大学第一附属医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=337504",
+   "raw": {
+    "project_id": "337504",
+    "registration_date": "2026/10/14"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600134208",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600134208",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600134208",
+   "title": "坦昔妥单抗、来那度胺（TAFA_LEN）联合R-CHOP方案治疗初治中高危弥漫大B细胞淋巴瘤的疗效和安全性",
+   "brief_title": "坦昔妥单抗、来那度胺（TAFA_LEN）联合R-CHOP方案治疗初治中高危弥漫大B细胞淋巴瘤的疗效和安全性",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-10-12",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "浙江大学医学院附属第二医院",
+   "study_type": "干预性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "浙江大学医学院附属第二医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=347048",
+   "raw": {
+    "project_id": "347048",
+    "registration_date": "2026/10/12"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600134003",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600134003",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600134003",
+   "title": "超低剂量放疗联合泽贝妥单抗用于局限期MALT淋巴瘤疗效与安全性",
+   "brief_title": "超低剂量放疗联合泽贝妥单抗用于局限期MALT淋巴瘤疗效与安全性",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-10-10",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "江苏省人民医院（南京医科大学第一附属医院）",
+   "study_type": "干预性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "江苏省人民医院（南京医科大学第一附属医院）",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=344826",
+   "raw": {
+    "project_id": "344826",
+    "registration_date": "2026/10/10"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600133981",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600133981",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600133981",
+   "title": "双特异性抗体可改善复发难治性弥漫大 B 细胞淋巴瘤三线治疗的生存期 ——2024 年前后真实世界研究",
+   "brief_title": "双特异性抗体可改善复发难治性弥漫大 B 细胞淋巴瘤三线治疗的生存期 ——2024 年前后真实世界研究",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-10-09",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "苏州大学附属第一医院",
+   "study_type": "观察性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "苏州大学附属第一医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=339932",
+   "raw": {
+    "project_id": "339932",
+    "registration_date": "2026/10/09"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600133404",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600133404",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600133404",
+   "title": "TP53突变在慢性淋巴细胞白血病/小淋巴细胞淋巴瘤中的临床意义",
+   "brief_title": "TP53突变在慢性淋巴细胞白血病/小淋巴细胞淋巴瘤中的临床意义",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-09-25",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "江苏省人民医院（南京医科大学第一附属医院）",
+   "study_type": "观察性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "江苏省人民医院（南京医科大学第一附属医院）",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=344200",
+   "raw": {
+    "project_id": "344200",
+    "registration_date": "2026/09/25"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600133391",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600133391",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600133391",
+   "title": "维泊妥珠单抗联合方案治疗低危大B细胞淋巴瘤的临床研究",
+   "brief_title": "维泊妥珠单抗联合方案治疗低危大B细胞淋巴瘤的临床研究",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-09-24",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "江苏省人民医院（南京医科大学第一附属医院）",
+   "study_type": "干预性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "江苏省人民医院（南京医科大学第一附属医院）",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=344628",
+   "raw": {
+    "project_id": "344628",
+    "registration_date": "2026/09/24"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600133309",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600133309",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600133309",
+   "title": "格菲妥单抗治疗复发/难治性中枢神经系统淋巴瘤的有效性与安全性：一项单中心回顾性研究",
+   "brief_title": "格菲妥单抗治疗复发/难治性中枢神经系统淋巴瘤的有效性与安全性：一项单中心回顾性研究",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-09-24",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "复旦大学附属华山医院",
+   "study_type": "观察性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "复旦大学附属华山医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=336654",
+   "raw": {
+    "project_id": "336654",
+    "registration_date": "2026/09/24"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600133211",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600133211",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600133211",
+   "title": "奥布替尼联合Pola-R-miniCHP（OPR-miniCHP）方案治疗初治老年高危弥漫大 B 细胞淋巴瘤的前瞻性、单臂、多中心临床研究",
+   "brief_title": "奥布替尼联合Pola-R-miniCHP（OPR-miniCHP）方案治疗初治老年高危弥漫大 B 细胞淋巴瘤的前瞻性、单臂、多中心临床研究",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-09-23",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "浙江大学医学院附属第一医院",
+   "study_type": "干预性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "浙江大学医学院附属第一医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=334319",
+   "raw": {
+    "project_id": "334319",
+    "registration_date": "2026/09/23"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600133158",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600133158",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600133158",
+   "title": "泽美妥司他联合GemOx治疗复发/难治性外周T细胞淋巴瘤（R/R PTCL）的前瞻性、单臂、探索性、多中心临床研究",
+   "brief_title": "泽美妥司他联合GemOx治疗复发/难治性外周T细胞淋巴瘤（R/R PTCL）的前瞻性、单臂、探索性、多中心临床研究",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-09-22",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "江南大学附属医院",
+   "study_type": "干预性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "江南大学附属医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=344095",
+   "raw": {
+    "project_id": "344095",
+    "registration_date": "2026/09/22"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600132942",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600132942",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600132942",
+   "title": "一项 HZ-H08905 在复发和/或难治性非霍奇金淋巴瘤患者中的有效性和安全性的 II 期临床研究",
+   "brief_title": "一项 HZ-H08905 在复发和/或难治性非霍奇金淋巴瘤患者中的有效性和安全性的 II 期临床研究",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-09-20",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "浙江大学医学院附属第一医院",
+   "study_type": "干预性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "浙江大学医学院附属第一医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=292474",
+   "raw": {
+    "project_id": "292474",
+    "registration_date": "2026/09/20"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600132819",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600132819",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600132819",
+   "title": "比较 R2-CHOP 与 R-CHOP 一线治疗老年 HIV 相关弥漫大 B 细胞淋巴瘤疗效与安全性的随机对照研究",
+   "brief_title": "比较 R2-CHOP 与 R-CHOP 一线治疗老年 HIV 相关弥漫大 B 细胞淋巴瘤疗效与安全性的随机对照研究",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-09-18",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "南方医科大学南方医院",
+   "study_type": "干预性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "南方医科大学南方医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=343726",
+   "raw": {
+    "project_id": "343726",
+    "registration_date": "2026/09/18"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600132617",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600132617",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600132617",
+   "title": "MRG001 联合来那度胺或奥布替尼用于复发/难治弥漫大B细胞淋巴瘤的开放、多中心临床研究",
+   "brief_title": "MRG001 联合来那度胺或奥布替尼用于复发/难治弥漫大B细胞淋巴瘤的开放、多中心临床研究",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-09-16",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "河南省肿瘤医院",
+   "study_type": "干预性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "河南省肿瘤医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=340019",
+   "raw": {
+    "project_id": "340019",
+    "registration_date": "2026/09/16"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600132579",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600132579",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600132579",
+   "title": "LMP1调控NK/T细胞淋巴瘤异常增殖的机制研究",
+   "brief_title": "LMP1调控NK/T细胞淋巴瘤异常增殖的机制研究",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-09-15",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "北京大学深圳医院",
+   "study_type": "观察性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "北京大学深圳医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=325631",
+   "raw": {
+    "project_id": "325631",
+    "registration_date": "2026/09/15"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600132522",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600132522",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600132522",
+   "title": "AI+多模态深度学习在眼附属器MALT淋巴瘤精准诊断和预后分析中的应用",
+   "brief_title": "AI+多模态深度学习在眼附属器MALT淋巴瘤精准诊断和预后分析中的应用",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-09-15",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "中国人民解放军陆军特色医学中心",
+   "study_type": "诊断试验",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "中国人民解放军陆军特色医学中心",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=265519",
+   "raw": {
+    "project_id": "265519",
+    "registration_date": "2026/09/15"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600132356",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600132356",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600132356",
+   "title": "HIV阳性淋巴瘤患者PET/CT影像学特征的回顾性队列研究",
+   "brief_title": "HIV阳性淋巴瘤患者PET/CT影像学特征的回顾性队列研究",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-09-14",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "复旦大学附属金山医院",
+   "study_type": "观察性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "复旦大学附属金山医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=336829",
+   "raw": {
+    "project_id": "336829",
+    "registration_date": "2026/09/14"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600132184",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600132184",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600132184",
+   "title": "免疫检查点抑制剂联合R-DA-EPOCH对比R-DA-EPOCH方案治疗初治HIV相关弥漫大B细胞淋巴瘤的多中心、双向性队列研究",
+   "brief_title": "免疫检查点抑制剂联合R-DA-EPOCH对比R-DA-EPOCH方案治疗初治HIV相关弥漫大B细胞淋巴瘤的多中心、双向性队列研究",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-09-10",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "南方医科大学南方医院",
+   "study_type": "观察性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "南方医科大学南方医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=341784",
+   "raw": {
+    "project_id": "341784",
+    "registration_date": "2026/09/10"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600131924",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600131924",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600131924",
+   "title": "一项评估大分割放疗联合粒巨噬细胞刺激因子、泊马度胺及格菲妥单抗治疗初诊原发中枢弥漫大B细胞淋巴瘤患者的疗效及安全性II期临床研究",
+   "brief_title": "一项评估大分割放疗联合粒巨噬细胞刺激因子、泊马度胺及格菲妥单抗治疗初诊原发中枢弥漫大B细胞淋巴瘤患者的疗效及安全性II期临床研究",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-09-07",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "厦门大学附属第一医院",
+   "study_type": "干预性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "厦门大学附属第一医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=342208",
+   "raw": {
+    "project_id": "342208",
+    "registration_date": "2026/09/07"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600131819",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600131819",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600131819",
+   "title": "一项评估外周T细胞淋巴瘤一线治疗中期评估疗效不佳患者中加入戈利昔替尼联合治疗的安全性和有效性的II期、单臂临床试验",
+   "brief_title": "一项评估外周T细胞淋巴瘤一线治疗中期评估疗效不佳患者中加入戈利昔替尼联合治疗的安全性和有效性的II期、单臂临床试验",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-09-07",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "南京医科大学第一附属医院",
+   "study_type": "干预性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "南京医科大学第一附属医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=300283",
+   "raw": {
+    "project_id": "300283",
+    "registration_date": "2026/09/07"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600131690",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600131690",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600131690",
+   "title": "索托克拉联合格菲妥单抗和GemOx治疗复发或难治大B细胞淋巴瘤的研究",
+   "brief_title": "索托克拉联合格菲妥单抗和GemOx治疗复发或难治大B细胞淋巴瘤的研究",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-09-05",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "苏州大学附属第一医院",
+   "study_type": "干预性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "苏州大学附属第一医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=339816",
+   "raw": {
+    "project_id": "339816",
+    "registration_date": "2026/09/05"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600131616",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600131616",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600131616",
+   "title": "索托克拉联合R-CHOP方案治疗初治BCL2阳性的侵袭性B细胞淋巴瘤：一项多中心、单臂、开放Ib/II期临床研究",
+   "brief_title": "索托克拉联合R-CHOP方案治疗初治BCL2阳性的侵袭性B细胞淋巴瘤：一项多中心、单臂、开放Ib/II期临床研究",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-09-04",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "南方医科大学珠江医院",
+   "study_type": "干预性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "南方医科大学珠江医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=339534",
+   "raw": {
+    "project_id": "339534",
+    "registration_date": "2026/09/04"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600130917",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600130917",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600130917",
+   "title": "利沙托克拉联合Pola -R-CHP 或R-CHOP方案治疗初治弥漫大B细胞淋巴瘤患者的一项Ib/II期临床研究",
+   "brief_title": "利沙托克拉联合Pola -R-CHP 或R-CHOP方案治疗初治弥漫大B细胞淋巴瘤患者的一项Ib/II期临床研究",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-08-26",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "四川大学华西医院",
+   "study_type": "干预性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "四川大学华西医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=339985",
+   "raw": {
+    "project_id": "339985",
+    "registration_date": "2026/08/26"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600130915",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600130915",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600130915",
+   "title": "评价超出放行的标准阿基仑赛注射液治疗复发/难治性B细胞非霍奇金淋巴瘤受试者有效性和安全性临床研究",
+   "brief_title": "评价超出放行的标准阿基仑赛注射液治疗复发/难治性B细胞非霍奇金淋巴瘤受试者有效性和安全性临床研究",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-08-26",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "苏州大学附属第一医院",
+   "study_type": "干预性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "苏州大学附属第一医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=338119",
+   "raw": {
+    "project_id": "338119",
+    "registration_date": "2026/08/26"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600130899",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600130899",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600130899",
+   "title": "艾滋病相关淋巴瘤患者抗HIV治疗方案优化研究",
+   "brief_title": "艾滋病相关淋巴瘤患者抗HIV治疗方案优化研究",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-08-26",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "上海市公共卫生临床中心",
+   "study_type": "干预性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "上海市公共卫生临床中心",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=322126",
+   "raw": {
+    "project_id": "322126",
+    "registration_date": "2026/08/26"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600130060",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600130060",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600130060",
+   "title": "应用二代基因测序动态监测肿瘤残留评估非霍奇金淋巴瘤疗效及复发风险",
+   "brief_title": "应用二代基因测序动态监测肿瘤残留评估非霍奇金淋巴瘤疗效及复发风险",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-08-13",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "苏州大学附属第一医院",
+   "study_type": "观察性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "苏州大学附属第一医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=338120",
+   "raw": {
+    "project_id": "338120",
+    "registration_date": "2026/08/13"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600129950",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600129950",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600129950",
+   "title": "循环肿瘤DNA位点突变与原发性中枢神经系统淋巴瘤为弥漫大B细胞淋巴瘤的相关性：一项基于CRISPR高灵敏生物传感器富集检测循环肿瘤DNA用于中枢淋巴瘤无创诊断的基础研究",
+   "brief_title": "循环肿瘤DNA位点突变与原发性中枢神经系统淋巴瘤为弥漫大B细胞淋巴瘤的相关性：一项基于CRISPR高灵敏生物传感器富集检测循环肿瘤DNA用于中枢淋巴瘤无创诊断的基础研究",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-08-12",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "北京大学深圳医院",
+   "study_type": "诊断试验",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "北京大学深圳医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=337111",
+   "raw": {
+    "project_id": "337111",
+    "registration_date": "2026/08/12"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600129873",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600129873",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600129873",
+   "title": "侵袭性淋巴瘤低剂量或快速18F-FDG PET/CT显像对代谢参数的影响及疗效评价的探索性研究",
+   "brief_title": "侵袭性淋巴瘤低剂量或快速18F-FDG PET/CT显像对代谢参数的影响及疗效评价的探索性研究",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-08-11",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "上海市第一人民医院",
+   "study_type": "观察性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "上海市第一人民医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=336907",
+   "raw": {
+    "project_id": "336907",
+    "registration_date": "2026/08/11"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600129843",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600129843",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600129843",
+   "title": "基于拓展构建理论的感恩干预对中青年淋巴瘤患者化疗期社会疏离水平的影响",
+   "brief_title": "基于拓展构建理论的感恩干预对中青年淋巴瘤患者化疗期社会疏离水平的影响",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-08-11",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "武汉大学",
+   "study_type": "干预性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "武汉大学",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=312749",
+   "raw": {
+    "project_id": "312749",
+    "registration_date": "2026/08/11"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600129783",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600129783",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600129783",
+   "title": "EED抑制剂治疗皮肤T细胞淋巴瘤的机制研究",
+   "brief_title": "EED抑制剂治疗皮肤T细胞淋巴瘤的机制研究",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-08-10",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "复旦大学附属华山医院",
+   "study_type": "观察性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "复旦大学附属华山医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=337257",
+   "raw": {
+    "project_id": "337257",
+    "registration_date": "2026/08/10"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600129190",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600129190",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600129190",
+   "title": "MRI 数据驱动的中枢神经系统淋巴瘤预后预测多维决策系统的研究",
+   "brief_title": "MRI 数据驱动的中枢神经系统淋巴瘤预后预测多维决策系统的研究",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-07-31",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "上海市同济医院",
+   "study_type": "观察性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "上海市同济医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=332925",
+   "raw": {
+    "project_id": "332925",
+    "registration_date": "2026/07/31"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600129112",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600129112",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600129112",
+   "title": "不同分子分型亚型外周 T 细胞淋巴瘤的真实世界注册登记研究",
+   "brief_title": "不同分子分型亚型外周 T 细胞淋巴瘤的真实世界注册登记研究",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-07-31",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "上海交通大学医学院附属瑞金医院",
+   "study_type": "观察性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "上海交通大学医学院附属瑞金医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=331815",
+   "raw": {
+    "project_id": "331815",
+    "registration_date": "2026/07/31"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600128760",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600128760",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600128760",
+   "title": "以维布妥昔单抗为基础的治疗方案对皮肤T细胞淋巴瘤（CTCL）的疗效观察及疗效影响因素的探索",
+   "brief_title": "以维布妥昔单抗为基础的治疗方案对皮肤T细胞淋巴瘤（CTCL）的疗效观察及疗效影响因素的探索",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-07-24",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "复旦大学附属华山医院",
+   "study_type": "观察性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "复旦大学附属华山医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=333812",
+   "raw": {
+    "project_id": "333812",
+    "registration_date": "2026/07/24"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600128673",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600128673",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600128673",
+   "title": "两次PET-CT扫描预测滤泡性淋巴瘤会否恶化的研究",
+   "brief_title": "两次PET-CT扫描预测滤泡性淋巴瘤会否恶化的研究",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-07-23",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "浙江省中医院",
+   "study_type": "观察性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "浙江省中医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=329022",
+   "raw": {
+    "project_id": "329022",
+    "registration_date": "2026/07/23"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600128667",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600128667",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600128667",
+   "title": "超声超分辨率微血流成像（URM）在淋巴瘤诊断中的探索性研究",
+   "brief_title": "超声超分辨率微血流成像（URM）在淋巴瘤诊断中的探索性研究",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-07-23",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "吉林大学第一医院",
+   "study_type": "诊断试验",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "吉林大学第一医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=322708",
+   "raw": {
+    "project_id": "322708",
+    "registration_date": "2026/07/23"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600128452",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600128452",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600128452",
+   "title": "儿童淋巴瘤临床特征及预后影响因素的回顾性多中心临床研究",
+   "brief_title": "儿童淋巴瘤临床特征及预后影响因素的回顾性多中心临床研究",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-07-21",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "中山大学附属第一医院",
+   "study_type": "观察性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "中山大学附属第一医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=299399",
+   "raw": {
+    "project_id": "299399",
+    "registration_date": "2026/07/21"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600127854",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600127854",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600127854",
+   "title": "基于泛免疫炎症及营养指标的结外 NK/T 细 胞淋巴瘤预后新模型构建：一项多中心回顾性研究",
+   "brief_title": "基于泛免疫炎症及营养指标的结外 NK/T 细 胞淋巴瘤预后新模型构建：一项多中心回顾性研究",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-07-08",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "中国人民解放军陆军军医大学第一附属医院",
+   "study_type": "观察性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "中国人民解放军陆军军医大学第一附属医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=331764",
+   "raw": {
+    "project_id": "331764",
+    "registration_date": "2026/07/08"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600127367",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600127367",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600127367",
+   "title": "一项在复发或难治性大B细胞淋巴瘤患者中评价格菲妥单抗联合吉西他滨和奥沙利铂对比标准治疗方案的有效性和安全性的开放性、多中心、随机研究",
+   "brief_title": "一项在复发或难治性大B细胞淋巴瘤患者中评价格菲妥单抗联合吉西他滨和奥沙利铂对比标准治疗方案的有效性和安全性的开放性、多中心、随机研究",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-06-30",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "苏州大学附属第一医院",
+   "study_type": "干预性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "苏州大学附属第一医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=329354",
+   "raw": {
+    "project_id": "329354",
+    "registration_date": "2026/06/30"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600127315",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600127315",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600127315",
+   "title": "本维莫德乳膏在皮肤T 细胞淋巴瘤中的疗效与安全性评估",
+   "brief_title": "本维莫德乳膏在皮肤T 细胞淋巴瘤中的疗效与安全性评估",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-06-29",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "北京大学第一医院",
+   "study_type": "干预性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "北京大学第一医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=330076",
+   "raw": {
+    "project_id": "330076",
+    "registration_date": "2026/06/29"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600127153",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600127153",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600127153",
+   "title": "BV-ICE方案治疗复发难治经典霍奇金淋巴瘤的真实世界研究",
+   "brief_title": "BV-ICE方案治疗复发难治经典霍奇金淋巴瘤的真实世界研究",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-06-25",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "上海交通大学医学院附属瑞金医院",
+   "study_type": "观察性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "上海交通大学医学院附属瑞金医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=320216",
+   "raw": {
+    "project_id": "320216",
+    "registration_date": "2026/06/25"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600127112",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600127112",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600127112",
+   "title": "间变性淋巴瘤激酶(ALK)阳性初始不可切除局部晚期或转移性非小细胞肺癌(NSCLC)患者真实世界治疗现状: 一项观察性临床研究",
+   "brief_title": "间变性淋巴瘤激酶(ALK)阳性初始不可切除局部晚期或转移性非小细胞肺癌(NSCLC)患者真实世界治疗现状: 一项观察性临床研究",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-06-24",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "广东医科大学附属医院",
+   "study_type": "观察性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "广东医科大学附属医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=310564",
+   "raw": {
+    "project_id": "310564",
+    "registration_date": "2026/06/24"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600127005",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600127005",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600127005",
+   "title": "基于微小残留病灶（MRD）状态指导布鲁顿酪氨酸激酶（BTK）抑制剂联合维奈克拉有限疗程治疗初治慢性淋巴细胞白血病（CLL）/小淋巴细胞淋巴瘤（SLL）的一项单臂双向性队列研究",
+   "brief_title": "基于微小残留病灶（MRD）状态指导布鲁顿酪氨酸激酶（BTK）抑制剂联合维奈克拉有限疗程治疗初治慢性淋巴细胞白血病（CLL）/小淋巴细胞淋巴瘤（SLL）的一项单臂双向性队列研究",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-06-22",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "中南大学湘雅二医院",
+   "study_type": "观察性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "中南大学湘雅二医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=326705",
+   "raw": {
+    "project_id": "326705",
+    "registration_date": "2026/06/22"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600126060",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600126060",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600126060",
+   "title": "一项评估奥布替尼联合标准化疗对CNS复发高风险的初治弥漫大B细胞淋巴瘤患者有效性和安全性的前瞻性、 单臂临床研究",
+   "brief_title": "一项评估奥布替尼联合标准化疗对CNS复发高风险的初治弥漫大B细胞淋巴瘤患者有效性和安全性的前瞻性、 单臂临床研究",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-06-03",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "浙江大学医学院附属第一医院",
+   "study_type": "干预性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "浙江大学医学院附属第一医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=273977",
+   "raw": {
+    "project_id": "273977",
+    "registration_date": "2026/06/03"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600125881",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600125881",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600125881",
+   "title": "泽美妥司他治疗既往接受至少一次全身治疗的复发或难治性皮肤T细胞淋巴瘤的开放、单臂、单中心临床试验",
+   "brief_title": "泽美妥司他治疗既往接受至少一次全身治疗的复发或难治性皮肤T细胞淋巴瘤的开放、单臂、单中心临床试验",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-06-01",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "山东第一医科大学附属皮肤病医院",
+   "study_type": "干预性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "山东第一医科大学附属皮肤病医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=325075",
+   "raw": {
+    "project_id": "325075",
+    "registration_date": "2026/06/01"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600125549",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600125549",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600125549",
+   "title": "泽布替尼治疗恶性淋巴瘤的真实世界血药浓度分析：暴露-疗效/安全性关系的单中心观察性研究",
+   "brief_title": "泽布替尼治疗恶性淋巴瘤的真实世界血药浓度分析：暴露-疗效/安全性关系的单中心观察性研究",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-05-28",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "上海市第一人民医院",
+   "study_type": "观察性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "上海市第一人民医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=325190",
+   "raw": {
+    "project_id": "325190",
+    "registration_date": "2026/05/28"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600125350",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600125350",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600125350",
+   "title": "Pola-R-CHP 方案治疗HIV 相关弥漫大B 细胞淋巴瘤患者的疗效和安全性",
+   "brief_title": "Pola-R-CHP 方案治疗HIV 相关弥漫大B 细胞淋巴瘤患者的疗效和安全性",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-05-26",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "重庆大学附属肿瘤医院",
+   "study_type": "观察性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "重庆大学附属肿瘤医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=321609",
+   "raw": {
+    "project_id": "321609",
+    "registration_date": "2026/05/26"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600125272",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600125272",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600125272",
+   "title": "基于18F-FDG PET/CT多模态影像、病理学特征构建双表达淋巴瘤临床预后模型的研究",
+   "brief_title": "基于18F-FDG PET/CT多模态影像、病理学特征构建双表达淋巴瘤临床预后模型的研究",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-05-25",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "重庆大学附属肿瘤医院",
+   "study_type": "观察性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "重庆大学附属肿瘤医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=297935",
+   "raw": {
+    "project_id": "297935",
+    "registration_date": "2026/05/25"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600125211",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600125211",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600125211",
+   "title": "18F-FDG PET/CT多参数及影像组学联合临床特征：含维泊妥珠单抗（Pola）方案治疗弥漫大B细胞淋巴瘤疗效评估与风险分层预测模型构建的单中心临床研究",
+   "brief_title": "18F-FDG PET/CT多参数及影像组学联合临床特征：含维泊妥珠单抗（Pola）方案治疗弥漫大B细胞淋巴瘤疗效评估与风险分层预测模型构建的单中心临床研究",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-05-22",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "四川大学华西医院",
+   "study_type": "观察性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "四川大学华西医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=322399",
+   "raw": {
+    "project_id": "322399",
+    "registration_date": "2026/05/22"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600125032",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600125032",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600125032",
+   "title": "弥漫性大B细胞淋巴瘤患者化疗期营养需求调查： 一项混合方法研究",
+   "brief_title": "弥漫性大B细胞淋巴瘤患者化疗期营养需求调查： 一项混合方法研究",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-05-20",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "常州市第一人民医院",
+   "study_type": "观察性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "常州市第一人民医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=324021",
+   "raw": {
+    "project_id": "324021",
+    "registration_date": "2026/05/20"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600124536",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600124536",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600124536",
+   "title": "BV、Chidamide、MIT-LIP 或 Golidocitinib 治疗方案复发/难治CD30阳性（CD30+）皮肤T细胞淋巴瘤",
+   "brief_title": "BV、Chidamide、MIT-LIP 或 Golidocitinib 治疗方案复发/难治CD30阳性（CD30+）皮肤T细胞淋巴瘤",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-05-13",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "复旦大学附属华山医院",
+   "study_type": "观察性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "复旦大学附属华山医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=305718",
+   "raw": {
+    "project_id": "305718",
+    "registration_date": "2026/05/13"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600123890",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600123890",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600123890",
+   "title": "评价自动化工艺生产的阿基仑赛注射液在复发/难治性大B细胞淋巴瘤患者中的疗效和安全性的单臂、多中心临床研究",
+   "brief_title": "评价自动化工艺生产的阿基仑赛注射液在复发/难治性大B细胞淋巴瘤患者中的疗效和安全性的单臂、多中心临床研究",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-04-30",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "四川大学华西医院",
+   "study_type": "干预性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "四川大学华西医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=320676",
+   "raw": {
+    "project_id": "320676",
+    "registration_date": "2026/04/30"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600123745",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600123745",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600123745",
+   "title": "EBV mRNA疫苗（WGc-043注射液） 治疗EB病毒阳性HIV相关淋巴瘤的探索性研究",
+   "brief_title": "EBV mRNA疫苗（WGc-043注射液） 治疗EB病毒阳性HIV相关淋巴瘤的探索性研究",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-04-29",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "四川大学华西医院",
+   "study_type": "干预性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "四川大学华西医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=321068",
+   "raw": {
+    "project_id": "321068",
+    "registration_date": "2026/04/29"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600123466",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600123466",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600123466",
+   "title": "奥布替尼联合免疫化疗治疗初治双表达弥漫性大B细胞淋巴瘤的多中心、开放、前瞻研究",
+   "brief_title": "奥布替尼联合免疫化疗治疗初治双表达弥漫性大B细胞淋巴瘤的多中心、开放、前瞻研究",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-04-27",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "哈尔滨市第一医院",
+   "study_type": "干预性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "哈尔滨市第一医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=241477",
+   "raw": {
+    "project_id": "241477",
+    "registration_date": "2026/04/27"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600123224",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600123224",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600123224",
+   "title": "含维泊妥珠单抗方案对初治弥漫大B细胞淋巴瘤的真实世界研究及5-hmC表达与临床意义：回顾性病例系列研究",
+   "brief_title": "含维泊妥珠单抗方案对初治弥漫大B细胞淋巴瘤的真实世界研究及5-hmC表达与临床意义：回顾性病例系列研究",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-04-23",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "中山大学附属第五医院",
+   "study_type": "观察性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "中山大学附属第五医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=319236",
+   "raw": {
+    "project_id": "319236",
+    "registration_date": "2026/04/23"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600122977",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600122977",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600122977",
+   "title": "PI3K抑制剂联合BV-CDP方案（维布妥昔单抗、西达本胺、地西他滨、信迪利单抗（PD-1））治疗难治/复发外周T细胞淋巴瘤（PTCL）的Ⅰ期单中心、单臂、前瞻性临床研究方案",
+   "brief_title": "PI3K抑制剂联合BV-CDP方案（维布妥昔单抗、西达本胺、地西他滨、信迪利单抗（PD-1））治疗难治/复发外周T细胞淋巴瘤（PTCL）的Ⅰ期单中心、单臂、前瞻性临床研究方案",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-04-20",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "中国人民解放军总医院",
+   "study_type": "干预性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "中国人民解放军总医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=280164",
+   "raw": {
+    "project_id": "280164",
+    "registration_date": "2026/04/20"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600122969",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600122969",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600122969",
+   "title": "戈利昔替尼治疗老年Frail复发难治血管免疫母T细胞淋巴瘤的临床突破",
+   "brief_title": "戈利昔替尼治疗老年Frail复发难治血管免疫母T细胞淋巴瘤的临床突破",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-04-20",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "苏北人民医院",
+   "study_type": "观察性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "苏北人民医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=296941",
+   "raw": {
+    "project_id": "296941",
+    "registration_date": "2026/04/20"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600122951",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600122951",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600122951",
+   "title": "肠道淋巴瘤临床及多组学研究",
+   "brief_title": "肠道淋巴瘤临床及多组学研究",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-04-20",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "上海交通大学医学院附属仁济医院",
+   "study_type": "观察性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "上海交通大学医学院附属仁济医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=297698",
+   "raw": {
+    "project_id": "297698",
+    "registration_date": "2026/04/20"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600122847",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600122847",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600122847",
+   "title": "评估新型检测技术在T细胞淋巴瘤诊断中的价值",
+   "brief_title": "评估新型检测技术在T细胞淋巴瘤诊断中的价值",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-04-20",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "复旦大学附属华山医院",
+   "study_type": "观察性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "复旦大学附属华山医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=291285",
+   "raw": {
+    "project_id": "291285",
+    "registration_date": "2026/04/20"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600122702",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600122702",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600122702",
+   "title": "ctDNA对恶性淋巴瘤患者造血干细胞移植后维持治疗效果的监测作用",
+   "brief_title": "ctDNA对恶性淋巴瘤患者造血干细胞移植后维持治疗效果的监测作用",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-04-16",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "上海交通大学医学院附属第九人民医院",
+   "study_type": "观察性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "上海交通大学医学院附属第九人民医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=316817",
+   "raw": {
+    "project_id": "316817",
+    "registration_date": "2026/04/16"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600122617",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600122617",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600122617",
+   "title": "泽贝妥单抗联合Pola-CHP方案治疗B细胞淋巴瘤相关噬血细胞综合征疗效与安全性研究",
+   "brief_title": "泽贝妥单抗联合Pola-CHP方案治疗B细胞淋巴瘤相关噬血细胞综合征疗效与安全性研究",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-04-15",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "上海交通大学医学院附属瑞金医院",
+   "study_type": "干预性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "上海交通大学医学院附属瑞金医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=313080",
+   "raw": {
+    "project_id": "313080",
+    "registration_date": "2026/04/15"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600122572",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600122572",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600122572",
+   "title": "来那度胺维持治疗弥漫大B细胞淋巴瘤的有效性研究",
+   "brief_title": "来那度胺维持治疗弥漫大B细胞淋巴瘤的有效性研究",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-04-15",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "上海交通大学医学院附属第九人民医院",
+   "study_type": "干预性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "上海交通大学医学院附属第九人民医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=276038",
+   "raw": {
+    "project_id": "276038",
+    "registration_date": "2026/04/15"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600122347",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600122347",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600122347",
+   "title": "68Ga-Pentixafor PET/CT在多发性骨髓瘤及惰性淋巴瘤中的临床应用研究",
+   "brief_title": "68Ga-Pentixafor PET/CT在多发性骨髓瘤及惰性淋巴瘤中的临床应用研究",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-04-13",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "重庆大学附属肿瘤医院",
+   "study_type": "诊断试验",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "重庆大学附属肿瘤医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=287195",
+   "raw": {
+    "project_id": "287195",
+    "registration_date": "2026/04/13"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600122028",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600122028",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600122028",
+   "title": "格菲妥单抗在真实世界中治疗原发难治及早期复发弥漫大B细胞淋巴瘤患者的疗效和安全性研究",
+   "brief_title": "格菲妥单抗在真实世界中治疗原发难治及早期复发弥漫大B细胞淋巴瘤患者的疗效和安全性研究",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-04-08",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "河南省肿瘤医院",
+   "study_type": "观察性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "河南省肿瘤医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=308690",
+   "raw": {
+    "project_id": "308690",
+    "registration_date": "2026/04/08"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600121682",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600121682",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600121682",
+   "title": "西达本胺联合减量R-CHOP方案治疗初治、MYC/BCL2双表达弥漫大B细胞淋巴瘤的单臂临床研究",
+   "brief_title": "西达本胺联合减量R-CHOP方案治疗初治、MYC/BCL2双表达弥漫大B细胞淋巴瘤的单臂临床研究",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-04-01",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "重庆大学附属肿瘤医院",
+   "study_type": "干预性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "重庆大学附属肿瘤医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=314285",
+   "raw": {
+    "project_id": "314285",
+    "registration_date": "2026/04/01"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600121485",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600121485",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600121485",
+   "title": "利沙托克拉（APG-2575片）单药治疗惰性淋巴瘤患者的疗效和安全性的临床研究",
+   "brief_title": "利沙托克拉（APG-2575片）单药治疗惰性淋巴瘤患者的疗效和安全性的临床研究",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-03-31",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "河南省肿瘤医院",
+   "study_type": "干预性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "河南省肿瘤医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=312284",
+   "raw": {
+    "project_id": "312284",
+    "registration_date": "2026/03/31"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600121178",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600121178",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600121178",
+   "title": "改良后TEAM预处理方案用于成人中枢高危/继发中枢神经系统累及的非霍奇金淋巴瘤患者自体造血干细胞移植的有效性和安全性探索",
+   "brief_title": "改良后TEAM预处理方案用于成人中枢高危/继发中枢神经系统累及的非霍奇金淋巴瘤患者自体造血干细胞移植的有效性和安全性探索",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-03-26",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "浙江大学医学院附属第二医院",
+   "study_type": "干预性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "浙江大学医学院附属第二医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=314057",
+   "raw": {
+    "project_id": "314057",
+    "registration_date": "2026/03/26"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600120877",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600120877",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600120877",
+   "title": "基于磁共振灌注成像、扩散加权成像及弥散张量成像特征的肿瘤样脱髓鞘病变与中枢神经系统淋巴瘤的鉴别诊断研究",
+   "brief_title": "基于磁共振灌注成像、扩散加权成像及弥散张量成像特征的肿瘤样脱髓鞘病变与中枢神经系统淋巴瘤的鉴别诊断研究",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-03-20",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "粤北人民医院",
+   "study_type": "观察性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "粤北人民医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=312793",
+   "raw": {
+    "project_id": "312793",
+    "registration_date": "2026/03/20"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600120773",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600120773",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600120773",
+   "title": "奥布替尼联合利妥昔单抗和来那度胺治疗初治边缘区淋巴瘤的单臂、多中⼼临床研究",
+   "brief_title": "奥布替尼联合利妥昔单抗和来那度胺治疗初治边缘区淋巴瘤的单臂、多中⼼临床研究",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-03-19",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "吉林⼤学第⼀医院",
+   "study_type": "干预性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "吉林⼤学第⼀医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=314576",
+   "raw": {
+    "project_id": "314576",
+    "registration_date": "2026/03/19"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600120648",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600120648",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600120648",
+   "title": "戈利昔替尼联合西达本胺用于接受过系统治疗的皮肤T细胞淋巴瘤的前瞻性单中心I/II期临床研究",
+   "brief_title": "戈利昔替尼联合西达本胺用于接受过系统治疗的皮肤T细胞淋巴瘤的前瞻性单中心I/II期临床研究",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-03-18",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "中国医学科学院北京协和医院",
+   "study_type": "干预性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "中国医学科学院北京协和医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=288023",
+   "raw": {
+    "project_id": "288023",
+    "registration_date": "2026/03/18"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600119915",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600119915",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600119915",
+   "title": "一项在既往未经治疗的非生发中心型弥漫性大B细胞淋巴瘤患者中评估维泊妥珠单抗联合泽布替尼、利妥昔单抗、环磷酰胺、多柔比星、泼尼松（Pola-ZRCHP）的疗效和安全性的前瞻性、多中心、单臂Ⅱ期研究",
+   "brief_title": "一项在既往未经治疗的非生发中心型弥漫性大B细胞淋巴瘤患者中评估维泊妥珠单抗联合泽布替尼、利妥昔单抗、环磷酰胺、多柔比星、泼尼松（Pola-ZRCHP）的疗效和安全性的前瞻性、多中心、单臂Ⅱ期研究",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-03-05",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "江苏省人民医院（南京医科大学第一附属医院）",
+   "study_type": "干预性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "江苏省人民医院（南京医科大学第一附属医院）",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=309287",
+   "raw": {
+    "project_id": "309287",
+    "registration_date": "2026/03/05"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600119766",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600119766",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600119766",
+   "title": "一项维布妥昔单抗联合西达本胺治疗CD30阳性（CD30+）皮肤T细胞淋巴瘤（CTCL）患者的单臂、开放性、多中心探索性临床研究",
+   "brief_title": "一项维布妥昔单抗联合西达本胺治疗CD30阳性（CD30+）皮肤T细胞淋巴瘤（CTCL）患者的单臂、开放性、多中心探索性临床研究",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-03-03",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "复旦大学附属华山医院",
+   "study_type": "干预性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "复旦大学附属华山医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=308893",
+   "raw": {
+    "project_id": "308893",
+    "registration_date": "2026/03/03"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600119037",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600119037",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600119037",
+   "title": "基于深度学习的淋巴瘤PET/CT影像处理方法及其临床验证",
+   "brief_title": "基于深度学习的淋巴瘤PET/CT影像处理方法及其临床验证",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-02-14",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "湘潭市中心医院",
+   "study_type": "诊断试验",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "湘潭市中心医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=308957",
+   "raw": {
+    "project_id": "308957",
+    "registration_date": "2026/02/14"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600118538",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600118538",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600118538",
+   "title": "中期调强添加格菲妥单抗用于标准一线治疗后高危弥漫性大B细胞淋巴瘤的单中心、单臂、前瞻性、II期研究",
+   "brief_title": "中期调强添加格菲妥单抗用于标准一线治疗后高危弥漫性大B细胞淋巴瘤的单中心、单臂、前瞻性、II期研究",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-02-06",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "中国医学科学院北京协和医院",
+   "study_type": "干预性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "中国医学科学院北京协和医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=303799",
+   "raw": {
+    "project_id": "303799",
+    "registration_date": "2026/02/06"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600117957",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600117957",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600117957",
+   "title": "基于弱监督联邦学习框架的临床级淋巴瘤AI诊断与亚型分类",
+   "brief_title": "基于弱监督联邦学习框架的临床级淋巴瘤AI诊断与亚型分类",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-01-30",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "广东省人民医院（广东省医学科学院）",
+   "study_type": "诊断试验",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "广东省人民医院（广东省医学科学院）",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=307492",
+   "raw": {
+    "project_id": "307492",
+    "registration_date": "2026/01/30"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600117389",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600117389",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600117389",
+   "title": "西达本胺、地西他滨、PD-1单抗联合培门冬酶（Epi-Immuno-Pe）治疗老年/化疗不耐受复发难治性NK/T细胞淋巴瘤患者的前瞻性、单臂、多中心临床研究",
+   "brief_title": "西达本胺、地西他滨、PD-1单抗联合培门冬酶（Epi-Immuno-Pe）治疗老年/化疗不耐受复发难治性NK/T细胞淋巴瘤患者的前瞻性、单臂、多中心临床研究",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-01-23",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "浙江大学医学院附属第一医院",
+   "study_type": "干预性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "浙江大学医学院附属第一医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=290266",
+   "raw": {
+    "project_id": "290266",
+    "registration_date": "2026/01/23"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600117331",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600117331",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600117331",
+   "title": "基于全身PET/CT的淋巴瘤病灶分布特征及扫描范围优化",
+   "brief_title": "基于全身PET/CT的淋巴瘤病灶分布特征及扫描范围优化",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-01-22",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "上海交通大学医学院附属瑞金医院",
+   "study_type": "观察性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "上海交通大学医学院附属瑞金医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=299684",
+   "raw": {
+    "project_id": "299684",
+    "registration_date": "2026/01/22"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600117000",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600117000",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600117000",
+   "title": "利妥昔单抗联合环磷酰胺、米托蒽醌脂质体、长春地辛和泼尼松(R-CMOP)方案治疗初治年龄大于等于60岁或伴心脏基础疾病的弥漫大B细胞淋巴瘤的前瞻性、单臂、多中心临床研究",
+   "brief_title": "利妥昔单抗联合环磷酰胺、米托蒽醌脂质体、长春地辛和泼尼松(R-CMOP)方案治疗初治年龄大于等于60岁或伴心脏基础疾病的弥漫大B细胞淋巴瘤的前瞻性、单臂、多中心临床研究",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-01-19",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "浙江大学医学院附属第一医院",
+   "study_type": "干预性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "浙江大学医学院附属第一医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=305851",
+   "raw": {
+    "project_id": "305851",
+    "registration_date": "2026/01/19"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600116920",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600116920",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600116920",
+   "title": "一项评估格菲妥单抗联合吉西他滨、地塞米松和顺铂（Glofit-GDP）方案挽救治疗复发/难治的弥漫性大B细胞淋巴瘤患者疗效和安全性的前瞻性、多中心、单臂临床研究",
+   "brief_title": "一项评估格菲妥单抗联合吉西他滨、地塞米松和顺铂（Glofit-GDP）方案挽救治疗复发/难治的弥漫性大B细胞淋巴瘤患者疗效和安全性的前瞻性、多中心、单臂临床研究",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-01-16",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "浙江大学医学院附属第一医院",
+   "study_type": "干预性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "浙江大学医学院附属第一医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=306154",
+   "raw": {
+    "project_id": "306154",
+    "registration_date": "2026/01/16"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600116686",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600116686",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600116686",
+   "title": "泽美妥司他、阿扎胞苷联合多恩达在复发难治性外周T细胞淋巴瘤中有效性及安全性的临床研究",
+   "brief_title": "泽美妥司他、阿扎胞苷联合多恩达在复发难治性外周T细胞淋巴瘤中有效性及安全性的临床研究",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-01-13",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "苏州大学附属第一医院",
+   "study_type": "干预性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "苏州大学附属第一医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=304285",
+   "raw": {
+    "project_id": "304285",
+    "registration_date": "2026/01/13"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600116402",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600116402",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600116402",
+   "title": "罗普司亭N01二级预防非霍奇金淋巴瘤患者化疗所致血小板减少症的前瞻性、单臂研究",
+   "brief_title": "罗普司亭N01二级预防非霍奇金淋巴瘤患者化疗所致血小板减少症的前瞻性、单臂研究",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-01-09",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "江西省肿瘤医院",
+   "study_type": "干预性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "江西省肿瘤医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=300263",
+   "raw": {
+    "project_id": "300263",
+    "registration_date": "2026/01/09"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600116394",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600116394",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600116394",
+   "title": "经支气管纵隔冷冻活检对于纵隔淋巴瘤诊断价值的临床研究",
+   "brief_title": "经支气管纵隔冷冻活检对于纵隔淋巴瘤诊断价值的临床研究",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-01-09",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "陆军军医大学第二附属医院(新桥医院)",
+   "study_type": "诊断试验",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "陆军军医大学第二附属医院(新桥医院)",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=297330",
+   "raw": {
+    "project_id": "297330",
+    "registration_date": "2026/01/09"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600116310",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600116310",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600116310",
+   "title": "CAR-T联合ASCT治疗有高危因素的复发/难治性大B细胞淋巴瘤疗效及安全性的单臂、单中心、开放性临床研究",
+   "brief_title": "CAR-T联合ASCT治疗有高危因素的复发/难治性大B细胞淋巴瘤疗效及安全性的单臂、单中心、开放性临床研究",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-01-08",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "浙江省肿瘤医院",
+   "study_type": "干预性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "浙江省肿瘤医院",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=299879",
+   "raw": {
+    "project_id": "299879",
+    "registration_date": "2026/01/08"
+   }
+  },
+  {
+   "id": "chictr:ChiCTR2600116306",
+   "source_id": "chictr",
+   "source_record_id": "ChiCTR2600116306",
+   "primary_registry": "ChiCTR",
+   "registry_no": "ChiCTR2600116306",
+   "title": "二联抗幽门螺旋杆菌方案在胃粘膜相关淋巴组织结外边缘区B细胞淋巴瘤中的安全性及疗效的探索性临床研究",
+   "brief_title": "二联抗幽门螺旋杆菌方案在胃粘膜相关淋巴组织结外边缘区B细胞淋巴瘤中的安全性及疗效的探索性临床研究",
+   "conditions": [],
+   "interventions": [],
+   "phase": null,
+   "status": null,
+   "status_cn": null,
+   "enrollment": null,
+   "start_date": "2026-01-08",
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": "南京医科大学第一附属医院(江苏省人民医院)",
+   "study_type": "干预性研究",
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [
+    {
+     "facility": "南京医科大学第一附属医院(江苏省人民医院)",
+     "city": null
+    }
+   ],
+   "year_basis": "registration",
+   "matched_by": "title",
+   "url": "https://www.chictr.org.cn/showproj.html?proj=291174",
+   "raw": {
+    "project_id": "291174",
+    "registration_date": "2026/01/08"
+   }
+  }
+ ],
+ "fetched_at": "2026-10-17T14:11:07.166Z"
+}

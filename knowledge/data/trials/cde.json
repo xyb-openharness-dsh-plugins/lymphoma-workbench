@@ -1,0 +1,1971 @@
+{
+ "source_id": "cde",
+ "label": "中国药物临床试验登记与信息公示平台（CDE）",
+ "org": "NMPA 药品审评中心",
+ "url": "https://www.chinadrugtrials.org.cn",
+ "access": "unified_search_trials MCP · search_trials（受控访问，站点 Cookie 由 configure 取得）",
+ "window": {
+  "disease": "关键词「淋巴瘤」",
+  "basis": "CTR 号前缀 CTR2026（登记年份）"
+ },
+ "status": "ok",
+ "note": "站点报告 708 条命中；按 CTR 降序翻 2 页，取回 2026 年登记 50 条。CTR 号已降序越过 2026 段。列表页不含日期与入排全文，故 start_date/enrollment 留空。",
+ "counts": {
+  "api_total": 708,
+  "fetched": 50,
+  "pages": 2
+ },
+ "records": [
+  {
+   "id": "cde:CTR20260803",
+   "source_id": "cde",
+   "source_record_id": "CTR20260803",
+   "primary_registry": "CTR",
+   "registry_no": "CTR20260803",
+   "title": "ARX305对复发/难治性淋巴瘤的有效性及安全性研究",
+   "brief_title": "ARX305对复发/难治性淋巴瘤的有效性及安全性研究",
+   "conditions": [
+    "复发/难治性淋巴瘤"
+   ],
+   "interventions": [
+    "注射用重组人源化抗CD70单抗-AS269偶联物（ARX305）"
+   ],
+   "phase": null,
+   "status": "进行中 招募中",
+   "status_cn": "进行中 招募中",
+   "enrollment": null,
+   "start_date": null,
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": null,
+   "study_type": null,
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [],
+   "year_basis": "registration",
+   "matched_by": "condition",
+   "url": "https://www.chinadrugtrials.org.cn/clinicaltrials.searchlist.dhtml",
+   "raw": {
+    "registryNumbers": [
+     {
+      "registry": "CTR",
+      "value": "CTR20260803",
+      "primary": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "cde:CTR20260131",
+   "source_id": "cde",
+   "source_record_id": "CTR20260131",
+   "primary_registry": "CTR",
+   "registry_no": "CTR20260131",
+   "title": "AZD0486一线治疗老年或不适合化疗的LBCL受试者",
+   "brief_title": "AZD0486一线治疗老年或不适合化疗的LBCL受试者",
+   "conditions": [
+    "新诊断的老年或不适合化疗的大B细胞淋巴瘤"
+   ],
+   "interventions": [
+    "NA"
+   ],
+   "phase": null,
+   "status": "进行中 招募中",
+   "status_cn": "进行中 招募中",
+   "enrollment": null,
+   "start_date": null,
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": null,
+   "study_type": null,
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [],
+   "year_basis": "registration",
+   "matched_by": "condition",
+   "url": "https://www.chinadrugtrials.org.cn/clinicaltrials.searchlist.dhtml",
+   "raw": {
+    "registryNumbers": [
+     {
+      "registry": "CTR",
+      "value": "CTR20260131",
+      "primary": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "cde:CTR20262277",
+   "source_id": "cde",
+   "source_record_id": "CTR20262277",
+   "primary_registry": "CTR",
+   "registry_no": "CTR20262277",
+   "title": "AZD3470单药治疗和与抗肿瘤药物联合治疗血液恶性肿瘤",
+   "brief_title": "AZD3470单药治疗和与抗肿瘤药物联合治疗血液恶性肿瘤",
+   "conditions": [
+    "典型霍奇金淋巴瘤（cHL）,外周T细胞淋巴瘤(PTCL)"
+   ],
+   "interventions": [
+    "AZD3470薄膜衣片"
+   ],
+   "phase": null,
+   "status": "进行中 招募中",
+   "status_cn": "进行中 招募中",
+   "enrollment": null,
+   "start_date": null,
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": null,
+   "study_type": null,
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [],
+   "year_basis": "registration",
+   "matched_by": "condition",
+   "url": "https://www.chinadrugtrials.org.cn/clinicaltrials.searchlist.dhtml",
+   "raw": {
+    "registryNumbers": [
+     {
+      "registry": "CTR",
+      "value": "CTR20262277",
+      "primary": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "cde:CTR20262046",
+   "source_id": "cde",
+   "source_record_id": "CTR20262046",
+   "primary_registry": "CTR",
+   "registry_no": "CTR20262046",
+   "title": "BEBT-908联合CHOP（环磷酰胺+多柔比星+长春新碱+泼尼松）治疗初治外周T细胞淋巴瘤的影响研究",
+   "brief_title": "BEBT-908联合CHOP（环磷酰胺+多柔比星+长春新碱+泼尼松）治疗初治外周T细胞淋巴瘤的影响研究",
+   "conditions": [
+    "初治外周T细胞淋巴瘤"
+   ],
+   "interventions": [
+    "注射用盐酸伊吡诺司他"
+   ],
+   "phase": null,
+   "status": "进行中 尚未招募",
+   "status_cn": "进行中 尚未招募",
+   "enrollment": null,
+   "start_date": null,
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": null,
+   "study_type": null,
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [],
+   "year_basis": "registration",
+   "matched_by": "condition",
+   "url": "https://www.chinadrugtrials.org.cn/clinicaltrials.searchlist.dhtml",
+   "raw": {
+    "registryNumbers": [
+     {
+      "registry": "CTR",
+      "value": "CTR20262046",
+      "primary": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "cde:CTR20263489",
+   "source_id": "cde",
+   "source_record_id": "CTR20263489",
+   "primary_registry": "CTR",
+   "registry_no": "CTR20263489",
+   "title": "BL-M08D1 联合免疫化疗治疗弥漫大B细胞淋巴瘤患者的 Ib/II 期临床研究",
+   "brief_title": "BL-M08D1 联合免疫化疗治疗弥漫大B细胞淋巴瘤患者的 Ib/II 期临床研究",
+   "conditions": [
+    "弥漫大B细胞淋巴瘤"
+   ],
+   "interventions": [
+    "注射用BL-M08D1"
+   ],
+   "phase": null,
+   "status": "进行中 尚未招募",
+   "status_cn": "进行中 尚未招募",
+   "enrollment": null,
+   "start_date": null,
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": null,
+   "study_type": null,
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [],
+   "year_basis": "registration",
+   "matched_by": "condition",
+   "url": "https://www.chinadrugtrials.org.cn/clinicaltrials.searchlist.dhtml",
+   "raw": {
+    "registryNumbers": [
+     {
+      "registry": "CTR",
+      "value": "CTR20263489",
+      "primary": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "cde:CTR20261571",
+   "source_id": "cde",
+   "source_record_id": "CTR20261571",
+   "primary_registry": "CTR",
+   "registry_no": "CTR20261571",
+   "title": "BMS-986458单药及联合抗淋巴瘤药物治疗复发/难治性NHL的I/II期研究 现阶段仅开展Part B1 单药剂量拓展部分，待后续拟开展联合用药时再进行修改",
+   "brief_title": "BMS-986458单药及联合抗淋巴瘤药物治疗复发/难治性NHL的I/II期研究 现阶段仅开展Part B1 单药剂量拓展部分，待后续拟开展联合用药时再进行修改",
+   "conditions": [
+    "复发/难治性非霍奇金淋巴瘤（R/R NHL）"
+   ],
+   "interventions": [
+    "NA"
+   ],
+   "phase": null,
+   "status": "进行中 招募中",
+   "status_cn": "进行中 招募中",
+   "enrollment": null,
+   "start_date": null,
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": null,
+   "study_type": null,
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [],
+   "year_basis": "registration",
+   "matched_by": "condition",
+   "url": "https://www.chinadrugtrials.org.cn/clinicaltrials.searchlist.dhtml",
+   "raw": {
+    "registryNumbers": [
+     {
+      "registry": "CTR",
+      "value": "CTR20261571",
+      "primary": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "cde:CTR20260825",
+   "source_id": "cde",
+   "source_record_id": "CTR20260825",
+   "primary_registry": "CTR",
+   "registry_no": "CTR20260825",
+   "title": "BRL-301治疗B-NHL的安全性和有效性研究",
+   "brief_title": "BRL-301治疗B-NHL的安全性和有效性研究",
+   "conditions": [
+    "复发或难治性B细胞非霍奇金淋巴瘤"
+   ],
+   "interventions": [
+    "靶向CD19基因修饰的异体嵌合抗原受体T细胞注射液"
+   ],
+   "phase": null,
+   "status": "进行中 尚未招募",
+   "status_cn": "进行中 尚未招募",
+   "enrollment": null,
+   "start_date": null,
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": null,
+   "study_type": null,
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [],
+   "year_basis": "registration",
+   "matched_by": "condition",
+   "url": "https://www.chinadrugtrials.org.cn/clinicaltrials.searchlist.dhtml",
+   "raw": {
+    "registryNumbers": [
+     {
+      "registry": "CTR",
+      "value": "CTR20260825",
+      "primary": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "cde:CTR20261351",
+   "source_id": "cde",
+   "source_record_id": "CTR20261351",
+   "primary_registry": "CTR",
+   "registry_no": "CTR20261351",
+   "title": "CS08399片在MTAP缺失的晚期实体瘤和淋巴瘤患者中的Ⅰ期临床试验",
+   "brief_title": "CS08399片在MTAP缺失的晚期实体瘤和淋巴瘤患者中的Ⅰ期临床试验",
+   "conditions": [
+    "甲硫基腺苷磷酸化酶（MTAP）缺失的晚期或转移性实体瘤及复发/难治性淋巴瘤"
+   ],
+   "interventions": [
+    "CS08399片"
+   ],
+   "phase": null,
+   "status": "进行中 招募中",
+   "status_cn": "进行中 招募中",
+   "enrollment": null,
+   "start_date": null,
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": null,
+   "study_type": null,
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [],
+   "year_basis": "registration",
+   "matched_by": "condition",
+   "url": "https://www.chinadrugtrials.org.cn/clinicaltrials.searchlist.dhtml",
+   "raw": {
+    "registryNumbers": [
+     {
+      "registry": "CTR",
+      "value": "CTR20261351",
+      "primary": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "cde:CTR20263465",
+   "source_id": "cde",
+   "source_record_id": "CTR20263465",
+   "primary_registry": "CTR",
+   "registry_no": "CTR20263465",
+   "title": "CT1190B在复发/难治大B细胞淋巴瘤I/II期临床试验",
+   "brief_title": "CT1190B在复发/难治大B细胞淋巴瘤I/II期临床试验",
+   "conditions": [
+    "大B细胞淋巴瘤"
+   ],
+   "interventions": [
+    "CT1190B CAR T细胞注射液"
+   ],
+   "phase": null,
+   "status": "进行中 招募中",
+   "status_cn": "进行中 招募中",
+   "enrollment": null,
+   "start_date": null,
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": null,
+   "study_type": null,
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [],
+   "year_basis": "registration",
+   "matched_by": "condition",
+   "url": "https://www.chinadrugtrials.org.cn/clinicaltrials.searchlist.dhtml",
+   "raw": {
+    "registryNumbers": [
+     {
+      "registry": "CTR",
+      "value": "CTR20263465",
+      "primary": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "cde:CTR20263731",
+   "source_id": "cde",
+   "source_record_id": "CTR20263731",
+   "primary_registry": "CTR",
+   "registry_no": "CTR20263731",
+   "title": "DZD8586在健康受试者中的药物-药物相互作用临床试验",
+   "brief_title": "DZD8586在健康受试者中的药物-药物相互作用临床试验",
+   "conditions": [
+    "B细胞非霍奇金淋巴瘤"
+   ],
+   "interventions": [
+    "DZD8586片"
+   ],
+   "phase": null,
+   "status": "进行中 尚未招募",
+   "status_cn": "进行中 尚未招募",
+   "enrollment": null,
+   "start_date": null,
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": null,
+   "study_type": null,
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [],
+   "year_basis": "registration",
+   "matched_by": "condition",
+   "url": "https://www.chinadrugtrials.org.cn/clinicaltrials.searchlist.dhtml",
+   "raw": {
+    "registryNumbers": [
+     {
+      "registry": "CTR",
+      "value": "CTR20263731",
+      "primary": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "cde:CTR20261011",
+   "source_id": "cde",
+   "source_record_id": "CTR20261011",
+   "primary_registry": "CTR",
+   "registry_no": "CTR20261011",
+   "title": "GW5282联合戈利昔替尼治疗T细胞淋巴瘤",
+   "brief_title": "GW5282联合戈利昔替尼治疗T细胞淋巴瘤",
+   "conditions": [
+    "T细胞淋巴瘤"
+   ],
+   "interventions": [
+    "GW5282片"
+   ],
+   "phase": null,
+   "status": "进行中 招募中",
+   "status_cn": "进行中 招募中",
+   "enrollment": null,
+   "start_date": null,
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": null,
+   "study_type": null,
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [],
+   "year_basis": "registration",
+   "matched_by": "condition",
+   "url": "https://www.chinadrugtrials.org.cn/clinicaltrials.searchlist.dhtml",
+   "raw": {
+    "registryNumbers": [
+     {
+      "registry": "CTR",
+      "value": "CTR20261011",
+      "primary": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "cde:CTR20262732",
+   "source_id": "cde",
+   "source_record_id": "CTR20262732",
+   "primary_registry": "CTR",
+   "registry_no": "CTR20262732",
+   "title": "HBW-3220胶囊新制剂在健康人体中的生物利用度和食物影响研究",
+   "brief_title": "HBW-3220胶囊新制剂在健康人体中的生物利用度和食物影响研究",
+   "conditions": [
+    "成熟 B 细胞淋巴瘤"
+   ],
+   "interventions": [
+    "HBW-3220胶囊"
+   ],
+   "phase": null,
+   "status": "进行中 尚未招募",
+   "status_cn": "进行中 尚未招募",
+   "enrollment": null,
+   "start_date": null,
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": null,
+   "study_type": null,
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [],
+   "year_basis": "registration",
+   "matched_by": "condition",
+   "url": "https://www.chinadrugtrials.org.cn/clinicaltrials.searchlist.dhtml",
+   "raw": {
+    "registryNumbers": [
+     {
+      "registry": "CTR",
+      "value": "CTR20262732",
+      "primary": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "cde:CTR20261451",
+   "source_id": "cde",
+   "source_record_id": "CTR20261451",
+   "primary_registry": "CTR",
+   "registry_no": "CTR20261451",
+   "title": "HH2853对照西达本胺治疗复发/难治性外周T细胞淋巴瘤的III期临床研究",
+   "brief_title": "HH2853对照西达本胺治疗复发/难治性外周T细胞淋巴瘤的III期临床研究",
+   "conditions": [
+    "外周T细胞淋巴瘤"
+   ],
+   "interventions": [
+    "HH2853片"
+   ],
+   "phase": null,
+   "status": "进行中 招募中",
+   "status_cn": "进行中 招募中",
+   "enrollment": null,
+   "start_date": null,
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": null,
+   "study_type": null,
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [],
+   "year_basis": "registration",
+   "matched_by": "condition",
+   "url": "https://www.chinadrugtrials.org.cn/clinicaltrials.searchlist.dhtml",
+   "raw": {
+    "registryNumbers": [
+     {
+      "registry": "CTR",
+      "value": "CTR20261451",
+      "primary": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "cde:CTR20263421",
+   "source_id": "cde",
+   "source_record_id": "CTR20263421",
+   "primary_registry": "CTR",
+   "registry_no": "CTR20263421",
+   "title": "JS203联合化疗对比利妥昔单抗联合化疗在复发/难治性弥漫大B细胞淋巴瘤患者中的随机、开放性、多中心III期临床研究",
+   "brief_title": "JS203联合化疗对比利妥昔单抗联合化疗在复发/难治性弥漫大B细胞淋巴瘤患者中的随机、开放性、多中心III期临床研究",
+   "conditions": [
+    "弥漫大B细胞淋巴瘤"
+   ],
+   "interventions": [
+    "注射用JS203"
+   ],
+   "phase": null,
+   "status": "进行中 招募中",
+   "status_cn": "进行中 招募中",
+   "enrollment": null,
+   "start_date": null,
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": null,
+   "study_type": null,
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [],
+   "year_basis": "registration",
+   "matched_by": "condition",
+   "url": "https://www.chinadrugtrials.org.cn/clinicaltrials.searchlist.dhtml",
+   "raw": {
+    "registryNumbers": [
+     {
+      "registry": "CTR",
+      "value": "CTR20263421",
+      "primary": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "cde:CTR20260077",
+   "source_id": "cde",
+   "source_record_id": "CTR20260077",
+   "primary_registry": "CTR",
+   "registry_no": "CTR20260077",
+   "title": "Lisaftoclax (APG-2575) 在既往接受布鲁顿氏酪氨酸激酶（ BTK ）抑制剂治疗的慢性淋巴细胞白血病/小淋巴细胞淋巴瘤患者中进行的临床研究（GLORA 研究）",
+   "brief_title": "Lisaftoclax (APG-2575) 在既往接受布鲁顿氏酪氨酸激酶（ BTK ）抑制剂治疗的慢性淋巴细胞白血病/小淋巴细胞淋巴瘤患者中进行的临床研究（GLORA 研究）",
+   "conditions": [
+    "慢性淋巴细胞白血病/小淋巴细胞淋巴瘤"
+   ],
+   "interventions": [
+    "APG-2575片"
+   ],
+   "phase": null,
+   "status": "进行中 招募中",
+   "status_cn": "进行中 招募中",
+   "enrollment": null,
+   "start_date": null,
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": null,
+   "study_type": null,
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [],
+   "year_basis": "registration",
+   "matched_by": "condition",
+   "url": "https://www.chinadrugtrials.org.cn/clinicaltrials.searchlist.dhtml",
+   "raw": {
+    "registryNumbers": [
+     {
+      "registry": "CTR",
+      "value": "CTR20260077",
+      "primary": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "cde:CTR20261941",
+   "source_id": "cde",
+   "source_record_id": "CTR20261941",
+   "primary_registry": "CTR",
+   "registry_no": "CTR20261941",
+   "title": "MK-1045单药或与其他抗肿瘤药物联合治疗非霍奇金淋巴瘤",
+   "brief_title": "MK-1045单药或与其他抗肿瘤药物联合治疗非霍奇金淋巴瘤",
+   "conditions": [
+    "非霍奇金淋巴瘤"
+   ],
+   "interventions": [
+    "注射用MK-1045"
+   ],
+   "phase": null,
+   "status": "进行中 招募中",
+   "status_cn": "进行中 招募中",
+   "enrollment": null,
+   "start_date": null,
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": null,
+   "study_type": null,
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [],
+   "year_basis": "registration",
+   "matched_by": "condition",
+   "url": "https://www.chinadrugtrials.org.cn/clinicaltrials.searchlist.dhtml",
+   "raw": {
+    "registryNumbers": [
+     {
+      "registry": "CTR",
+      "value": "CTR20261941",
+      "primary": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "cde:CTR20262076",
+   "source_id": "cde",
+   "source_record_id": "CTR20262076",
+   "primary_registry": "CTR",
+   "registry_no": "CTR20262076",
+   "title": "MK-1045联合利妥昔单抗一线治疗滤泡性淋巴瘤（目前仅开展II期试验）",
+   "brief_title": "MK-1045联合利妥昔单抗一线治疗滤泡性淋巴瘤（目前仅开展II期试验）",
+   "conditions": [
+    "滤泡性淋巴瘤"
+   ],
+   "interventions": [
+    "注射用MK-1045"
+   ],
+   "phase": null,
+   "status": "进行中 尚未招募",
+   "status_cn": "进行中 尚未招募",
+   "enrollment": null,
+   "start_date": null,
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": null,
+   "study_type": null,
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [],
+   "year_basis": "registration",
+   "matched_by": "condition",
+   "url": "https://www.chinadrugtrials.org.cn/clinicaltrials.searchlist.dhtml",
+   "raw": {
+    "registryNumbers": [
+     {
+      "registry": "CTR",
+      "value": "CTR20262076",
+      "primary": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "cde:CTR20262058",
+   "source_id": "cde",
+   "source_record_id": "CTR20262058",
+   "primary_registry": "CTR",
+   "registry_no": "CTR20262058",
+   "title": "SCTB35联合GemOx对比R-GemOx在复发/难治性弥漫大B细胞淋巴瘤的III期临床研究",
+   "brief_title": "SCTB35联合GemOx对比R-GemOx在复发/难治性弥漫大B细胞淋巴瘤的III期临床研究",
+   "conditions": [
+    "复发/难治性弥漫大B细胞淋巴瘤"
+   ],
+   "interventions": [
+    "SCTB35注射液"
+   ],
+   "phase": null,
+   "status": "进行中 招募中",
+   "status_cn": "进行中 招募中",
+   "enrollment": null,
+   "start_date": null,
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": null,
+   "study_type": null,
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [],
+   "year_basis": "registration",
+   "matched_by": "condition",
+   "url": "https://www.chinadrugtrials.org.cn/clinicaltrials.searchlist.dhtml",
+   "raw": {
+    "registryNumbers": [
+     {
+      "registry": "CTR",
+      "value": "CTR20262058",
+      "primary": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "cde:CTR20263618",
+   "source_id": "cde",
+   "source_record_id": "CTR20263618",
+   "primary_registry": "CTR",
+   "registry_no": "CTR20263618",
+   "title": "SCTB35联合SCTB41与化疗不联用或联用在非霍奇金淋巴瘤的Ib/Ⅱ期临床研究",
+   "brief_title": "SCTB35联合SCTB41与化疗不联用或联用在非霍奇金淋巴瘤的Ib/Ⅱ期临床研究",
+   "conditions": [
+    "非霍奇金淋巴瘤"
+   ],
+   "interventions": [
+    "SCTB35注射液"
+   ],
+   "phase": null,
+   "status": "进行中 尚未招募",
+   "status_cn": "进行中 尚未招募",
+   "enrollment": null,
+   "start_date": null,
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": null,
+   "study_type": null,
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [],
+   "year_basis": "registration",
+   "matched_by": "condition",
+   "url": "https://www.chinadrugtrials.org.cn/clinicaltrials.searchlist.dhtml",
+   "raw": {
+    "registryNumbers": [
+     {
+      "registry": "CTR",
+      "value": "CTR20263618",
+      "primary": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "cde:CTR20263621",
+   "source_id": "cde",
+   "source_record_id": "CTR20263621",
+   "primary_registry": "CTR",
+   "registry_no": "CTR20263621",
+   "title": "SCTB35联合SCTB41与化疗不联用或联用在非霍奇金淋巴瘤的Ib/Ⅱ期临床研究",
+   "brief_title": "SCTB35联合SCTB41与化疗不联用或联用在非霍奇金淋巴瘤的Ib/Ⅱ期临床研究",
+   "conditions": [
+    "非霍奇金淋巴瘤"
+   ],
+   "interventions": [
+    "SCTB41注射液"
+   ],
+   "phase": null,
+   "status": "进行中 尚未招募",
+   "status_cn": "进行中 尚未招募",
+   "enrollment": null,
+   "start_date": null,
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": null,
+   "study_type": null,
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [],
+   "year_basis": "registration",
+   "matched_by": "condition",
+   "url": "https://www.chinadrugtrials.org.cn/clinicaltrials.searchlist.dhtml",
+   "raw": {
+    "registryNumbers": [
+     {
+      "registry": "CTR",
+      "value": "CTR20263621",
+      "primary": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "cde:CTR20262021",
+   "source_id": "cde",
+   "source_record_id": "CTR20262021",
+   "primary_registry": "CTR",
+   "registry_no": "CTR20262021",
+   "title": "SCTB35联合来那度胺对比利妥昔单抗联合来那度胺治疗复发/难治性滤泡性淋巴瘤的III期临床试验（Part 1无对照组）",
+   "brief_title": "SCTB35联合来那度胺对比利妥昔单抗联合来那度胺治疗复发/难治性滤泡性淋巴瘤的III期临床试验（Part 1无对照组）",
+   "conditions": [
+    "复发/难治性滤泡性淋巴瘤"
+   ],
+   "interventions": [
+    "SCTB35注射液"
+   ],
+   "phase": null,
+   "status": "进行中 招募中",
+   "status_cn": "进行中 招募中",
+   "enrollment": null,
+   "start_date": null,
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": null,
+   "study_type": null,
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [],
+   "year_basis": "registration",
+   "matched_by": "condition",
+   "url": "https://www.chinadrugtrials.org.cn/clinicaltrials.searchlist.dhtml",
+   "raw": {
+    "registryNumbers": [
+     {
+      "registry": "CTR",
+      "value": "CTR20262021",
+      "primary": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "cde:CTR20262394",
+   "source_id": "cde",
+   "source_record_id": "CTR20262394",
+   "primary_registry": "CTR",
+   "registry_no": "CTR20262394",
+   "title": "SHR-3079在B细胞非霍奇金淋巴瘤参与者中的I期临床研究",
+   "brief_title": "SHR-3079在B细胞非霍奇金淋巴瘤参与者中的I期临床研究",
+   "conditions": [
+    "B细胞非霍奇金淋巴瘤"
+   ],
+   "interventions": [
+    "SHR-3079注射液"
+   ],
+   "phase": null,
+   "status": "进行中 招募中",
+   "status_cn": "进行中 招募中",
+   "enrollment": null,
+   "start_date": null,
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": null,
+   "study_type": null,
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [],
+   "year_basis": "registration",
+   "matched_by": "condition",
+   "url": "https://www.chinadrugtrials.org.cn/clinicaltrials.searchlist.dhtml",
+   "raw": {
+    "registryNumbers": [
+     {
+      "registry": "CTR",
+      "value": "CTR20262394",
+      "primary": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "cde:CTR20261546",
+   "source_id": "cde",
+   "source_record_id": "CTR20261546",
+   "primary_registry": "CTR",
+   "registry_no": "CTR20261546",
+   "title": "TQB3909对比研究者选择的方案治疗复发/难治性CLL/SLL的随机、开放、多中心III期研究",
+   "brief_title": "TQB3909对比研究者选择的方案治疗复发/难治性CLL/SLL的随机、开放、多中心III期研究",
+   "conditions": [
+    "复发或难治性慢性淋巴细胞白血病/小淋巴细胞淋巴瘤"
+   ],
+   "interventions": [
+    "TQB3909片"
+   ],
+   "phase": null,
+   "status": "进行中 尚未招募",
+   "status_cn": "进行中 尚未招募",
+   "enrollment": null,
+   "start_date": null,
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": null,
+   "study_type": null,
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [],
+   "year_basis": "registration",
+   "matched_by": "condition",
+   "url": "https://www.chinadrugtrials.org.cn/clinicaltrials.searchlist.dhtml",
+   "raw": {
+    "registryNumbers": [
+     {
+      "registry": "CTR",
+      "value": "CTR20261546",
+      "primary": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "cde:CTR20263426",
+   "source_id": "cde",
+   "source_record_id": "CTR20263426",
+   "primary_registry": "CTR",
+   "registry_no": "CTR20263426",
+   "title": "TT-01488片联合含抗CD20单克隆抗体方案治疗套细胞淋巴瘤的II期研究",
+   "brief_title": "TT-01488片联合含抗CD20单克隆抗体方案治疗套细胞淋巴瘤的II期研究",
+   "conditions": [
+    "初治套细胞淋巴瘤"
+   ],
+   "interventions": [
+    "TT-01488片"
+   ],
+   "phase": null,
+   "status": "进行中 尚未招募",
+   "status_cn": "进行中 尚未招募",
+   "enrollment": null,
+   "start_date": null,
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": null,
+   "study_type": null,
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [],
+   "year_basis": "registration",
+   "matched_by": "condition",
+   "url": "https://www.chinadrugtrials.org.cn/clinicaltrials.searchlist.dhtml",
+   "raw": {
+    "registryNumbers": [
+     {
+      "registry": "CTR",
+      "value": "CTR20263426",
+      "primary": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "cde:CTR20260012",
+   "source_id": "cde",
+   "source_record_id": "CTR20260012",
+   "primary_registry": "CTR",
+   "registry_no": "CTR20260012",
+   "title": "XNW5004片治疗复发或难治性滤泡性淋巴瘤（EZH2野生型）患者的II期临床研究",
+   "brief_title": "XNW5004片治疗复发或难治性滤泡性淋巴瘤（EZH2野生型）患者的II期临床研究",
+   "conditions": [
+    "复发或难治性滤泡性淋巴瘤"
+   ],
+   "interventions": [
+    "XNW5004片"
+   ],
+   "phase": null,
+   "status": "进行中 招募中",
+   "status_cn": "进行中 招募中",
+   "enrollment": null,
+   "start_date": null,
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": null,
+   "study_type": null,
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [],
+   "year_basis": "registration",
+   "matched_by": "condition",
+   "url": "https://www.chinadrugtrials.org.cn/clinicaltrials.searchlist.dhtml",
+   "raw": {
+    "registryNumbers": [
+     {
+      "registry": "CTR",
+      "value": "CTR20260012",
+      "primary": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "cde:CTR20262676",
+   "source_id": "cde",
+   "source_record_id": "CTR20262676",
+   "primary_registry": "CTR",
+   "registry_no": "CTR20262676",
+   "title": "[14C]TR115在成年男性健康试验参与者中的物质平衡研究",
+   "brief_title": "[14C]TR115在成年男性健康试验参与者中的物质平衡研究",
+   "conditions": [
+    "复发/难治性非霍奇金淋巴瘤或晚期实体瘤"
+   ],
+   "interventions": [
+    "[14C]TR115片"
+   ],
+   "phase": null,
+   "status": "进行中 尚未招募",
+   "status_cn": "进行中 尚未招募",
+   "enrollment": null,
+   "start_date": null,
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": null,
+   "study_type": null,
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [],
+   "year_basis": "registration",
+   "matched_by": "condition",
+   "url": "https://www.chinadrugtrials.org.cn/clinicaltrials.searchlist.dhtml",
+   "raw": {
+    "registryNumbers": [
+     {
+      "registry": "CTR",
+      "value": "CTR20262676",
+      "primary": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "cde:CTR20261353",
+   "source_id": "cde",
+   "source_record_id": "CTR20261353",
+   "primary_registry": "CTR",
+   "registry_no": "CTR20261353",
+   "title": "一项AZD4512单药治疗或与抗癌药物联合治疗复发/难治性B细胞非霍奇金淋巴瘤受试者的I/II期研究（Lumi-NHL）",
+   "brief_title": "一项AZD4512单药治疗或与抗癌药物联合治疗复发/难治性B细胞非霍奇金淋巴瘤受试者的I/II期研究（Lumi-NHL）",
+   "conditions": [
+    "复发/难治性B细胞非霍奇金淋巴瘤"
+   ],
+   "interventions": [
+    "AZD4512"
+   ],
+   "phase": null,
+   "status": "进行中 尚未招募",
+   "status_cn": "进行中 尚未招募",
+   "enrollment": null,
+   "start_date": null,
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": null,
+   "study_type": null,
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [],
+   "year_basis": "registration",
+   "matched_by": "condition",
+   "url": "https://www.chinadrugtrials.org.cn/clinicaltrials.searchlist.dhtml",
+   "raw": {
+    "registryNumbers": [
+     {
+      "registry": "CTR",
+      "value": "CTR20261353",
+      "primary": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "cde:CTR20262758",
+   "source_id": "cde",
+   "source_record_id": "CTR20262758",
+   "primary_registry": "CTR",
+   "registry_no": "CTR20262758",
+   "title": "一项在ALK阳性晚期恶性肿瘤患者中评价SY-12321安全性、耐受性、药代动力学及初步疗效的开放性、多中心Ⅰ/Ⅱ期临床试验",
+   "brief_title": "一项在ALK阳性晚期恶性肿瘤患者中评价SY-12321安全性、耐受性、药代动力学及初步疗效的开放性、多中心Ⅰ/Ⅱ期临床试验",
+   "conditions": [
+    "ALK阳性晚期恶性肿瘤患者，包括非小细胞肺癌（NSCLC）、炎症性肌成纤维母细胞瘤（IMT）、间变性大细胞淋巴瘤（ALCL）、结直肠癌、胰腺癌、乳腺癌等"
+   ],
+   "interventions": [
+    "SY-12321胶囊"
+   ],
+   "phase": null,
+   "status": "进行中 招募中",
+   "status_cn": "进行中 招募中",
+   "enrollment": null,
+   "start_date": null,
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": null,
+   "study_type": null,
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [],
+   "year_basis": "registration",
+   "matched_by": "condition",
+   "url": "https://www.chinadrugtrials.org.cn/clinicaltrials.searchlist.dhtml",
+   "raw": {
+    "registryNumbers": [
+     {
+      "registry": "CTR",
+      "value": "CTR20262758",
+      "primary": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "cde:CTR20261365",
+   "source_id": "cde",
+   "source_record_id": "CTR20261365",
+   "primary_registry": "CTR",
+   "registry_no": "CTR20261365",
+   "title": "一项在复发/难治性慢性淋巴细胞白血病或小淋巴细胞淋巴瘤患者中比较 BGB-16673 与匹妥布替尼的安全性和有效性的研究",
+   "brief_title": "一项在复发/难治性慢性淋巴细胞白血病或小淋巴细胞淋巴瘤患者中比较 BGB-16673 与匹妥布替尼的安全性和有效性的研究",
+   "conditions": [
+    "复发/难治性慢性淋巴细胞白血病或小淋巴细胞淋巴瘤"
+   ],
+   "interventions": [
+    "NA"
+   ],
+   "phase": null,
+   "status": "进行中 招募中",
+   "status_cn": "进行中 招募中",
+   "enrollment": null,
+   "start_date": null,
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": null,
+   "study_type": null,
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [],
+   "year_basis": "registration",
+   "matched_by": "condition",
+   "url": "https://www.chinadrugtrials.org.cn/clinicaltrials.searchlist.dhtml",
+   "raw": {
+    "registryNumbers": [
+     {
+      "registry": "CTR",
+      "value": "CTR20261365",
+      "primary": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "cde:CTR20262074",
+   "source_id": "cde",
+   "source_record_id": "CTR20262074",
+   "primary_registry": "CTR",
+   "registry_no": "CTR20262074",
+   "title": "一项治疗儿童和青少年复发/难治性T淋巴母细胞白血病/淋巴瘤患者的I期临床研究",
+   "brief_title": "一项治疗儿童和青少年复发/难治性T淋巴母细胞白血病/淋巴瘤患者的I期临床研究",
+   "conditions": [
+    "儿童和青少年复发/难治性T淋巴母细胞白血病/淋巴瘤。"
+   ],
+   "interventions": [
+    "PA3-17注射液"
+   ],
+   "phase": null,
+   "status": "进行中 尚未招募",
+   "status_cn": "进行中 尚未招募",
+   "enrollment": null,
+   "start_date": null,
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": null,
+   "study_type": null,
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [],
+   "year_basis": "registration",
+   "matched_by": "condition",
+   "url": "https://www.chinadrugtrials.org.cn/clinicaltrials.searchlist.dhtml",
+   "raw": {
+    "registryNumbers": [
+     {
+      "registry": "CTR",
+      "value": "CTR20262074",
+      "primary": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "cde:CTR20263780",
+   "source_id": "cde",
+   "source_record_id": "CTR20263780",
+   "primary_registry": "CTR",
+   "registry_no": "CTR20263780",
+   "title": "一项评价奥布替尼联合ICP-248 治疗复发/难治性边缘区淋巴瘤的III 期临床试验",
+   "brief_title": "一项评价奥布替尼联合ICP-248 治疗复发/难治性边缘区淋巴瘤的III 期临床试验",
+   "conditions": [
+    "边缘区淋巴瘤"
+   ],
+   "interventions": [
+    "奥布替尼片"
+   ],
+   "phase": null,
+   "status": "进行中 尚未招募",
+   "status_cn": "进行中 尚未招募",
+   "enrollment": null,
+   "start_date": null,
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": null,
+   "study_type": null,
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [],
+   "year_basis": "registration",
+   "matched_by": "condition",
+   "url": "https://www.chinadrugtrials.org.cn/clinicaltrials.searchlist.dhtml",
+   "raw": {
+    "registryNumbers": [
+     {
+      "registry": "CTR",
+      "value": "CTR20263780",
+      "primary": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "cde:CTR20261956",
+   "source_id": "cde",
+   "source_record_id": "CTR20261956",
+   "primary_registry": "CTR",
+   "registry_no": "CTR20261956",
+   "title": "乐托克拉（LP-108）治疗复发或难治性 CLL/SLL 受试者的 II 期临床研究",
+   "brief_title": "乐托克拉（LP-108）治疗复发或难治性 CLL/SLL 受试者的 II 期临床研究",
+   "conditions": [
+    "复发或难治性慢性淋巴细胞白血病（CLL）/小淋巴细胞淋巴瘤（SLL）"
+   ],
+   "interventions": [
+    "LP-108片"
+   ],
+   "phase": null,
+   "status": "进行中 招募中",
+   "status_cn": "进行中 招募中",
+   "enrollment": null,
+   "start_date": null,
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": null,
+   "study_type": null,
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [],
+   "year_basis": "registration",
+   "matched_by": "condition",
+   "url": "https://www.chinadrugtrials.org.cn/clinicaltrials.searchlist.dhtml",
+   "raw": {
+    "registryNumbers": [
+     {
+      "registry": "CTR",
+      "value": "CTR20261956",
+      "primary": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "cde:CTR20263414",
+   "source_id": "cde",
+   "source_record_id": "CTR20263414",
+   "primary_registry": "CTR",
+   "registry_no": "CTR20263414",
+   "title": "伊布替尼片在健康人体随机、开放、两制剂、四周期、重复交叉、空腹生物等效性试验",
+   "brief_title": "伊布替尼片在健康人体随机、开放、两制剂、四周期、重复交叉、空腹生物等效性试验",
+   "conditions": [
+    "本品单药适用于既往至少接受过一种治疗的套细胞淋巴瘤患者的治疗。 本品单药适用于慢性淋巴细胞白血病/小淋巴细胞淋巴瘤患者的治疗。 本品单药适用于既往至少接受过一种治疗的华氏巨球蛋白血症患者的治疗，或者不适合接受化学免疫治疗的华氏巨球蛋白血症患者的一线治疗。 本品联用利妥昔单抗，适用于华氏巨球蛋白血症患者的治疗。"
+   ],
+   "interventions": [
+    "伊布替尼片"
+   ],
+   "phase": null,
+   "status": "进行中 尚未招募",
+   "status_cn": "进行中 尚未招募",
+   "enrollment": null,
+   "start_date": null,
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": null,
+   "study_type": null,
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [],
+   "year_basis": "registration",
+   "matched_by": "condition",
+   "url": "https://www.chinadrugtrials.org.cn/clinicaltrials.searchlist.dhtml",
+   "raw": {
+    "registryNumbers": [
+     {
+      "registry": "CTR",
+      "value": "CTR20263414",
+      "primary": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "cde:CTR20263570",
+   "source_id": "cde",
+   "source_record_id": "CTR20263570",
+   "primary_registry": "CTR",
+   "registry_no": "CTR20263570",
+   "title": "伊布替尼胶囊人体生物等效性试验",
+   "brief_title": "伊布替尼胶囊人体生物等效性试验",
+   "conditions": [
+    "本品单药适用于既往至少接受过一种治疗的套细胞淋巴瘤患者的治疗。 本品单药适用于慢性淋巴细胞白血病/小淋巴细胞淋巴瘤患者的治疗。 本品单药适用于既往至少接受过一种治疗的华氏巨球蛋白血症患者的治疗，或者不适合接受化学免疫治疗的华氏巨球蛋白血症患者的一线治疗。 本品联用利妥昔单抗，适用于华氏巨球蛋白血症患者的治疗。"
+   ],
+   "interventions": [
+    "伊布替尼胶囊"
+   ],
+   "phase": null,
+   "status": "进行中 尚未招募",
+   "status_cn": "进行中 尚未招募",
+   "enrollment": null,
+   "start_date": null,
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": null,
+   "study_type": null,
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [],
+   "year_basis": "registration",
+   "matched_by": "condition",
+   "url": "https://www.chinadrugtrials.org.cn/clinicaltrials.searchlist.dhtml",
+   "raw": {
+    "registryNumbers": [
+     {
+      "registry": "CTR",
+      "value": "CTR20263570",
+      "primary": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "cde:CTR20261712",
+   "source_id": "cde",
+   "source_record_id": "CTR20261712",
+   "primary_registry": "CTR",
+   "registry_no": "CTR20261712",
+   "title": "伊布替尼胶囊生物等效性试验",
+   "brief_title": "伊布替尼胶囊生物等效性试验",
+   "conditions": [
+    "本品单药适用于既往至少接受过一种治疗的套细胞淋巴瘤患者的治疗。 本品单药适用于慢性淋巴细胞白血病/小淋巴细胞淋巴瘤患者的治疗。 本品单药适用于既往至少接受过一种治疗的华氏巨球蛋白血症患者的治疗，或者不适合接受化学免疫治疗的华氏巨球蛋白血症患者的一线治疗。 本品联用利妥昔单抗，适用于华氏巨球蛋白血症患者的治疗。"
+   ],
+   "interventions": [
+    "伊布替尼胶囊"
+   ],
+   "phase": null,
+   "status": "已完成",
+   "status_cn": "已完成",
+   "enrollment": null,
+   "start_date": null,
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": null,
+   "study_type": null,
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [],
+   "year_basis": "registration",
+   "matched_by": "condition",
+   "url": "https://www.chinadrugtrials.org.cn/clinicaltrials.searchlist.dhtml",
+   "raw": {
+    "registryNumbers": [
+     {
+      "registry": "CTR",
+      "value": "CTR20261712",
+      "primary": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "cde:CTR20262544",
+   "source_id": "cde",
+   "source_record_id": "CTR20262544",
+   "primary_registry": "CTR",
+   "registry_no": "CTR20262544",
+   "title": "伊布替尼胶囊空腹生物等效性试验",
+   "brief_title": "伊布替尼胶囊空腹生物等效性试验",
+   "conditions": [
+    "1.本品单药适用于既往至少接受过一种治疗的套细胞淋巴瘤患者的治疗。2.本品单药适用于慢性淋巴细胞白血病/小淋巴细胞淋巴瘤患者的治疗。3.本品单药适用于既往至少接受过一种治疗的华氏巨球蛋白血症患者的治疗，或者不适合接受化学免疫治疗的华氏巨球蛋白血症患者的一线治疗。4.本品联用利妥昔单抗，适用于华氏巨球蛋白血症患者的治疗。"
+   ],
+   "interventions": [
+    "伊布替尼胶囊"
+   ],
+   "phase": null,
+   "status": "进行中 尚未招募",
+   "status_cn": "进行中 尚未招募",
+   "enrollment": null,
+   "start_date": null,
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": null,
+   "study_type": null,
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [],
+   "year_basis": "registration",
+   "matched_by": "condition",
+   "url": "https://www.chinadrugtrials.org.cn/clinicaltrials.searchlist.dhtml",
+   "raw": {
+    "registryNumbers": [
+     {
+      "registry": "CTR",
+      "value": "CTR20262544",
+      "primary": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "cde:CTR20260281",
+   "source_id": "cde",
+   "source_record_id": "CTR20260281",
+   "primary_registry": "CTR",
+   "registry_no": "CTR20260281",
+   "title": "在男性健康受试者中DZD8586的物质平衡试验",
+   "brief_title": "在男性健康受试者中DZD8586的物质平衡试验",
+   "conditions": [
+    "B细胞非霍奇金淋巴瘤"
+   ],
+   "interventions": [
+    "DZD8586片"
+   ],
+   "phase": null,
+   "status": "已完成",
+   "status_cn": "已完成",
+   "enrollment": null,
+   "start_date": null,
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": null,
+   "study_type": null,
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [],
+   "year_basis": "registration",
+   "matched_by": "condition",
+   "url": "https://www.chinadrugtrials.org.cn/clinicaltrials.searchlist.dhtml",
+   "raw": {
+    "registryNumbers": [
+     {
+      "registry": "CTR",
+      "value": "CTR20260281",
+      "primary": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "cde:CTR20262043",
+   "source_id": "cde",
+   "source_record_id": "CTR20262043",
+   "primary_registry": "CTR",
+   "registry_no": "CTR20262043",
+   "title": "新药 TR115 用于复发难治外周 T/NK 细胞淋巴瘤的临床疗效及安全评价",
+   "brief_title": "新药 TR115 用于复发难治外周 T/NK 细胞淋巴瘤的临床疗效及安全评价",
+   "conditions": [
+    "复发和/或难治性外周T/NK细胞淋巴瘤患者"
+   ],
+   "interventions": [
+    "TR115片"
+   ],
+   "phase": null,
+   "status": "进行中 尚未招募",
+   "status_cn": "进行中 尚未招募",
+   "enrollment": null,
+   "start_date": null,
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": null,
+   "study_type": null,
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [],
+   "year_basis": "registration",
+   "matched_by": "condition",
+   "url": "https://www.chinadrugtrials.org.cn/clinicaltrials.searchlist.dhtml",
+   "raw": {
+    "registryNumbers": [
+     {
+      "registry": "CTR",
+      "value": "CTR20262043",
+      "primary": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "cde:CTR20260122",
+   "source_id": "cde",
+   "source_record_id": "CTR20260122",
+   "primary_registry": "CTR",
+   "registry_no": "CTR20260122",
+   "title": "洛布替尼对比研究者选择的BTK抑制剂治疗复发或难治性套细胞淋巴瘤的III期临床研究",
+   "brief_title": "洛布替尼对比研究者选择的BTK抑制剂治疗复发或难治性套细胞淋巴瘤的III期临床研究",
+   "conditions": [
+    "套细胞淋巴瘤"
+   ],
+   "interventions": [
+    "洛布替尼片"
+   ],
+   "phase": null,
+   "status": "进行中 招募中",
+   "status_cn": "进行中 招募中",
+   "enrollment": null,
+   "start_date": null,
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": null,
+   "study_type": null,
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [],
+   "year_basis": "registration",
+   "matched_by": "condition",
+   "url": "https://www.chinadrugtrials.org.cn/clinicaltrials.searchlist.dhtml",
+   "raw": {
+    "registryNumbers": [
+     {
+      "registry": "CTR",
+      "value": "CTR20260122",
+      "primary": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "cde:CTR20261566",
+   "source_id": "cde",
+   "source_record_id": "CTR20261566",
+   "primary_registry": "CTR",
+   "registry_no": "CTR20261566",
+   "title": "洛布替尼联合R-GemOx治疗复发/难治性DLBCL的Ib期临床研究",
+   "brief_title": "洛布替尼联合R-GemOx治疗复发/难治性DLBCL的Ib期临床研究",
+   "conditions": [
+    "弥漫大B细胞淋巴瘤（DLBCL）"
+   ],
+   "interventions": [
+    "洛布替尼片"
+   ],
+   "phase": null,
+   "status": "进行中 招募中",
+   "status_cn": "进行中 招募中",
+   "enrollment": null,
+   "start_date": null,
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": null,
+   "study_type": null,
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [],
+   "year_basis": "registration",
+   "matched_by": "condition",
+   "url": "https://www.chinadrugtrials.org.cn/clinicaltrials.searchlist.dhtml",
+   "raw": {
+    "registryNumbers": [
+     {
+      "registry": "CTR",
+      "value": "CTR20261566",
+      "primary": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "cde:CTR20260442",
+   "source_id": "cde",
+   "source_record_id": "CTR20260442",
+   "primary_registry": "CTR",
+   "registry_no": "CTR20260442",
+   "title": "甲氨蝶呤片在空腹及餐后条件下的人体生物等效性试验",
+   "brief_title": "甲氨蝶呤片在空腹及餐后条件下的人体生物等效性试验",
+   "conditions": [
+    "1、各型急性白血病，特别是急性淋巴细胞白血病、恶性淋巴瘤、非何杰金氏淋巴瘤和蕈样肉芽肿、多发性骨髓病； 2、头颈部癌、肺癌、各种软组织肉瘤、银屑病； 3、乳腺癌、卵巢癌、宫颈癌、恶性葡萄胎、绒毛膜上皮癌、睾丸癌。 4、用于多关节型幼年特发性关节炎儿童患者(pJIA)。"
+   ],
+   "interventions": [
+    "甲氨蝶呤片"
+   ],
+   "phase": null,
+   "status": "已完成",
+   "status_cn": "已完成",
+   "enrollment": null,
+   "start_date": null,
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": null,
+   "study_type": null,
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [],
+   "year_basis": "registration",
+   "matched_by": "condition",
+   "url": "https://www.chinadrugtrials.org.cn/clinicaltrials.searchlist.dhtml",
+   "raw": {
+    "registryNumbers": [
+     {
+      "registry": "CTR",
+      "value": "CTR20260442",
+      "primary": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "cde:CTR20261801",
+   "source_id": "cde",
+   "source_record_id": "CTR20261801",
+   "primary_registry": "CTR",
+   "registry_no": "CTR20261801",
+   "title": "评价JL19001注射液单药或加载标准治疗在晚期实体瘤及复发或难治性B细胞非霍奇金淋巴瘤患者中的安全性和耐受性的I期临床研究",
+   "brief_title": "评价JL19001注射液单药或加载标准治疗在晚期实体瘤及复发或难治性B细胞非霍奇金淋巴瘤患者中的安全性和耐受性的I期临床研究",
+   "conditions": [
+    "晚期实体瘤（AST）和复发或难治性B细胞非霍奇金淋巴瘤（r/r B-NHL）"
+   ],
+   "interventions": [
+    "JL19001注射液"
+   ],
+   "phase": null,
+   "status": "进行中 招募中",
+   "status_cn": "进行中 招募中",
+   "enrollment": null,
+   "start_date": null,
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": null,
+   "study_type": null,
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [],
+   "year_basis": "registration",
+   "matched_by": "condition",
+   "url": "https://www.chinadrugtrials.org.cn/clinicaltrials.searchlist.dhtml",
+   "raw": {
+    "registryNumbers": [
+     {
+      "registry": "CTR",
+      "value": "CTR20261801",
+      "primary": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "cde:CTR20261853",
+   "source_id": "cde",
+   "source_record_id": "CTR20261853",
+   "primary_registry": "CTR",
+   "registry_no": "CTR20261853",
+   "title": "评价SYN818单药在复发和/或难治性淋巴瘤、多发性骨髓瘤受试者中的I/II 期临床研究",
+   "brief_title": "评价SYN818单药在复发和/或难治性淋巴瘤、多发性骨髓瘤受试者中的I/II 期临床研究",
+   "conditions": [
+    "复发和 /或难治性淋巴瘤、多发性骨髓瘤"
+   ],
+   "interventions": [
+    "SYN818片"
+   ],
+   "phase": null,
+   "status": "进行中 尚未招募",
+   "status_cn": "进行中 尚未招募",
+   "enrollment": null,
+   "start_date": null,
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": null,
+   "study_type": null,
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [],
+   "year_basis": "registration",
+   "matched_by": "condition",
+   "url": "https://www.chinadrugtrials.org.cn/clinicaltrials.searchlist.dhtml",
+   "raw": {
+    "registryNumbers": [
+     {
+      "registry": "CTR",
+      "value": "CTR20261853",
+      "primary": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "cde:CTR20260705",
+   "source_id": "cde",
+   "source_record_id": "CTR20260705",
+   "primary_registry": "CTR",
+   "registry_no": "CTR20260705",
+   "title": "评价SYS6055注射液治疗复发/难治侵袭性B细胞淋巴瘤参与者的I/Ⅱ期临床研究",
+   "brief_title": "评价SYS6055注射液治疗复发/难治侵袭性B细胞淋巴瘤参与者的I/Ⅱ期临床研究",
+   "conditions": [
+    "复发/难治侵袭性B细胞淋巴瘤"
+   ],
+   "interventions": [
+    "SYS6055注射液"
+   ],
+   "phase": null,
+   "status": "进行中 招募中",
+   "status_cn": "进行中 招募中",
+   "enrollment": null,
+   "start_date": null,
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": null,
+   "study_type": null,
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [],
+   "year_basis": "registration",
+   "matched_by": "condition",
+   "url": "https://www.chinadrugtrials.org.cn/clinicaltrials.searchlist.dhtml",
+   "raw": {
+    "registryNumbers": [
+     {
+      "registry": "CTR",
+      "value": "CTR20260705",
+      "primary": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "cde:CTR20261321",
+   "source_id": "cde",
+   "source_record_id": "CTR20261321",
+   "primary_registry": "CTR",
+   "registry_no": "CTR20261321",
+   "title": "评价TM471-1胶囊治疗复发或难治性边缘区淋巴瘤患者II期临床试验",
+   "brief_title": "评价TM471-1胶囊治疗复发或难治性边缘区淋巴瘤患者II期临床试验",
+   "conditions": [
+    "复发或难治性边缘区淋巴瘤（MZL）患者"
+   ],
+   "interventions": [
+    "TM471-1胶囊"
+   ],
+   "phase": null,
+   "status": "进行中 尚未招募",
+   "status_cn": "进行中 尚未招募",
+   "enrollment": null,
+   "start_date": null,
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": null,
+   "study_type": null,
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [],
+   "year_basis": "registration",
+   "matched_by": "condition",
+   "url": "https://www.chinadrugtrials.org.cn/clinicaltrials.searchlist.dhtml",
+   "raw": {
+    "registryNumbers": [
+     {
+      "registry": "CTR",
+      "value": "CTR20261321",
+      "primary": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "cde:CTR20262972",
+   "source_id": "cde",
+   "source_record_id": "CTR20262972",
+   "primary_registry": "CTR",
+   "registry_no": "CTR20262972",
+   "title": "评价注射用FG-M131在TRBC1阳性的复发/难治外周T细胞淋巴瘤患者中的安全性、耐受性、药代动力学特征和初步疗效的开放性、多中心Ⅰ/II期临床试验",
+   "brief_title": "评价注射用FG-M131在TRBC1阳性的复发/难治外周T细胞淋巴瘤患者中的安全性、耐受性、药代动力学特征和初步疗效的开放性、多中心Ⅰ/II期临床试验",
+   "conditions": [
+    "经治的TRBC1阳性的复发/难治外周T细胞淋巴瘤患者"
+   ],
+   "interventions": [
+    "注射用FG-M131"
+   ],
+   "phase": null,
+   "status": "进行中 尚未招募",
+   "status_cn": "进行中 尚未招募",
+   "enrollment": null,
+   "start_date": null,
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": null,
+   "study_type": null,
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [],
+   "year_basis": "registration",
+   "matched_by": "condition",
+   "url": "https://www.chinadrugtrials.org.cn/clinicaltrials.searchlist.dhtml",
+   "raw": {
+    "registryNumbers": [
+     {
+      "registry": "CTR",
+      "value": "CTR20262972",
+      "primary": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "cde:CTR20262111",
+   "source_id": "cde",
+   "source_record_id": "CTR20262111",
+   "primary_registry": "CTR",
+   "registry_no": "CTR20262111",
+   "title": "评估HDM2005联合用药治疗复发难治性套细胞淋巴瘤的Ib/III期临床研究",
+   "brief_title": "评估HDM2005联合用药治疗复发难治性套细胞淋巴瘤的Ib/III期临床研究",
+   "conditions": [
+    "复发难治性套细胞淋巴瘤"
+   ],
+   "interventions": [
+    "注射用HDM2005"
+   ],
+   "phase": null,
+   "status": "进行中 招募中",
+   "status_cn": "进行中 招募中",
+   "enrollment": null,
+   "start_date": null,
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": null,
+   "study_type": null,
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [],
+   "year_basis": "registration",
+   "matched_by": "condition",
+   "url": "https://www.chinadrugtrials.org.cn/clinicaltrials.searchlist.dhtml",
+   "raw": {
+    "registryNumbers": [
+     {
+      "registry": "CTR",
+      "value": "CTR20262111",
+      "primary": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "cde:CTR20263184",
+   "source_id": "cde",
+   "source_record_id": "CTR20263184",
+   "primary_registry": "CTR",
+   "registry_no": "CTR20263184",
+   "title": "评估ICP-248联合奥布替尼对比匹妥布替尼治疗r/r MCL的疗效",
+   "brief_title": "评估ICP-248联合奥布替尼对比匹妥布替尼治疗r/r MCL的疗效",
+   "conditions": [
+    "套细胞淋巴瘤"
+   ],
+   "interventions": [
+    "ICP-248"
+   ],
+   "phase": null,
+   "status": "进行中 尚未招募",
+   "status_cn": "进行中 尚未招募",
+   "enrollment": null,
+   "start_date": null,
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": null,
+   "study_type": null,
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [],
+   "year_basis": "registration",
+   "matched_by": "condition",
+   "url": "https://www.chinadrugtrials.org.cn/clinicaltrials.searchlist.dhtml",
+   "raw": {
+    "registryNumbers": [
+     {
+      "registry": "CTR",
+      "value": "CTR20263184",
+      "primary": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "cde:CTR20263794",
+   "source_id": "cde",
+   "source_record_id": "CTR20263794",
+   "primary_registry": "CTR",
+   "registry_no": "CTR20263794",
+   "title": "雷尼基奥仑赛注射液治疗复发/难治性B细胞非霍奇金淋巴瘤的真实世界研究",
+   "brief_title": "雷尼基奥仑赛注射液治疗复发/难治性B细胞非霍奇金淋巴瘤的真实世界研究",
+   "conditions": [
+    "复发/难治性B细胞非霍奇金淋巴瘤"
+   ],
+   "interventions": [
+    "雷尼基奥仑赛注射液"
+   ],
+   "phase": null,
+   "status": "进行中 尚未招募",
+   "status_cn": "进行中 尚未招募",
+   "enrollment": null,
+   "start_date": null,
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": null,
+   "study_type": null,
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [],
+   "year_basis": "registration",
+   "matched_by": "condition",
+   "url": "https://www.chinadrugtrials.org.cn/clinicaltrials.searchlist.dhtml",
+   "raw": {
+    "registryNumbers": [
+     {
+      "registry": "CTR",
+      "value": "CTR20263794",
+      "primary": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "cde:CTR20262293",
+   "source_id": "cde",
+   "source_record_id": "CTR20262293",
+   "primary_registry": "CTR",
+   "registry_no": "CTR20262293",
+   "title": "食物和质子泵抑制剂对HMPL-760胶囊药代动力学影响的研究",
+   "brief_title": "食物和质子泵抑制剂对HMPL-760胶囊药代动力学影响的研究",
+   "conditions": [
+    "弥漫大B细胞淋巴瘤"
+   ],
+   "interventions": [
+    "HMPL-760胶囊"
+   ],
+   "phase": null,
+   "status": "已完成",
+   "status_cn": "已完成",
+   "enrollment": null,
+   "start_date": null,
+   "primary_completion_date": null,
+   "last_update": null,
+   "sponsor": null,
+   "study_type": null,
+   "is_china": 1,
+   "site_count": null,
+   "china_sites": [],
+   "year_basis": "registration",
+   "matched_by": "condition",
+   "url": "https://www.chinadrugtrials.org.cn/clinicaltrials.searchlist.dhtml",
+   "raw": {
+    "registryNumbers": [
+     {
+      "registry": "CTR",
+      "value": "CTR20262293",
+      "primary": true
+     }
+    ]
+   }
+  }
+ ],
+ "fetched_at": "2026-10-17T14:16:29.232Z"
+}

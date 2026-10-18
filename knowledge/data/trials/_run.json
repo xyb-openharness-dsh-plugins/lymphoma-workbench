@@ -1,0 +1,14 @@
+{
+ "fetched_at": "2026-10-17T14:17:23.205Z",
+ "window_from": "2026-01-01",
+ "sources": [
+  {
+   "source_id": "chictr",
+   "status": "unavailable",
+   "fetched": 0,
+   "note": "sidecar 不可用：fetch failed。先启动 ~/Downloads/chictr_trials 的 sidecar 再跑。（本次未覆盖上次快照）",
+   "kept_previous": 82
+  }
+ ],
+ "total_records": 0
+}

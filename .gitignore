@@ -1,0 +1,19 @@
+node_modules/
+*.tgz
+*.sqlite
+*.sqlite-journal
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite.before-restore-*
+.DS_Store
+/tmp
+/tmp-*
+coverage/
+
+# 试验采集失败记录（临时，不入库）
+knowledge/data/trials/_failed-*.json
+.secrets/
+_secrets/
+
+# 项目工作数据（会话记录等），不进仓库；不要删这个目录
+.workbuddy/

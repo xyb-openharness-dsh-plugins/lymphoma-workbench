@@ -1,0 +1,1219 @@
+[
+  {
+    "id": "dlbcl-1l",
+    "subtype_id": "dlbcl-nos",
+    "title": "DLBCL 一线治疗",
+    "intent": "回答「一线用什么、打几个周期、要不要放疗、什么时候做中枢预防」。",
+    "scope": "初治 DLBCL-NOS，成人",
+    "source_id": "nccn-bcell-2026v4",
+    "verified": 0,
+    "note": "方案与周期经 2026.V3/V4 解读页转述；中国指南对 Pola-R-CHP 的表述以 IPI≥2 为考虑条件。",
+    "steps": [
+      {
+        "seq": 1,
+        "phase": "分层",
+        "kind": "decision",
+        "title": "先分三件事：期别、体能、打击",
+        "detail": "按 Lugano 分期区分局限期（I–II）与晚期（IIX–IV）；记录大肿块（≥7.5 cm）；评估是否适合标准剂量免疫化疗；FISH 结果决定是否为双/三打击。",
+        "branch": "局限期 / 晚期；fit / unfit；普通 / 双打击",
+        "evidence": null,
+        "source_id": "nccn-bcell-2026v4-summary",
+        "locator": "DLBCL 初治分层"
+      },
+      {
+        "seq": 2,
+        "phase": "治疗",
+        "kind": "action",
+        "title": "fit 晚期：R-CHOP-21 或 Pola-R-CHP",
+        "detail": "R-CHOP-21 为 1 类首选；Pola-R-CHP 亦为 1 类，不能耐受蒽环类心脏毒性时可优先考虑。中国指南写的是 IPI≥2 分可考虑 Pola-R-CHP。",
+        "branch": null,
+        "evidence": "1 类",
+        "source_id": "nccn-bcell-2026v4-summary",
+        "locator": "DLBCL 一线治疗"
+      },
+      {
+        "seq": 3,
+        "phase": "治疗",
+        "kind": "action",
+        "title": "局限期：3–6 周期，CR 后可省放疗",
+        "detail": "I–II 期无大包块者用 R-CHOP×3–6 周期；达到完全缓解后可省略放疗。",
+        "branch": "有残留或大包块 → 进入下一步",
+        "evidence": null,
+        "source_id": "nccn-bcell-2026v4-summary",
+        "locator": "局限期 DLBCL"
+      },
+      {
+        "seq": 4,
+        "phase": "治疗",
+        "kind": "action",
+        "title": "大包块加局部放疗",
+        "detail": "大肿块（≥7.5 cm）在免疫化疗后可行受累野放疗（ISRT）巩固。是否放疗由治疗团队按残留情况决定。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-bcell-2026v4-summary",
+        "locator": "大包块与 ISRT"
+      },
+      {
+        "seq": 5,
+        "phase": "治疗",
+        "kind": "note",
+        "title": "双/三打击：R-CHOP 仍是标准",
+        "detail": "双打击/三打击 HGBL 用 R-CHOP-21 仍为标准；DA-EPOCH-R 为 2A 推荐，并非所有双打击都必须用它。",
+        "branch": null,
+        "evidence": "2A（DA-EPOCH-R）",
+        "source_id": "nccn-bcell-2026v4-summary",
+        "locator": "HGBL 一线"
+      },
+      {
+        "seq": 6,
+        "phase": "支持",
+        "kind": "action",
+        "title": "中枢预防只给高危",
+        "detail": "高 IPI、睾丸、鼻窦、多重打击、HIV 相关等高危人群给鞘内甲氨蝶呤预防；不做全脑放疗。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-bcell-2026v4-summary",
+        "locator": "中枢预防"
+      },
+      {
+        "seq": 7,
+        "phase": "治疗",
+        "kind": "note",
+        "title": "一线不做移植巩固",
+        "detail": "一线治疗达缓解后不常规做自体造血干细胞移植巩固，仅用于临床试验。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-bcell-2026v4-summary",
+        "locator": "一线巩固"
+      },
+      {
+        "seq": 8,
+        "phase": "评估",
+        "kind": "checkpoint",
+        "title": "治疗结束做 PET-CT",
+        "detail": "按 Lugano 标准判 CR/PR/SD/PD，同时记录 Deauville 分数。中期评估的结论不能直接替代结束评估。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "lugano-2014",
+        "locator": "Response assessment"
+      }
+    ]
+  },
+  {
+    "id": "dlbcl-rr",
+    "subtype_id": "dlbcl-nos",
+    "title": "DLBCL 复发 / 难治",
+    "intent": "回答「复发后先看什么、什么情况直接上 CAR-T、什么情况先挽救化疗」。",
+    "scope": "一线治疗后复发或原发难治的 DLBCL",
+    "source_id": "nccn-bcell-2026v4",
+    "verified": 0,
+    "note": "2026.V1 起 CD20×CD3 双抗地位提升；具体推荐级别以原文为准。",
+    "steps": [
+      {
+        "seq": 1,
+        "phase": "分层",
+        "kind": "decision",
+        "title": "先量两件事：复发时间、能不能耐受",
+        "detail": "区分原发难治、一线 12 个月内复发、12 个月后复发；同时评估体能状态与合并症，决定是否适合移植或 CAR-T。",
+        "branch": "<12 个月 / >12 个月 / 原发难治",
+        "evidence": null,
+        "source_id": "nccn-bcell-2026v4-summary",
+        "locator": "R/R DLBCL 分层"
+      },
+      {
+        "seq": 2,
+        "phase": "治疗",
+        "kind": "action",
+        "title": "早期复发且 fit：CAR-T 优先",
+        "detail": "原发难治或一线 12 个月内复发、适合者优先 CD19 CAR-T（1 类），优于传统挽救化疗联合自体移植。",
+        "branch": null,
+        "evidence": "1 类",
+        "source_id": "nccn-bcell-2026v4-summary",
+        "locator": "R/R DLBCL 二线"
+      },
+      {
+        "seq": 3,
+        "phase": "治疗",
+        "kind": "action",
+        "title": "晚期复发：先挽救，再决定移植",
+        "detail": "12 个月后复发者用挽救免疫化疗，敏感者行自体移植巩固；不敏感者转向 CAR-T 或双抗。中国指南同样以 12 个月为界。",
+        "branch": "敏感 → auto-HCT；不敏感 → CAR-T / 双抗",
+        "evidence": null,
+        "source_id": "cn-lymphoma-2026-summary",
+        "locator": "推荐意见 6、7（DLBCL）"
+      },
+      {
+        "seq": 4,
+        "phase": "治疗",
+        "kind": "action",
+        "title": "不适合移植：双抗与 ADC 优先",
+        "detail": "老年体弱或不适合移植者，双特异性抗体与抗体偶联药物为优先方向，减少高强度化疗。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-bcell-2026v4-summary",
+        "locator": "不适合移植的 R/R DLBCL"
+      },
+      {
+        "seq": 5,
+        "phase": "治疗",
+        "kind": "action",
+        "title": "CAR-T 失败后仍有选项",
+        "detail": "Glofitamab 由 2B 上调至 2A，不再限定必须先经历 CAR-T 加 pirtobrutinib 失败；Mosunetuzumab 联合 Pola 为 2A；loncastuximab、Tafasitamab-来那度胺、临床试验亦在列。",
+        "branch": null,
+        "evidence": "2A",
+        "source_id": "nccn-bcell-2026v4-summary",
+        "locator": "CAR-T 失败后的治疗"
+      },
+      {
+        "seq": 6,
+        "phase": "评估",
+        "kind": "checkpoint",
+        "title": "每次换线前重做影像",
+        "detail": "挽救治疗前后都要有 PET-CT 基线，否则无法判断是否敏感。活检在有条件时应做，尤其怀疑转化时。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "lugano-2014",
+        "locator": "Response assessment"
+      }
+    ]
+  },
+  {
+    "id": "pmbcl-1l",
+    "subtype_id": "pmbcl",
+    "title": "原发纵隔大 B 细胞淋巴瘤",
+    "intent": "回答「和普通 DLBCL 有什么不同、残留灶怎么处理」。",
+    "scope": "初治 PMBCL",
+    "source_id": "nccn-bcell-2026v4",
+    "verified": 0,
+    "note": null,
+    "steps": [
+      {
+        "seq": 1,
+        "phase": "诊断",
+        "kind": "action",
+        "title": "纵隔肿块要取到足够组织",
+        "detail": "纵隔穿刺取材常不足，必要时行纵隔镜或手术活检。基线做 PET-CT，并评估上腔静脉压迫、心包与胸腔积液。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-bcell-2026v4-summary",
+        "locator": "PMBCL 诊断"
+      },
+      {
+        "seq": 2,
+        "phase": "治疗",
+        "kind": "action",
+        "title": "R-CHOP 或 DA-EPOCH-R",
+        "detail": "两类方案都在指南内，选择取决于治疗团队对病情与耐受性的判断。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-bcell-2026v4-summary",
+        "locator": "PMBCL 一线"
+      },
+      {
+        "seq": 3,
+        "phase": "评估",
+        "kind": "checkpoint",
+        "title": "结束治疗必做 PET-CT",
+        "detail": "治疗结束用 PET-CT 评估，Deauville 分数与残留肿块大小分开记录。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-bcell-2026v4-summary",
+        "locator": "PMBCL 疗效评估"
+      },
+      {
+        "seq": 4,
+        "phase": "决策",
+        "kind": "decision",
+        "title": "PET 阳性先活检，别直接放疗",
+        "detail": "残留病灶 PET 阳性时优先活检确认是否有活肿瘤，避免仅凭影像做过度放疗。",
+        "branch": "活检阳性 → 按残留处理；阴性 → 观察",
+        "evidence": null,
+        "source_id": "nccn-bcell-2026v4-summary",
+        "locator": "PMBCL 残留病灶处理"
+      }
+    ]
+  },
+  {
+    "id": "hgbl-1l",
+    "subtype_id": "hgbl",
+    "title": "高级别 B 细胞淋巴瘤（双/三打击）",
+    "intent": "回答「是不是一定要用强化方案、中枢预防怎么做」。",
+    "scope": "初治 HGBL，含 MYC/BCL2/BCL6 重排",
+    "source_id": "nccn-bcell-2026v4",
+    "verified": 0,
+    "note": null,
+    "steps": [
+      {
+        "seq": 1,
+        "phase": "诊断",
+        "kind": "action",
+        "title": "FISH 是分型前提",
+        "detail": "必须做 MYC、BCL2、BCL6 重排检测，才能区分双打击/三打击与 HGBL-NOS。Ki-67 与形态学一并记录。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-bcell-2026v4-summary",
+        "locator": "HGBL 诊断"
+      },
+      {
+        "seq": 2,
+        "phase": "分层",
+        "kind": "decision",
+        "title": "年龄与体能决定强度",
+        "detail": "年轻 fit 与老年/不适合强化者的路径不同。双打击本身不等于必须强化，仍要看能否耐受。",
+        "branch": "年轻 fit / 老年或 unfit",
+        "evidence": null,
+        "source_id": "nccn-bcell-2026v4-summary",
+        "locator": "HGBL 分层"
+      },
+      {
+        "seq": 3,
+        "phase": "治疗",
+        "kind": "action",
+        "title": "R-CHOP-21 为标准，DA-EPOCH-R 为 2A",
+        "detail": "R-CHOP-21 仍为标准方案；DA-EPOCH-R 为 2A 推荐，并非所有双打击一律使用。",
+        "branch": null,
+        "evidence": "2A（DA-EPOCH-R）",
+        "source_id": "nccn-bcell-2026v4-summary",
+        "locator": "HGBL 一线"
+      },
+      {
+        "seq": 4,
+        "phase": "支持",
+        "kind": "action",
+        "title": "中枢预防按高危因素",
+        "detail": "多重打击属中枢高危因素之一，是否鞘内预防按整体风险组合决定。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-bcell-2026v4-summary",
+        "locator": "中枢预防"
+      },
+      {
+        "seq": 5,
+        "phase": "评估",
+        "kind": "checkpoint",
+        "title": "中期与结束都要影像",
+        "detail": "HGBL 进展快，评估间隔短于惰性淋巴瘤；具体节点由方案决定。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "lugano-2014",
+        "locator": "Response assessment"
+      }
+    ]
+  },
+  {
+    "id": "fl-1l",
+    "subtype_id": "fl",
+    "title": "滤泡性淋巴瘤一线",
+    "intent": "回答「要不要马上治、局限期怎么办、无症状能不能等」。",
+    "scope": "初治 FL 1–3A 级",
+    "source_id": "nccn-bcell-2026v4",
+    "verified": 0,
+    "note": "3B 级通常按 DLBCL 处理，不在本条范围。",
+    "steps": [
+      {
+        "seq": 1,
+        "phase": "分层",
+        "kind": "decision",
+        "title": "先看有没有治疗指征",
+        "detail": "分期、肿瘤负荷、血细胞减少、症状、器官受压与进展速度共同决定是否需要治疗。没有指征的晚期 FL 可以观察。",
+        "branch": "有指征 / 无指征",
+        "evidence": null,
+        "source_id": "nccn-bcell-2026v4-summary",
+        "locator": "FL 治疗指征"
+      },
+      {
+        "seq": 2,
+        "phase": "治疗",
+        "kind": "note",
+        "title": "无症状晚期：观察等待是标准",
+        "detail": "无症状的晚期 FL 不提前干预，按期复查。开始治疗不代表越早越好。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-bcell-2026v4-summary",
+        "locator": "FL 观察等待"
+      },
+      {
+        "seq": 3,
+        "phase": "治疗",
+        "kind": "action",
+        "title": "局限期首选受累部位放疗",
+        "detail": "I 期与局限 II 期首选 ISRT；非局限 II 期可用 CD20 单抗 ± 化疗 + ISRT。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "cn-lymphoma-2026-summary",
+        "locator": "推荐意见（FL 部分）"
+      },
+      {
+        "seq": 4,
+        "phase": "治疗",
+        "kind": "action",
+        "title": "需要系统治疗时的三类选择",
+        "detail": "传统方案 BR、R-CHOP、R-CVP；无化疗方案奥妥珠单抗 + 来那度胺（G-Len）为 1 类。选择取决于年龄、体能、合并症与本人意愿。",
+        "branch": null,
+        "evidence": "1 类（G-Len）",
+        "source_id": "nccn-bcell-2026v4-summary",
+        "locator": "FL 一线系统治疗"
+      },
+      {
+        "seq": 5,
+        "phase": "评估",
+        "kind": "checkpoint",
+        "title": "PET-CT 评估，注意惰性特点",
+        "detail": "按 Lugano 标准评估。FL 的 PET 代谢与组织学分级可能不一致，SUV 很高时要考虑转化。",
+        "branch": "SUV 明显升高 → 怀疑转化，考虑活检",
+        "evidence": null,
+        "source_id": "lugano-2014",
+        "locator": "Response assessment / 转化"
+      }
+    ]
+  },
+  {
+    "id": "fl-rr",
+    "subtype_id": "fl",
+    "title": "滤泡性淋巴瘤复发 / 难治",
+    "intent": "回答「二线以后还有什么、什么时候用 CAR-T 或双抗」。",
+    "scope": "至少接受过一线治疗的 R/R FL",
+    "source_id": "nccn-bcell-2026v4",
+    "verified": 0,
+    "note": null,
+    "steps": [
+      {
+        "seq": 1,
+        "phase": "分层",
+        "kind": "decision",
+        "title": "看缓解时长与既往暴露",
+        "detail": "记录每线方案的起止、最佳疗效、缓解持续多久，以及是否用过 CD20 单抗、BTKi、来那度胺。这些决定后续可选项。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-bcell-2026v4-summary",
+        "locator": "R/R FL 分层"
+      },
+      {
+        "seq": 2,
+        "phase": "治疗",
+        "kind": "action",
+        "title": "≥2 线后可考虑 CAR-T",
+        "detail": "CAR-T 用于 2 线及以后的 FL（1 类）。是否符合条件由治疗团队评估。",
+        "branch": null,
+        "evidence": "1 类",
+        "source_id": "nccn-bcell-2026v4-summary",
+        "locator": "R/R FL 治疗"
+      },
+      {
+        "seq": 3,
+        "phase": "治疗",
+        "kind": "action",
+        "title": "双抗升为优先方向",
+        "detail": "Glofitamab、Mosunetuzumab 在 R/R FL 中升为优先方案；中国 2026 版把莫妥珠单抗纳入 I 级推荐，坦昔妥单抗联合 R² 亦为 I 级（限既往用过 CD20 单抗者）。",
+        "branch": null,
+        "evidence": "1 类 / I 级",
+        "source_id": "csco-2026-summary",
+        "locator": "R/R FL 更新"
+      },
+      {
+        "seq": 4,
+        "phase": "治疗",
+        "kind": "action",
+        "title": "EZH2 突变有对应靶向",
+        "detail": "EZH2 抑制剂用于 EZH2 突变人群。是否检测、何时检测由治疗团队安排。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-bcell-2026v4-summary",
+        "locator": "FL 分子靶向"
+      },
+      {
+        "seq": 5,
+        "phase": "支持",
+        "kind": "note",
+        "title": "PI3K 抑制剂要盯感染与肝毒性",
+        "detail": "这类药物的感染与肝脏不良反应需要定期监测，具体监测频率由治疗团队安排。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-bcell-2026v4-summary",
+        "locator": "FL 治疗注意事项"
+      }
+    ]
+  },
+  {
+    "id": "mcl-1l",
+    "subtype_id": "mcl",
+    "title": "套细胞淋巴瘤一线（2026 更新）",
+    "intent": "回答「TP53 为什么必须查、什么时候可以不做移植」。",
+    "scope": "初治 MCL，成人",
+    "source_id": "nccn-bcell-2026v4",
+    "verified": 0,
+    "note": "本条对应 NCCN B 细胞指南 v4.2026 的 MCL 更新（2026-09-16）；细节经公开报道转述，需回原文核对。",
+    "steps": [
+      {
+        "seq": 1,
+        "phase": "诊断",
+        "kind": "action",
+        "title": "TP53 检测是必做项",
+        "detail": "诊断时检测 TP53 基因状态；同时确认 CCND1 与 t(11;14)。TP53 突变与进展快、对标准治疗反应差相关。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "curetoday-mcl-2026v4",
+        "locator": "MCL 诊断检测"
+      },
+      {
+        "seq": 2,
+        "phase": "分层",
+        "kind": "decision",
+        "title": "分 fit / unfit，再看 TP53",
+        "detail": "能否耐受强化治疗、TP53 是否突变，是两个独立维度。二者组合决定路径。",
+        "branch": "fit 无 TP53 / fit 有 TP53 / unfit",
+        "evidence": null,
+        "source_id": "curetoday-mcl-2026v4",
+        "locator": "MCL 一线分层"
+      },
+      {
+        "seq": 3,
+        "phase": "治疗",
+        "kind": "action",
+        "title": "fit 且无 TP53：TRIANGLE 为首选",
+        "detail": "TRIANGLE 方案（化疗 + 利妥昔单抗 + BTK 抑制剂，后续维持）列为首选。可把其中的伊布替尼换为阿可替尼或泽布替尼，但这两个药未在该试验中验证。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "curetoday-mcl-2026v4",
+        "locator": "MCL 一线首选"
+      },
+      {
+        "seq": 4,
+        "phase": "治疗",
+        "kind": "action",
+        "title": "unfit：BTKi 联合或 BR",
+        "detail": "老年或不适合强化者，首选阿可替尼 + 苯达莫司汀/利妥昔单抗（BR）、阿可替尼 + 利妥昔单抗，或单用 BR。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "curetoday-mcl-2026v4",
+        "locator": "MCL unfit 一线"
+      },
+      {
+        "seq": 5,
+        "phase": "评估",
+        "kind": "checkpoint",
+        "title": "一线后做高敏 MRD",
+        "detail": "用能检出百万分之一（10⁻⁶）级别残留的 MRD 检测评估疗效，这是决定要不要移植的前提。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "curetoday-mcl-2026v4",
+        "locator": "MCL MRD 评估"
+      },
+      {
+        "seq": 6,
+        "phase": "决策",
+        "kind": "decision",
+        "title": "CR + MRD 阴性可以不做移植",
+        "detail": "达到完全缓解且 MRD 阴性者可不做自体移植，直接进入利妥昔单抗维持（± BTKi）。这条依据 EA4151 试验。",
+        "branch": "MRD 阴性 → 不移植，进入维持",
+        "evidence": null,
+        "source_id": "curetoday-mcl-2026v4",
+        "locator": "MCL 移植决策"
+      },
+      {
+        "seq": 7,
+        "phase": "决策",
+        "kind": "decision",
+        "title": "CR 但 MRD 阳性：移植仍是选项",
+        "detail": "完全缓解但 MRD 仍可检出者，移植仍是选项，之后进入维持治疗。",
+        "branch": "MRD 阳性 → 移植 + 维持",
+        "evidence": null,
+        "source_id": "curetoday-mcl-2026v4",
+        "locator": "MCL 移植决策"
+      },
+      {
+        "seq": 8,
+        "phase": "治疗",
+        "kind": "note",
+        "title": "TP53 突变：试验优先",
+        "detail": "专家组强烈建议进入临床试验。试验外可选维奈克拉 + 泽布替尼 + 奥妥珠单抗、能耐受者用 TRIANGLE、不能耐受者用阿可替尼 + 利妥昔单抗。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "curetoday-mcl-2026v4",
+        "locator": "MCL TP53 突变"
+      },
+      {
+        "seq": 9,
+        "phase": "支持",
+        "kind": "note",
+        "title": "BTKi 连续用 + 利妥昔维持要防感染",
+        "detail": "两者叠加会增加严重感染风险，需要更密切的监测、疫苗安排与「什么时候联系团队」的交代。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "curetoday-mcl-2026v4",
+        "locator": "MCL 安全性"
+      }
+    ]
+  },
+  {
+    "id": "mcl-rr",
+    "subtype_id": "mcl",
+    "title": "套细胞淋巴瘤复发 / 难治",
+    "intent": "回答「BTKi 用完还能用什么」。",
+    "scope": "至少一线治疗后进展的 MCL",
+    "source_id": "csco-lymphoma-2026",
+    "verified": 0,
+    "note": null,
+    "steps": [
+      {
+        "seq": 1,
+        "phase": "分层",
+        "kind": "decision",
+        "title": "先看是否 BTKi 耐药",
+        "detail": "共价 BTKi 治疗后进展与未暴露者的可选路径不同；同时看缓解时长、TP53 状态与移植可行性。",
+        "branch": "BTKi 失败 / 未暴露",
+        "evidence": null,
+        "source_id": "csco-2026-summary",
+        "locator": "R/R MCL 更新"
+      },
+      {
+        "seq": 2,
+        "phase": "治疗",
+        "kind": "action",
+        "title": "BTKi 失败后：匹妥布替尼",
+        "detail": "非共价 BTKi 匹妥布替尼进入 I 级推荐（2A 类证据），用于共价 BTKi 失败者。",
+        "branch": null,
+        "evidence": "I 级 / 2A",
+        "source_id": "csco-2026-summary",
+        "locator": "R/R MCL 挽救治疗"
+      },
+      {
+        "seq": 3,
+        "phase": "治疗",
+        "kind": "action",
+        "title": "其他新增选项",
+        "detail": "索托克拉、洛布替尼进入 II 级推荐（2B 类）。是否使用由治疗团队按既往暴露与合并症决定。",
+        "branch": null,
+        "evidence": "II 级 / 2B",
+        "source_id": "csco-2026-summary",
+        "locator": "R/R MCL 挽救治疗"
+      },
+      {
+        "seq": 4,
+        "phase": "评估",
+        "kind": "checkpoint",
+        "title": "换线前重新取基线",
+        "detail": "影像、骨髓与 TP53 状态在换线前应有最新记录，否则无法判断疗效与是否适合细胞治疗。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "lugano-2014",
+        "locator": "Response assessment"
+      }
+    ]
+  },
+  {
+    "id": "malt-gastric",
+    "subtype_id": "malt-gastric",
+    "title": "胃结外边缘区淋巴瘤",
+    "intent": "回答「为什么先查幽门螺杆菌、什么时候才做放疗或系统治疗」。",
+    "scope": "初治胃 MALT 淋巴瘤",
+    "source_id": "nccn-bcell-2026v4",
+    "verified": 0,
+    "note": "幽门螺杆菌处理与复查节奏属 NCCN 胃 MALT 章节的常规做法，库内未逐条核对原文。",
+    "steps": [
+      {
+        "seq": 1,
+        "phase": "诊断",
+        "kind": "action",
+        "title": "胃镜活检 + 幽门螺杆菌检测",
+        "detail": "胃镜取多点活检明确病理与 H. pylori 状态；同时做影像与骨髓评估分期。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-bcell-2026v4",
+        "locator": "Extranodal Marginal Zone Lymphoma of the Stomach"
+      },
+      {
+        "seq": 2,
+        "phase": "治疗",
+        "kind": "action",
+        "title": "H. pylori 阳性先根除",
+        "detail": "局限期且 H. pylori 阳性者，一线是根除治疗，之后评估淋巴瘤是否消退。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-bcell-2026v4",
+        "locator": "胃 MALT 一线"
+      },
+      {
+        "seq": 3,
+        "phase": "评估",
+        "kind": "checkpoint",
+        "title": "根除后复查胃镜",
+        "detail": "按团队安排的时间点复查胃镜与活检，判断组织学缓解。影像不能替代病理。",
+        "branch": "未达缓解 → 进入下一步",
+        "evidence": null,
+        "source_id": "nccn-bcell-2026v4",
+        "locator": "胃 MALT 疗效评估"
+      },
+      {
+        "seq": 4,
+        "phase": "治疗",
+        "kind": "action",
+        "title": "未缓解或晚期：放疗或系统治疗",
+        "detail": "根除无效、H. pylori 阴性或晚期者，可考虑胃部放疗或系统治疗。中国 2026 版对 III/IV 期有症状者新增利妥昔单抗 + 奥布替尼（II 级，2A）。",
+        "branch": null,
+        "evidence": "II 级 / 2A",
+        "source_id": "csco-2026-summary",
+        "locator": "MZL 一线更新"
+      }
+    ]
+  },
+  {
+    "id": "mzl-nongastric",
+    "subtype_id": "malt-nongastric",
+    "title": "非胃结外边缘区淋巴瘤",
+    "intent": "回答「原发部位为什么决定治疗」。",
+    "scope": "初治非胃 MALT、淋巴结边缘区、脾边缘区",
+    "source_id": "nccn-bcell-2026v4",
+    "verified": 0,
+    "note": "NMZL 与 SMZL 与本条共用骨架，细节各有差异。",
+    "steps": [
+      {
+        "seq": 1,
+        "phase": "分层",
+        "kind": "decision",
+        "title": "按原发部位分层",
+        "detail": "结外非胃、淋巴结、脾三条路径的局部处理与系统治疗指征不同；同时判断是否有治疗指征。",
+        "branch": "局限 / 晚期；有症状 / 无症状",
+        "evidence": null,
+        "source_id": "cn-lymphoma-2026-summary",
+        "locator": "MZL 按原发部位分层"
+      },
+      {
+        "seq": 2,
+        "phase": "治疗",
+        "kind": "action",
+        "title": "局限期可局部处理",
+        "detail": "局限病灶可用受累部位放疗或局部处理；无症状者存在观察空间。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-bcell-2026v4-summary",
+        "locator": "MZL 局限期"
+      },
+      {
+        "seq": 3,
+        "phase": "治疗",
+        "kind": "action",
+        "title": "有症状或晚期：利妥昔 ± 化疗",
+        "detail": "系统治疗以 CD20 单抗为基础；中国 2026 版对 III/IV 期有症状者新增利妥昔单抗 + 奥布替尼（II 级，2A）。",
+        "branch": null,
+        "evidence": "II 级 / 2A",
+        "source_id": "csco-2026-summary",
+        "locator": "MZL 一线更新"
+      },
+      {
+        "seq": 4,
+        "phase": "评估",
+        "kind": "checkpoint",
+        "title": "按 Lugano 评估",
+        "detail": "惰性淋巴瘤的影像变化慢，评估要结合症状与血象，不只看肿块大小。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "lugano-2014",
+        "locator": "Response assessment"
+      }
+    ]
+  },
+  {
+    "id": "cll-1l",
+    "subtype_id": "cll-sll",
+    "title": "CLL/SLL 一线（2026 更新）",
+    "intent": "回答「为什么先查 17p/TP53 和 IGHV、化学免疫治疗为什么不再是首选」。",
+    "scope": "初治 CLL/SLL，需要治疗者",
+    "source_id": "nccn-cll-2026v2",
+    "verified": 0,
+    "note": "对应 NCCN CLL/SLL v2.2026（JNCCN 2026;24(3):68–80）与 CSCO 2026 更新。",
+    "steps": [
+      {
+        "seq": 1,
+        "phase": "诊断",
+        "kind": "action",
+        "title": "流式 + 遗传学基线",
+        "detail": "流式免疫表型确诊；FISH 查 del(17p)/TP53、del(11q) 等；IGHV 突变状态影响方案与疗程设计。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-cll-2026v2",
+        "locator": "CLL/SLL 诊断与预后标志"
+      },
+      {
+        "seq": 2,
+        "phase": "分层",
+        "kind": "decision",
+        "title": "有没有 del(17p)/TP53 突变",
+        "detail": "这是二选一的分水岭：有突变者不能用同样的固定疗程组合，需要单独路径。",
+        "branch": "无 del(17p)/TP53 / 有突变",
+        "evidence": null,
+        "source_id": "nccn-cll-2026v2",
+        "locator": "一线治疗分层"
+      },
+      {
+        "seq": 3,
+        "phase": "治疗",
+        "kind": "action",
+        "title": "无突变：BTKi + BCL2i 固定疗程",
+        "detail": "阿可替尼 + 维奈克拉 ± 奥妥珠单抗为 1 类首选（固定疗程）。伊布替尼 + 维奈克拉的固定疗程或 MRD 指导方案为 1 类其他推荐。",
+        "branch": null,
+        "evidence": "1 类",
+        "source_id": "nccn-cll-2026v2",
+        "locator": "CLL 一线首选"
+      },
+      {
+        "seq": 4,
+        "phase": "治疗",
+        "kind": "action",
+        "title": "有突变：泽布替尼 + 维奈克拉",
+        "detail": "del(17p)/TP53 突变者，泽布替尼 + 维奈克拉（MRD 指导）为首选（2A）；阿可替尼 + 维奈克拉 + 奥妥珠单抗的 MRD 指导方案亦为首选（2A）。",
+        "branch": null,
+        "evidence": "2A",
+        "source_id": "nccn-cll-2026v2",
+        "locator": "TP53 异常一线"
+      },
+      {
+        "seq": 5,
+        "phase": "治疗",
+        "kind": "note",
+        "title": "化学免疫治疗不再是一线推荐",
+        "detail": "随机试验显示靶向方案优于化学免疫治疗。只有在 BTKi 与 BCL2i 都不可及或不可行时才考虑化疗。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-cll-2026v2",
+        "locator": "化学免疫治疗的地位"
+      },
+      {
+        "seq": 6,
+        "phase": "评估",
+        "kind": "checkpoint",
+        "title": "治疗中每 3–6 个月查 MRD",
+        "detail": "用流式或 NGS，灵敏度至少 10⁻⁴。近 3 个月内用过 CD20 单抗可能出现假阴性，判读时要说明。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-cll-2026v2",
+        "locator": "MRD 评估"
+      },
+      {
+        "seq": 7,
+        "phase": "随访",
+        "kind": "note",
+        "title": "不是所有人都要马上治",
+        "detail": "无治疗指征的早期 CLL/SLL 可以观察，按期复查血象与临床状态。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-cll-2026v2",
+        "locator": "观察指征"
+      }
+    ]
+  },
+  {
+    "id": "cll-rr-richter",
+    "subtype_id": "cll-sll",
+    "title": "CLL 复发与 Richter 转化",
+    "intent": "回答「BTKi/BCL2i 都用了以后怎么办、怀疑转化时先做什么」。",
+    "scope": "复发/难治 CLL/SLL；怀疑或确诊 Richter 转化",
+    "source_id": "nccn-cll-2026v2",
+    "verified": 0,
+    "note": null,
+    "steps": [
+      {
+        "seq": 1,
+        "phase": "分层",
+        "kind": "decision",
+        "title": "看既往暴露与是否转化",
+        "detail": "记录是否用过共价 BTKi、BCL2i；突然出现快速增大、LDH 升高或新发 B 症状时要排除 Richter 转化。",
+        "branch": "单纯复发 / 怀疑转化",
+        "evidence": null,
+        "source_id": "nccn-cll-2026v2",
+        "locator": "R/R CLL 与 Richter 转化"
+      },
+      {
+        "seq": 2,
+        "phase": "诊断",
+        "kind": "action",
+        "title": "怀疑转化必须活检",
+        "detail": "取高代谢部位活检，并做分子分析判断 CLL 与转化后 DLBCL 是否存在克隆关系，这会影响方案选择。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-cll-2026v2",
+        "locator": "Richter 转化诊断"
+      },
+      {
+        "seq": 3,
+        "phase": "治疗",
+        "kind": "action",
+        "title": "BTKi 失败后用非共价 BTKi",
+        "detail": "匹妥布替尼对共价 BTKi 耐药（含 BTK C481 突变）有效，已获批准用于 R/R CLL/SLL。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-cll-2026v2",
+        "locator": "R/R CLL 二线"
+      },
+      {
+        "seq": 4,
+        "phase": "治疗",
+        "kind": "action",
+        "title": "符合条件的可考虑 CAR-T",
+        "detail": "lisocabtagene maraleucel 可用于既往至少一线系统治疗后的合格患者。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-cll-2026v2",
+        "locator": "CAR-T 地位"
+      },
+      {
+        "seq": 5,
+        "phase": "治疗",
+        "kind": "note",
+        "title": "Richter 转化：非化疗方案与试验",
+        "detail": "可选免疫检查点联合方案、BTKi（阿可替尼 2B、匹妥布替尼）、双抗（epcoritamab、glofitamab）、CAR-T 与临床试验。预后差，试验优先。",
+        "branch": null,
+        "evidence": "2A / 2B",
+        "source_id": "nccn-cll-2026v2",
+        "locator": "Richter 转化治疗"
+      }
+    ]
+  },
+  {
+    "id": "lpl-wm",
+    "subtype_id": "lpl-wm",
+    "title": "淋巴浆细胞淋巴瘤 / 华氏巨球蛋白血症",
+    "intent": "回答「IgM 高就一定要治吗、什么时候才启动治疗」。",
+    "scope": "初治 LPL/WM",
+    "source_id": "nccn-bcell-2026v4",
+    "verified": 0,
+    "note": "本条只搭骨架，具体方案与疗效标准未逐条核对指南原文。",
+    "steps": [
+      {
+        "seq": 1,
+        "phase": "诊断",
+        "kind": "action",
+        "title": "骨髓 + MYD88 + IgM 一起看",
+        "detail": "骨髓活检与流式确认淋巴浆细胞浸润；查 MYD88 L265P 与 IgM 单克隆蛋白，并排除其他 IgM 相关疾病。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-bcell-2026v4",
+        "locator": "LPL/WM 诊断"
+      },
+      {
+        "seq": 2,
+        "phase": "分层",
+        "kind": "decision",
+        "title": "有没有治疗指征",
+        "detail": "无症状者可以观察。治疗指征通常围绕血细胞减少、症状性高黏滞、进行性器官肿大、周围神经病变与全身症状。",
+        "branch": "有指征 / 无指征",
+        "evidence": null,
+        "source_id": "nccn-bcell-2026v4",
+        "locator": "WM 治疗指征"
+      },
+      {
+        "seq": 3,
+        "phase": "治疗",
+        "kind": "action",
+        "title": "系统治疗以靶向为主",
+        "detail": "BTK 抑制剂是常用方向；是否联合利妥昔单抗、选哪种方案由治疗团队按 IgM 水平、血象与合并症决定。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-bcell-2026v4",
+        "locator": "WM 一线"
+      },
+      {
+        "seq": 4,
+        "phase": "支持",
+        "kind": "action",
+        "title": "高黏滞要先处理",
+        "detail": "出现症状性高黏滞时先行血浆置换，再启动系统治疗；IgM 很高时利妥昔单抗可能一过性升高 IgM，需要监测。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-bcell-2026v4",
+        "locator": "WM 支持治疗"
+      }
+    ]
+  },
+  {
+    "id": "burkitt",
+    "subtype_id": "bl",
+    "title": "伯基特淋巴瘤",
+    "intent": "回答「为什么进展这么快、肿瘤溶解怎么防」。",
+    "scope": "初治 BL，成人",
+    "source_id": "nccn-bcell-2026v4",
+    "verified": 0,
+    "note": null,
+    "steps": [
+      {
+        "seq": 1,
+        "phase": "诊断",
+        "kind": "action",
+        "title": "Ki-67 与 MYC 是分型关键",
+        "detail": "典型者 Ki-67 接近 100%，伴 MYC 重排。需与高级别 B 细胞淋巴瘤鉴别。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-bcell-2026v4",
+        "locator": "Burkitt 诊断"
+      },
+      {
+        "seq": 2,
+        "phase": "分期",
+        "kind": "action",
+        "title": "分期要覆盖中枢与骨髓",
+        "detail": "PET-CT、骨髓活检与脑脊液检查都要做，BL 常有骨髓与中枢受累。LDH 往往很高。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-bcell-2026v4",
+        "locator": "Burkitt 分期"
+      },
+      {
+        "seq": 3,
+        "phase": "治疗",
+        "kind": "action",
+        "title": "短疗程强化免疫化疗",
+        "detail": "以强化、短疗程的免疫化疗为主，具体方案按年龄与体能选择；中枢预防是方案的一部分。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-bcell-2026v4",
+        "locator": "Burkitt 一线"
+      },
+      {
+        "seq": 4,
+        "phase": "支持",
+        "kind": "action",
+        "title": "肿瘤溶解综合征是首要风险",
+        "detail": "治疗前水化、碱化，监测尿酸、钾、磷、钙与肾功能；高危者按团队安排使用降尿酸药物。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-bcell-2026v4",
+        "locator": "TLS 预防"
+      },
+      {
+        "seq": 5,
+        "phase": "评估",
+        "kind": "checkpoint",
+        "title": "早期评估，别等疗程结束",
+        "detail": "BL 倍增快，评估节点比惰性淋巴瘤密；影像与临床一起看。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "lugano-2014",
+        "locator": "Response assessment"
+      }
+    ]
+  },
+  {
+    "id": "ptld",
+    "subtype_id": "ptld",
+    "title": "移植后淋巴增殖性疾病",
+    "intent": "回答「为什么第一步常常是减免疫抑制，而不是先上化疗」。",
+    "scope": "实体器官或造血干细胞移植后发生的 PTLD",
+    "source_id": "nccn-bcell-2026v4",
+    "verified": 0,
+    "note": "本条只搭骨架，细节未核对原文。",
+    "steps": [
+      {
+        "seq": 1,
+        "phase": "诊断",
+        "kind": "action",
+        "title": "活检 + EBV + 克隆性",
+        "detail": "取病灶活检明确病理类型与克隆性，查 EBV 状态；同时评估移植器官功能与免疫抑制程度。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-bcell-2026v4",
+        "locator": "PTLD 诊断"
+      },
+      {
+        "seq": 2,
+        "phase": "治疗",
+        "kind": "action",
+        "title": "先减少免疫抑制",
+        "detail": "多数 PTLD 的第一步是降低免疫抑制，由移植团队与血液科共同决定减量幅度。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-bcell-2026v4",
+        "locator": "PTLD 治疗"
+      },
+      {
+        "seq": 3,
+        "phase": "治疗",
+        "kind": "decision",
+        "title": "无效再进入系统治疗",
+        "detail": "减免疫抑制无效或高危型，进入利妥昔单抗为基础的治疗或化疗；具体由多学科团队决定。",
+        "branch": "有效 → 观察；无效 → 系统治疗",
+        "evidence": null,
+        "source_id": "nccn-bcell-2026v4",
+        "locator": "PTLD 治疗"
+      },
+      {
+        "seq": 4,
+        "phase": "随访",
+        "kind": "checkpoint",
+        "title": "移植器官与感染一起随访",
+        "detail": "随访既要看 PTLD 是否缓解，也要看移植器官功能与感染风险。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-bcell-2026v4",
+        "locator": "PTLD 随访"
+      }
+    ]
+  },
+  {
+    "id": "b-lbl",
+    "subtype_id": "b-lbl",
+    "title": "B 淋巴母细胞白血病/淋巴瘤",
+    "intent": "回答「为什么按白血病方案治、MRD 为什么重要」。",
+    "scope": "初治 B-LBL",
+    "source_id": "nccn-bcell-2026v4",
+    "verified": 0,
+    "note": "本条只搭骨架，方案细节未核对原文。",
+    "steps": [
+      {
+        "seq": 1,
+        "phase": "诊断",
+        "kind": "action",
+        "title": "骨髓与流式是分型基础",
+        "detail": "骨髓穿刺 + 流式 + 细胞遗传学/分子检测；区分淋巴瘤期与白血病期，两者治疗框架相同。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-bcell-2026v4",
+        "locator": "Lymphoblastic Lymphoma 诊断"
+      },
+      {
+        "seq": 2,
+        "phase": "治疗",
+        "kind": "action",
+        "title": "按急性淋巴细胞白血病方案",
+        "detail": "采用包含诱导、巩固、维持的多药方案，具体按风险分层与年龄调整。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-bcell-2026v4",
+        "locator": "B-LBL 治疗"
+      },
+      {
+        "seq": 3,
+        "phase": "支持",
+        "kind": "action",
+        "title": "中枢预防是方案组成部分",
+        "detail": "鞘内化疗按方案执行；是否加放疗由团队判断。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-bcell-2026v4",
+        "locator": "CNS 预防"
+      },
+      {
+        "seq": 4,
+        "phase": "评估",
+        "kind": "checkpoint",
+        "title": "MRD 决定后续强度",
+        "detail": "按时间点查 MRD，结果影响是否升级治疗或进入移植；具体阈值以方案为准。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-bcell-2026v4",
+        "locator": "MRD 评估"
+      }
+    ]
+  },
+  {
+    "id": "transformed",
+    "subtype_id": "transformed",
+    "title": "惰性淋巴瘤向 DLBCL 转化",
+    "intent": "回答「什么时候该怀疑转化、确诊后按什么治」。",
+    "scope": "既往惰性淋巴瘤（FL、MZL、CLL 等）出现组织学转化",
+    "source_id": "nccn-bcell-2026v4",
+    "verified": 0,
+    "note": null,
+    "steps": [
+      {
+        "seq": 1,
+        "phase": "诊断",
+        "kind": "decision",
+        "title": "突然变大变快就要怀疑",
+        "detail": "惰性淋巴瘤出现快速增大、LDH 明显升高、新发 B 症状或 PET 上 SUV 明显升高时，应怀疑转化。",
+        "branch": "怀疑 → 活检",
+        "evidence": null,
+        "source_id": "nccn-bcell-2026v4",
+        "locator": "Histologic Transformation"
+      },
+      {
+        "seq": 2,
+        "phase": "诊断",
+        "kind": "action",
+        "title": "取高代谢部位活检",
+        "detail": "PET 引导下取 SUV 最高的部位，病理确认 DLBCL 转化；同时尽量明确与原件是否克隆相关。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-bcell-2026v4",
+        "locator": "转化诊断"
+      },
+      {
+        "seq": 3,
+        "phase": "治疗",
+        "kind": "action",
+        "title": "按 DLBCL 处理，但看既往暴露",
+        "detail": "未用过蒽环类者可按 DLBCL 一线治疗；已用过者需考虑累积剂量与既往治疗线，符合条件的进入 CAR-T。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-bcell-2026v4",
+        "locator": "转化后治疗"
+      },
+      {
+        "seq": 4,
+        "phase": "评估",
+        "kind": "checkpoint",
+        "title": "按 DLBCL 的标准评估",
+        "detail": "用 PET-CT 与 Lugano 标准；转化后的缓解持续时间通常短于原发 DLBCL，随访要更紧。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "lugano-2014",
+        "locator": "Response assessment"
+      }
+    ]
+  },
+  {
+    "id": "nmzl",
+    "subtype_id": "nmzl",
+    "title": "淋巴结边缘区淋巴瘤",
+    "intent": "回答「淋巴结边缘区与其他小 B 细胞淋巴瘤怎么区分、局限期能不能只做局部处理」。",
+    "scope": "初治 NMZL",
+    "source_id": "nccn-bcell-2026v4",
+    "verified": 0,
+    "note": "与 MALT 非胃共用大部分骨架，差异在鉴别诊断与局部处理；细节未核对原文。",
+    "steps": [
+      {
+        "seq": 1,
+        "phase": "诊断",
+        "kind": "action",
+        "title": "先排除其他小 B 细胞淋巴瘤",
+        "detail": "淋巴结活检 + 免疫组化；NMZL 通常 CD5 阴性、CD10 阴性、cyclin D1 阴性，需与 CLL/SLL、FL、MCL 鉴别。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-bcell-2026v4",
+        "locator": "Nodal Marginal Zone Lymphoma 诊断"
+      },
+      {
+        "seq": 2,
+        "phase": "分层",
+        "kind": "decision",
+        "title": "局限还是晚期，有无治疗指征",
+        "detail": "局限期与晚期路径不同；无症状的晚期病例存在观察空间。",
+        "branch": "局限 / 晚期；有指征 / 无指征",
+        "evidence": null,
+        "source_id": "nccn-bcell-2026v4",
+        "locator": "NMZL 分层"
+      },
+      {
+        "seq": 3,
+        "phase": "治疗",
+        "kind": "action",
+        "title": "局限期可局部放疗，晚期以 CD20 单抗为基础",
+        "detail": "局限病灶可用受累部位放疗；需要系统治疗时以利妥昔单抗为基础，是否联合化疗由治疗团队决定。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-bcell-2026v4",
+        "locator": "NMZL 治疗"
+      },
+      {
+        "seq": 4,
+        "phase": "评估",
+        "kind": "checkpoint",
+        "title": "按 Lugano 评估",
+        "detail": "惰性病程，影像变化慢；评估结合症状、血象与影像。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "lugano-2014",
+        "locator": "Response assessment"
+      }
+    ]
+  }
+]

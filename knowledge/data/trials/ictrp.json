@@ -1,0 +1,18 @@
+{
+ "source_id": "ictrp",
+ "label": "WHO ICTRP",
+ "org": "World Health Organization",
+ "url": "https://trialsearch.who.int",
+ "access": "unified_search_trials MCP · search_trials",
+ "window": {
+  "disease": "keyword lymphoma",
+  "basis": "无年份过滤（聚合层不提供）"
+ },
+ "status": "unavailable",
+ "note": "未查询成功：FAILED ictrp_search 上游返回错误：上游工具返回 isError，但未提供错误详情。",
+ "counts": {
+  "fetched": 0
+ },
+ "records": [],
+ "fetched_at": "2026-10-17T14:11:27.783Z"
+}

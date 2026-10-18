@@ -1,0 +1,382 @@
+[
+  {
+    "id": "dx-general",
+    "subtype_id": null,
+    "title": "从疑似到分期：通用诊断流程",
+    "intent": "把「怀疑淋巴瘤」到「可以讨论治疗」之间要做的事排成一条线。",
+    "scope": "成人，初诊、尚未开始抗淋巴瘤治疗",
+    "source_id": "cn-lymphoma-2026",
+    "verified": 0,
+    "note": "推荐编号取自 2026 版中国指南解读页；NCCN 各亚型指南的诊断章节结构一致。",
+    "steps": [
+      {
+        "seq": 1,
+        "phase": "诊断",
+        "kind": "action",
+        "title": "取到足够的组织",
+        "detail": "临床表现或影像提示淋巴瘤时，尽早做肿瘤组织活检以明确病理诊断与分型。完整切除或切开活检优先；细针穿刺不能作为确诊依据。",
+        "branch": "取材不足或无法分型 → 再次活检或病理会诊",
+        "evidence": "1 类推荐（推荐意见 1）",
+        "source_id": "cn-lymphoma-2026-summary",
+        "locator": "推荐意见 1；NCCN B 细胞指南诊断章节"
+      },
+      {
+        "seq": 2,
+        "phase": "诊断",
+        "kind": "action",
+        "title": "免疫组化定谱系",
+        "detail": "B 细胞淋巴瘤的基础组合包括 CD20、CD10、BCL-2、BCL-6、MUM1；T 细胞需加 CD30、CD2/CD3/CD4/CD8/CD5/CD7 等；霍奇金需 CD30、CD15、PAX5、CD45。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-bcell-2026v4-summary",
+        "locator": "通用诊断与基线评估；T 细胞指南基线诊断"
+      },
+      {
+        "seq": 3,
+        "phase": "诊断",
+        "kind": "action",
+        "title": "分子检测识别高危亚型",
+        "detail": "B 细胞查 MYC、BCL2、BCL6 重排以识别双打击/三打击高级别 B 细胞淋巴瘤；套细胞查 CCND1/t(11;14)。T 细胞查克隆性 TRB/TRG 重排，AITL/TFH 关注 RHOA、TET2、DNMT3A，ENKTL 查 EBV，ATLL 查 HTLV-1。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-tcell-2026v2-summary",
+        "locator": "基线诊断与评估（2026.V1 更新）"
+      },
+      {
+        "seq": 4,
+        "phase": "分期",
+        "kind": "action",
+        "title": "全身影像做基线",
+        "detail": "病理确诊后做全身影像明确累及部位，必要时结合内镜、超声。FDG-PET-CT 是多数亚型分期与疗效评估的核心。",
+        "branch": null,
+        "evidence": "1 类推荐（推荐意见 2）",
+        "source_id": "cn-lymphoma-2026-summary",
+        "locator": "推荐意见 2"
+      },
+      {
+        "seq": 5,
+        "phase": "分期",
+        "kind": "action",
+        "title": "骨髓与实验室基线",
+        "detail": "骨髓穿刺 + 活检 + 流式按亚型决定是否必做（霍奇金仅在 IV 期或 B 症状伴血细胞异常时做）。实验室常查 LDH、β2-微球蛋白、乙肝全套；拟用蒽环类者评估心脏，拟用博来霉素者评估肺功能。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-hl-2026v2-summary",
+        "locator": "病理、基线评估与分期"
+      },
+      {
+        "seq": 6,
+        "phase": "分层",
+        "kind": "decision",
+        "title": "分期 + 亚型 + 风险因素一起看",
+        "detail": "按 Lugano 分类做分期（霍奇金用改良 Ann Arbor），记录 B 症状与大肿块。风险评分（IPI、FLIPI、MIPI、PIT、IPS）只记录医生给出的值，工作台不复算。",
+        "branch": "分层结果进入治疗团队讨论，不在工作台内生成方案",
+        "evidence": null,
+        "source_id": "lugano-2014",
+        "locator": "Lugano 分期与疗效标准"
+      },
+      {
+        "seq": 7,
+        "phase": "支持",
+        "kind": "action",
+        "title": "治疗前的生育力与感染筛查",
+        "detail": "拟用烷化剂或盆腔放疗前转诊生殖医学做生育力保存咨询；同时完成乙肝、结核、HIV 等筛查。这两件事要在治疗开始前做，事后补不回来。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-bcell-2026v4-summary",
+        "locator": "基线评估；生育力保存"
+      }
+    ]
+  },
+  {
+    "id": "eval-response",
+    "subtype_id": null,
+    "title": "治疗中的疗效评估",
+    "intent": "把影像、Deauville 评分与 Lugano 疗效结论分开记录，避免把「影像阳性」直接当成「治疗失败」。",
+    "scope": "正在接受抗淋巴瘤治疗、按方案到达评估节点",
+    "source_id": "lugano-2014",
+    "verified": 0,
+    "note": "各亚型的评估时点不同（如 cHL 一线 2–3 周期后），具体节点以该亚型指南为准。",
+    "steps": [
+      {
+        "seq": 1,
+        "phase": "评估",
+        "kind": "checkpoint",
+        "title": "到节点才评估",
+        "detail": "按方案预设的节点做评估。经典型霍奇金一线治疗 2–3 周期后需 PET-CT 评价疗效并据此调整后续方案与周期数；DLBCL 多在中期与治疗结束评估。",
+        "branch": null,
+        "evidence": "1 类推荐（推荐意见 4，cHL）",
+        "source_id": "cn-lymphoma-2026-summary",
+        "locator": "推荐意见 3、4"
+      },
+      {
+        "seq": 2,
+        "phase": "评估",
+        "kind": "action",
+        "title": "PET-CT + Deauville 5 分",
+        "detail": "用 FDG-PET-CT 做疗效评估，按 Deauville 5 分法记录分数。1–3 分通常判为代谢阴性，4–5 分提示残留或进展，但判读要结合临床与既往影像。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "lugano-2014",
+        "locator": "Deauville 5 分法 / Lugano 疗效标准"
+      },
+      {
+        "seq": 3,
+        "phase": "评估",
+        "kind": "decision",
+        "title": "分数之后的处置因亚型而异",
+        "detail": "同样是 Deauville 4，在霍奇金二线治疗后仍可进入移植（PET 阴性更理想），在 DLBCL 则要警惕残留。处置差异写在亚型流程里，不在这里统一。",
+        "branch": "1–3 分 / 4 分 / 5 分三条分支，各自进入亚型流程",
+        "evidence": null,
+        "source_id": "nccn-hl-2026v1-jnccn",
+        "locator": "复发/难治 cHL 的 Deauville 处置段落"
+      },
+      {
+        "seq": 4,
+        "phase": "评估",
+        "kind": "action",
+        "title": "写清 CR / PR / SD / PD",
+        "detail": "按 Lugano 2014 记录完全缓解、部分缓解、疾病稳定、疾病进展。CT 上残留肿块的大小变化与 PET 代谢结论要分开写，不能互相替代。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "lugano-2014",
+        "locator": "Response assessment"
+      },
+      {
+        "seq": 5,
+        "phase": "评估",
+        "kind": "note",
+        "title": "影像阳性不等于要换方案",
+        "detail": "PET 阳性存在炎症、胸腺反弹等假阳性。是否升级治疗、要不要活检确认，由治疗团队判断；工作台只保存报告原文与分数。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-bcell-2026v4-summary",
+        "locator": "疗效评估与残留病灶处理"
+      }
+    ]
+  },
+  {
+    "id": "followup-general",
+    "subtype_id": null,
+    "title": "治疗结束后的随访",
+    "intent": "回答「多久复查一次、查什么、要不要每次都做 CT」。",
+    "scope": "完成一线治疗并达到完全缓解",
+    "source_id": "followup-review",
+    "verified": 0,
+    "note": "节奏来自 NCCN/ESMO 随访推荐的二手综述，各亚型与各中心会调整；具体间隔以治疗团队安排为准。",
+    "steps": [
+      {
+        "seq": 1,
+        "phase": "随访",
+        "kind": "checkpoint",
+        "title": "前 1–2 年最密",
+        "detail": "治疗后前 1–2 年复发风险最高，通常每 3–6 个月复查一次，内容包括病史、查体、血常规与生化。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "followup-review",
+        "locator": "NCCN/ESMO 随访节奏"
+      },
+      {
+        "seq": 2,
+        "phase": "随访",
+        "kind": "checkpoint",
+        "title": "第 3–5 年拉长",
+        "detail": "第 3–5 年一般每 6–12 个月一次，同时开始系统关注治疗远期影响。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "followup-review",
+        "locator": "NCCN/ESMO 随访节奏"
+      },
+      {
+        "seq": 3,
+        "phase": "随访",
+        "kind": "checkpoint",
+        "title": "5 年后每年一次",
+        "detail": "5 年后改为每年一次，重点转向心脏、肺、甲状腺、骨与第二肿瘤的筛查。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "followup-review",
+        "locator": "远期并发症监测"
+      },
+      {
+        "seq": 4,
+        "phase": "随访",
+        "kind": "note",
+        "title": "不常规做 PET 监测",
+        "detail": "完全缓解且无症状的人，NCCN 与 ESMO 都不主张按固定间隔做 PET-CT 或 CT 监测；影像用于有症状、查体异常或化验异常时。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "followup-review",
+        "locator": "Surveillance imaging"
+      },
+      {
+        "seq": 5,
+        "phase": "支持",
+        "kind": "action",
+        "title": "把远期影响写进随访",
+        "detail": "颈部放疗后每年查 TSH；蒽环类暴露者关注心功能；博来霉素暴露者关注肺功能；长期随访还要覆盖第二肿瘤与疫苗接种。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "followup-review",
+        "locator": "Late effects"
+      }
+    ]
+  },
+  {
+    "id": "special-elderly",
+    "subtype_id": null,
+    "title": "老年与不适合强化治疗",
+    "intent": "把「年龄大」拆成可评估的几件事，避免只按岁数决定强度。",
+    "scope": "≥60–65 岁，或体能状态/合并症使强化治疗不可行",
+    "source_id": "csco-lymphoma-2026",
+    "verified": 0,
+    "note": "2026 版 CSCO 新增老年淋巴瘤板块。",
+    "steps": [
+      {
+        "seq": 1,
+        "phase": "分层",
+        "kind": "action",
+        "title": "先做衰弱与合并症评估",
+        "detail": "用衰弱（frailty）评估、日常活动能力、器官功能与合并症来判断耐受度，而不是只看年龄。心、肝、肾、糖尿病与心血管病史都会改变方案选择。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-bcell-2026v4-summary",
+        "locator": "老年/不适合标准剂量人群"
+      },
+      {
+        "seq": 2,
+        "phase": "治疗",
+        "kind": "action",
+        "title": "强度按耐受度下调，不按年龄一刀切",
+        "detail": "DLBCL 不适合标准剂量时可用减量 R-CHOP、R-mini-CHOP 或减量 Pola-R-CHP；惰性淋巴瘤可优先无化疗方案。具体方案由治疗团队决定。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-bcell-2026v4-summary",
+        "locator": "老年/unfit 一线治疗"
+      },
+      {
+        "seq": 3,
+        "phase": "支持",
+        "kind": "action",
+        "title": "支持治疗与方案同等重要",
+        "detail": "关注感染、粒细胞减少、心功能、跌倒与营养。G-CSF 使用、疫苗时机、输血阈值都由治疗团队按当时情况决定。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "csco-2026-summary",
+        "locator": "老年淋巴瘤专题"
+      },
+      {
+        "seq": 4,
+        "phase": "评估",
+        "kind": "note",
+        "title": "剂量调整要留原因",
+        "detail": "每次减量、延迟都应记录原因（感染、血象、心功能、本人意愿）。这些记录比方案名称更能解释后来的结果。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "csco-2026-summary",
+        "locator": "老年淋巴瘤专题"
+      }
+    ]
+  },
+  {
+    "id": "special-pregnancy",
+    "subtype_id": null,
+    "title": "妊娠期淋巴瘤",
+    "intent": "明确哪些决定必须由多学科一起做，以及工作台在这里不做什么。",
+    "scope": "妊娠期确诊或治疗中妊娠",
+    "source_id": "nccn-hl-2026v2",
+    "verified": 0,
+    "note": "NCCN 霍奇金指南设妊娠专章；其他亚型参照各自的特殊人群章节。",
+    "steps": [
+      {
+        "seq": 1,
+        "phase": "分层",
+        "kind": "action",
+        "title": "孕周与分期同时进评估",
+        "detail": "需要血液科、产科与新生儿科共同评估：亚型、分期、症状、孕周、胎儿情况。影像尽量用无辐射方式，必要时的防护由团队安排。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-hl-2026v2",
+        "locator": "Management of CHL in Pregnancy"
+      },
+      {
+        "seq": 2,
+        "phase": "决策",
+        "kind": "decision",
+        "title": "能不能等到分娩后再治",
+        "detail": "惰性或无症状病例存在延迟治疗、密切观察的空间；侵袭性或有症状者通常需要孕期治疗。这个判断只能由多学科团队做。",
+        "branch": "可延迟 → 观察至产后；不可延迟 → 孕期治疗",
+        "evidence": null,
+        "source_id": "nccn-hl-2026v2",
+        "locator": "妊娠专章"
+      },
+      {
+        "seq": 3,
+        "phase": "治疗",
+        "kind": "note",
+        "title": "方案与孕周强相关",
+        "detail": "工作台不提供孕期用药建议。记录实际用了什么、从第几周开始、由哪个团队决定，已经足够支撑后续就诊。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-hl-2026v2",
+        "locator": "妊娠专章"
+      },
+      {
+        "seq": 4,
+        "phase": "支持",
+        "kind": "action",
+        "title": "产后衔接要提前写",
+        "detail": "分娩方式、新生儿评估、产后继续治疗的衔接，都应在孕晚期前写进计划，避免临时协调。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-hl-2026v2",
+        "locator": "妊娠专章"
+      }
+    ]
+  },
+  {
+    "id": "special-fertility",
+    "subtype_id": null,
+    "title": "生育力保存：只记时点与咨询",
+    "intent": "把生育话题放回治疗时间线，但不评估生育能力、不给保存方案。",
+    "scope": "治疗前、育龄期",
+    "source_id": "cn-lymphoma-2026",
+    "verified": 0,
+    "note": "做法与 DESIGN-SESSION D23 一致（只做时间点 + 咨询记录）；这是产品决定，不是指南条文的逐条核对。",
+    "steps": [
+      {
+        "seq": 1,
+        "phase": "支持",
+        "kind": "checkpoint",
+        "title": "在治疗开始前提出",
+        "detail": "拟用烷化剂、含铂方案或盆腔放疗时，治疗前是保存生育力的窗口。错过这个窗口，事后无法补做。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "nccn-bcell-2026v4-summary",
+        "locator": "基线评估；生育力保存"
+      },
+      {
+        "seq": 2,
+        "phase": "支持",
+        "kind": "action",
+        "title": "转诊生殖医学",
+        "detail": "具体采用哪种保存方式、是否适合、需要多久，由生殖医学与血液科共同判断。工作台只记录「已转诊 / 已咨询 / 未咨询」。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "cn-lymphoma-2026",
+        "locator": "治疗前评估"
+      },
+      {
+        "seq": 3,
+        "phase": "随访",
+        "kind": "note",
+        "title": "治疗结束后仍可再问",
+        "detail": "已经完成治疗的人，这个话题仍然可以提；是否有影响、要不要进一步评估，由生殖医学与血液科一起判断。",
+        "branch": null,
+        "evidence": null,
+        "source_id": "cn-lymphoma-2026",
+        "locator": "随访与远期影响"
+      }
+    ]
+  }
+]

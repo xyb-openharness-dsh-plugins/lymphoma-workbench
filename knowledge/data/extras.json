@@ -1,0 +1,113 @@
+{
+  "questions": [
+    { "subtype_id": null, "phase": "诊断", "text": "我的病理是哪种亚型？依据是哪几项免疫组化和分子检测？", "why": "分型是所有后续决定的起点；把依据问清楚，换医院时不用重做一遍。", "source_id": "cn-lymphoma-2026" },
+    { "subtype_id": null, "phase": "诊断", "text": "这次取材够不够做分型和分子检测？如果不够，需不需要重新活检？", "why": "取材不足会导致分型不确定，后面每个决定都悬着。", "source_id": "cn-lymphoma-2026" },
+    { "subtype_id": null, "phase": "分期", "text": "我的分期是哪一期？有没有大肿块、B 症状？", "why": "分期和大肿块直接决定治疗强度与是否放疗。", "source_id": "lugano-2014" },
+    { "subtype_id": null, "phase": "治疗", "text": "这个方案的目标是什么？是根治性治疗还是控制病情？", "why": "目标不同，对副作用的容忍度和疗程长度也不同。", "source_id": "nccn-bcell-2026v4" },
+    { "subtype_id": null, "phase": "治疗", "text": "如果这次因为感染或血象推迟，方案后面会怎么调整？", "why": "延迟和减量很常见，提前知道规则能减少焦虑。", "source_id": "csco-lymphoma-2026" },
+    { "subtype_id": null, "phase": "评估", "text": "这次 PET 的 Deauville 是几分？分数和结论分别是什么？", "why": "分数是影像描述，结论是治疗判断，两者不能混着记。", "source_id": "lugano-2014" },
+    { "subtype_id": null, "phase": "随访", "text": "接下来两年的复查节奏是怎样的？哪些情况需要提前来？", "why": "复查节奏因亚型和缓解状态而异，写下来比记着可靠。", "source_id": "followup-review" },
+    { "subtype_id": null, "phase": "支持", "text": "治疗前要不要做生育力保存咨询？现在做还来得及吗？", "why": "这个窗口在治疗开始前，事后无法补做。", "source_id": "nccn-bcell-2026v4" },
+
+    { "subtype_id": "dlbcl-nos", "phase": "治疗", "text": "我的 IPI 是多少？是否属于可以考虑 Pola-R-CHP 的情况？", "why": "中国指南把 IPI≥2 作为考虑 Pola-R-CHP 的条件之一。", "source_id": "cn-lymphoma-2026" },
+    { "subtype_id": "dlbcl-nos", "phase": "支持", "text": "我需要做中枢预防吗？依据是哪几个危险因素？", "why": "中枢预防只给高危人群，不是所有人都做。", "source_id": "nccn-bcell-2026v4" },
+    { "subtype_id": "dlbcl-nos", "phase": "治疗", "text": "如果复发，是直接做 CAR-T 还是先做挽救化疗？", "why": "分界通常看复发时间是否在 12 个月内。", "source_id": "nccn-bcell-2026v4" },
+    { "subtype_id": "fl", "phase": "治疗", "text": "我现在有治疗指征吗？能不能先观察？", "why": "无症状的晚期 FL 可以观察，不必提前干预。", "source_id": "nccn-bcell-2026v4" },
+    { "subtype_id": "fl", "phase": "随访", "text": "PET 上的 SUV 升高会不会提示转化？需要活检吗？", "why": "FL 的代谢与分级可能不一致，SUV 明显升高要排除转化。", "source_id": "nccn-bcell-2026v4" },
+    { "subtype_id": "mcl", "phase": "诊断", "text": "我的 TP53 检测做了吗？结果是什么？", "why": "2026 版把 TP53 列为诊断必做，它直接影响一线路径。", "source_id": "curetoday-mcl-2026v4" },
+    { "subtype_id": "mcl", "phase": "评估", "text": "一线结束后会做 MRD 检测吗？灵敏度是多少？", "why": "MRD 阴性是「可以不做移植」的前提。", "source_id": "curetoday-mcl-2026v4" },
+    { "subtype_id": "mcl", "phase": "治疗", "text": "如果我达到 CR 且 MRD 阴性，还需要做自体移植吗？", "why": "2026 版允许这部分人跳过移植，直接进入维持。", "source_id": "curetoday-mcl-2026v4" },
+    { "subtype_id": "cll-sll", "phase": "诊断", "text": "我的 del(17p)/TP53 和 IGHV 状态查了吗？", "why": "这两项决定一线用哪类方案、疗程怎么设计。", "source_id": "nccn-cll-2026v2" },
+    { "subtype_id": "cll-sll", "phase": "治疗", "text": "为什么不再用化学免疫治疗？", "why": "2026 版已不把化学免疫治疗作为一线推荐。", "source_id": "nccn-cll-2026v2" },
+    { "subtype_id": "cll-sll", "phase": "评估", "text": "治疗中多久查一次 MRD？我之前用过 CD20 单抗，会影响结果吗？", "why": "近 3 个月用过 CD20 单抗可能出现假阴性。", "source_id": "nccn-cll-2026v2" },
+    { "subtype_id": "chl", "phase": "治疗", "text": "我属于早期低危还是高危？依据是哪几个因素？", "why": "早期分层决定是 2 周期还是 4 周期、要不要放疗。", "source_id": "nccn-hl-2026v2" },
+    { "subtype_id": "chl", "phase": "评估", "text": "2 周期后 PET 是几分？如果 ≥3 分，方案会怎么改？", "why": "这是早期 cHL 最关键的一次决策点。", "source_id": "nccn-hl-2026v2" },
+    { "subtype_id": "chl", "phase": "治疗", "text": "我的方案里有博来霉素吗？肺功能和吸烟史会影响选择吗？", "why": "博来霉素肺毒性是方案选择时要权衡的因素。", "source_id": "nccn-hl-2026v2" },
+    { "subtype_id": "ptcl-nos", "phase": "诊断", "text": "CD30 是阳性还是阴性？这会影响用药吗？", "why": "CD30 决定能否使用维布妥昔单抗。", "source_id": "nccn-tcell-2026v2" },
+    { "subtype_id": "ptcl-nos", "phase": "治疗", "text": "缓解后需要做自体移植吗？", "why": "PTCL 常在首次缓解后考虑移植巩固。", "source_id": "nccn-tcell-2026v2" },
+    { "subtype_id": "enktl", "phase": "治疗", "text": "我属于局限期还是晚期？治疗以放疗为主还是以化疗为主？", "why": "ENKTL 的分期直接决定放疗与化疗的顺序。", "source_id": "nccn-tcell-2026v2" },
+    { "subtype_id": "enktl", "phase": "评估", "text": "血浆 EBV DNA 现在是多少？和影像结果一致吗？", "why": "EBV DNA 与影像可能不同步，需要一起解释。", "source_id": "nccn-tcell-2026v2" }
+  ],
+  "metric_defs": [
+    {
+      "id": "lugano-stage",
+      "name_zh": "Lugano 分期",
+      "name_en": "Lugano classification",
+      "category": "分期",
+      "definition": "2014 年 Lugano 会议在 Ann Arbor 基础上修订的分期系统，用于霍奇金与非霍奇金淋巴瘤；以 PET-CT 为主要分期工具，按受累淋巴结区域与结外器官范围分 I–IV 期。",
+      "usable_as": "记录医生给出的分期原文与日期。",
+      "must_not": "不自行根据影像描述推断分期；不在工作台内生成分期结论。",
+      "source_id": "lugano-2014"
+    },
+    {
+      "id": "deauville-5ps",
+      "name_zh": "Deauville 5 分法",
+      "name_en": "Deauville 5-point scale",
+      "category": "疗效",
+      "definition": "PET-CT 疗效判读的 5 级量表：1 分无摄取；2 分摄取 ≤ 纵隔血池；3 分摄取 > 纵隔但 ≤ 肝脏；4 分摄取中等高于肝脏；5 分摄取明显高于肝脏或新发病灶。1–3 分通常判为代谢阴性。",
+      "usable_as": "抄录报告上的分数与原文；按时间排成节点。",
+      "must_not": "不把分数换算成「有效/无效」结论；不据此建议换方案。",
+      "source_id": "lugano-2014"
+    },
+    {
+      "id": "lugano-response",
+      "name_zh": "Lugano 疗效标准",
+      "name_en": "Lugano response criteria",
+      "category": "疗效",
+      "definition": "2014 年 Lugano 标准把影像与临床结合，定义完全缓解（CR）、部分缓解（PR）、疾病稳定（SD）、疾病进展（PD）；PET-CT 与 CT 的判读规则不同。",
+      "usable_as": "记录医生给出的疗效结论与依据的检查。",
+      "must_not": "不自行判定 CR/PR/SD/PD。",
+      "source_id": "lugano-2014"
+    },
+    {
+      "id": "ipi",
+      "name_zh": "国际预后指数 IPI",
+      "name_en": "International Prognostic Index",
+      "category": "预后",
+      "definition": "用于侵袭性非霍奇金淋巴瘤的风险分层，包含年龄、LDH、体能状态、分期与结外受累部位数五项。",
+      "usable_as": "只记录医生写出的分值或分组。",
+      "must_not": "工作台不复算、不据此给生存期或预后结论。",
+      "source_id": "nccn-bcell-2026v4"
+    },
+    {
+      "id": "flipi",
+      "name_zh": "FLIPI / FLIPI-2",
+      "name_en": "Follicular Lymphoma International Prognostic Index",
+      "category": "预后",
+      "definition": "滤泡性淋巴瘤的风险分层工具，FLIPI 含年龄、分期、血红蛋白、淋巴结区域数与 LDH；FLIPI-2 用 β2-微球蛋白与最长径替代部分指标。",
+      "usable_as": "只记录医生给出的分值或分组。",
+      "must_not": "不复算、不据此判断预后或选择方案。",
+      "source_id": "nccn-bcell-2026v4"
+    },
+    {
+      "id": "mipi",
+      "name_zh": "MIPI",
+      "name_en": "Mantle Cell Lymphoma International Prognostic Index",
+      "category": "预后",
+      "definition": "套细胞淋巴瘤专用风险分层，含年龄、ECOG、LDH 与白细胞计数；另有结合 Ki-67 的 MIPI-c。",
+      "usable_as": "只记录医生给出的分值或分组。",
+      "must_not": "不复算、不据此给结论。",
+      "source_id": "csco-lymphoma-2026"
+    },
+    {
+      "id": "pit",
+      "name_zh": "PTCL 预后指数 PIT",
+      "name_en": "Prognostic Index for PTCL",
+      "category": "预后",
+      "definition": "外周 T 细胞淋巴瘤的风险分层工具，含年龄、ECOG、LDH 与骨髓受累。",
+      "usable_as": "只记录医生给出的分值或分组。",
+      "must_not": "不复算、不据此给结论。",
+      "source_id": "nccn-tcell-2026v2"
+    },
+    {
+      "id": "ips",
+      "name_zh": "IPS",
+      "name_en": "International Prognostic Score",
+      "category": "预后",
+      "definition": "晚期经典型霍奇金淋巴瘤的风险评分，含白蛋白、血红蛋白、性别、年龄、白细胞、淋巴细胞与 IV 期状态共 7 项。",
+      "usable_as": "只记录医生给出的分值或分组。",
+      "must_not": "不复算、不据此判断预后或调整方案。",
+      "source_id": "nccn-hl-2026v2"
+    }
+  ]
+}

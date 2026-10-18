@@ -1303,9 +1303,9 @@ function openAbout() {
 function openSettings() {
   const c = state.cfg;
   openModal('设置', `<div class="cfg-tabs" role="tablist">
-      <button role="tab" aria-selected="true">工作区</button><button role="tab" aria-selected="false" data-action="cfg-tab">文档解析</button><button role="tab" aria-selected="false" data-action="cfg-tab">临床数据库</button>
+      <button role="tab" aria-selected="true" data-action="cfg-tab" data-tab="ws">工作区</button><button role="tab" aria-selected="false" data-action="cfg-tab" data-tab="parse">文档解析</button><button role="tab" aria-selected="false" data-action="cfg-tab" data-tab="kb">临床数据库</button>
     </div>
-    <div style="margin-top:16px" class="cfg-block">
+    <div style="margin-top:16px" class="cfg-block" data-tab="ws">
       <h3 style="font-size:13px">资料目录</h3>
       <p class="small-note">业务数据放在你选的目录里；主目录、根目录、桌面根会被拒绝。</p>
       <div class="path-row"><code>${esc(c.root)}</code><button class="soft" data-action="pick-root">更改位置</button></div>
@@ -1316,11 +1316,22 @@ function openSettings() {
       </div>
       <p class="small-note">上次备份：${esc(c.backupAt)} · 立即备份 / 从备份恢复在原型中为入口演示。</p>
     </div>
-    <div class="cfg-block" style="margin-top:12px">
+    <div class="cfg-block" style="margin-top:12px" data-tab="parse" hidden>
       <h3 style="font-size:13px">文档解析（MinerU）</h3>
       <label class="check-row"><input type="checkbox" ${c.consent ? 'checked' : ''} data-action="consent"><span>我知道选中的文件会被上传到云端解析；不勾选不会上传。</span></label>
+      <p class="small-note" style="margin:6px 0 0">真实实现会在开启前弹三条提醒（数据会上传 / 建议先隐藏个人信息 / 为什么不能自动脱敏）；取消勾选立即生效。</p>
       <div class="token-row"><code class="masked">${esc(c.tokenMasked)}</code><button class="soft" data-action="replace-token">替换 Token</button></div>
       <p class="small-note">Token 只显示后 4 位，不回显全文；保存时先校验，失败会区分 401 / 429 / 网络错误。</p>
+    </div>
+    <div class="cfg-block" style="margin-top:12px" data-tab="kb" hidden>
+      <h3 style="font-size:13px">临床数据库</h3>
+      <p class="small-note">只读接入本机知识库（指南条文 + 试验登记），用于分型库与试验线索；不参与任何判断。</p>
+      <div class="grid three" style="margin-top:12px">
+        <div class="stat-tile"><span>状态</span><b>已连接</b></div>
+        <div class="stat-tile"><span>亚型</span><b>—</b></div>
+        <div class="stat-tile"><span>试验</span><b>—</b></div>
+      </div>
+      <p class="small-note">原型演示值；各源年份口径不同（CT.gov 用更新日、ChiCTR 用注册年、CDE 用 CTR 号前缀），导出时会写明用的是哪个口径。</p>
     </div>`, '<button class="primary" data-action="close">完成</button>', '小铃铛 · 设置');
 }
 function openExport() {
@@ -1367,7 +1378,11 @@ document.addEventListener('click', (e) => {
   }
   if (a === 'consent') { state.cfg.consent = el.checked; toast(el.checked ? '已同意云端解析' : '已取消；不会上传文件'); return; }
   if (a === 'replace-token') { toast('原型不接收真实 Token；真实实现只校验不回显'); return; }
-  if (a === 'cfg-tab') { toast('这个 tab 在原型里只演示入口'); return; }
+  if (a === 'cfg-tab') {
+    $$('.cfg-tabs [role=tab]').forEach((b) => b.setAttribute('aria-selected', String(b === el)));
+    $$('.cfg-block[data-tab]').forEach((b) => { b.hidden = b.dataset.tab !== el.dataset.tab; });
+    return;
+  }
   if (a === 'copy-md') {
     const picked = state.questions.filter((q) => q.selected);
     const md = markdownPreview(picked.filter((q) => q.kind === 'fact'), picked.filter((q) => q.kind === 'view'));

@@ -247,7 +247,7 @@ async function call(app, method, url, body) {
   return { status: res.code, json: isJson && res.body ? JSON.parse(res.body) : null, raw: res.body };
 }
 
-test('Agent 绑定：session→project 写入并可恢复；desktop-bridge.js 可被浏览器取到', async () => {
+test('Agent 绑定：session→project 写入并可恢复；bridge.js 可被浏览器取到', async () => {
   const app = createWorkbenchServer({ dbPath: ':memory:', kbPath: null, seed: true });
   const w1 = await call(app, 'POST', '/api/agent/session-projects', { sessionId: 's-1', projectId: 'p2' });
   assert.equal(w1.status, 200);
@@ -256,8 +256,8 @@ test('Agent 绑定：session→project 写入并可恢复；desktop-bridge.js �
   assert.equal(w2.json.sessions['s-2'], 'p1');
   const got = await call(app, 'GET', '/api/agent/session-projects');
   assert.equal(got.json.sessions['s-1'], 'p2'); // 互不抢占
-  const bridge = await call(app, 'GET', '/desktop-bridge.js');
+  const bridge = await call(app, 'GET', '/bridge.js');
   assert.equal(bridge.status, 200);
-  assert.match(bridge.raw, /wb-dataelement-dsh-lymbell/);
+  assert.match(bridge.raw, /wb-xyb-openharness-dsh-plugins-lymphoma-workbench/);
   app.close();
 });

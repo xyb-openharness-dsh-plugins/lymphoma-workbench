@@ -91,5 +91,13 @@ if (existsSync(target) && readFileSync(target, 'utf8') === generated) {
   process.exit(0)
 }
 
+/* workbench.json（DSH 工作台清单）：存在就同步 version 字段，与 package.json 同版本。 */
+const manifest = join(root, 'workbench.json')
+if (existsSync(manifest)) {
+  const current = readFileSync(manifest, 'utf8')
+  const next = current.replace(/("version"\s*:\s*)"[^"]*"/, `$1"${raw}"`)
+  if (next !== current) writeFileSync(manifest, next)
+}
+
 writeFileSync(target, generated)
 console.log(`✓ 已生成 lib/version.js：v${raw}（build ${build} · ${channel}）`)

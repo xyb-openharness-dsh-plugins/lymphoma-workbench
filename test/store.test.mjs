@@ -61,13 +61,25 @@ test('演示档案：只有 p1 有完整指标，p2 是观察等待', () => {
   db.close();
 });
 
-test('读模型形状：6 个分类、10 个指标定义、42 个指标点', () => {
+test('演示数据在 6 个月窗口里连续采样（一图秀能画出折线；影像类按 3 个月一次）', () => {
+  const { db, store } = storeWithData();
+  const b = store.bootstrap('p1');
+  const inWindow = (points) => points.filter((p) => p.d >= '2026-04-17' && p.d <= '2026-10-17').length;
+  for (const code of ['ldh', 'anc', 'hgb', 'plt', 'igg', 'crp', 'wt']) {
+    assert.ok(inWindow(b.metrics[code].points) >= 6, `${code} 在 6 个月内至少 6 个点，实际 ${inWindow(b.metrics[code].points)}`);
+  }
+  // 影像不放宽到每 2 周：半月做一次 PET/CT 是假的，宁可这条线点少
+  assert.equal(inWindow(b.metrics.lesion.points), 3);
+  db.close();
+});
+
+test('读模型形状：6 个分类、10 个指标定义、89 个指标点', () => {
   const { db, store } = storeWithData();
   const b = store.bootstrap('p1');
   assert.equal(b.cats.length, 6);
   assert.deepEqual(b.cats[0], ['肿瘤负荷', '#7c5cbf']);
   assert.equal(Object.keys(b.metrics).length, 10);
-  assert.equal(b.metrics.ldh.points.length, 7);
+  assert.equal(b.metrics.ldh.points.length, 13);
   assert.equal(b.metrics.ctcae.numeric, false, '治疗毒性是分类变量，不许画趋势');
   assert.equal(b.docs.length, 5);
   assert.equal(b.lesions.length, 3);

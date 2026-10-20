@@ -18,7 +18,7 @@
 | **M2 主线闭环** | 分型 → 治疗线 → 周期 → 评估 → 一图秀 → 就诊准备导出 | `public/` + `dsh/server.js` | ✅ **2026-10-17 完成**：`npm start` 可跑，27 视图渲染 0 异常；写入进库；UI 一致率 99.89%（见 `UI-PARITY.md`）。**未做**：报告导入（MinerU）、导出文件落盘（当前只有预览与复制） | M1 |
 | **M3 支持模块** | 感染、血象、营养、心理与生活（含生育节点）完整交互 | 同上 | ⏳ **部分**：体温 / 症状 / 进食 / 体重 / 会诊 / 给药 / 新治疗线均已能记；红框文案未改写。**未做**：按亚型的支持内容、生育节点自动进时间线 | M2 |
 | **M4 设置与就绪** | 工作区选择、MinerU 接入、临床库空态、顶栏两状态 | `dsh/server.js`、`dsh/paths.js` | ⏳ **部分**：资料目录拒绝主目录/根/桌面根（A28）；Token 只存掩码不回显（A29）；临床库已接。**未做**：MinerU 真正解析、备份与恢复 | M2 |
-| **M5 接入 DSH** | `cordis.patch.yml`、`dsh/index.js`、`lib/client.js` | 可安装包 | V1 + V2 过；容器内页面见 `vX.Y.Z` | M3、M4 |
+| **M5 接入 DSH** | `cordis.patch.yml`、`dsh/index.js`、`dsh/host.js`、`src/client.js`→`lib/client.js`、`lib/identity.js`、`workbench.json` | 可安装包 | ✅ **2026-10-20 完成 V1（装机）**：0.3.0 包装进 Desktop，**列表里出现 `xyb-openharness-dsh-plugins/lymphoma-workbench`**，宿主配置目录 `harness/lymphoma-workbench/lymbell.sqlite` 已建立，日志无 import 错误。**V2（容器内页面）待用户在界面打开确认**——本机用 curl 直连接口一律 401，那正是授权闸在工作，不代表页面不可用 | M3、M4 |
 | **M6 发布** | 推 Git、市场投稿 | tag + 市场记录 | V3 业务验证过；市场可查可装 | M5 |
 
 ## 2. M0 已完成（2026-10-17）
@@ -118,10 +118,25 @@
 | 草稿核对 | 「检查与指标 → 报告导入」子页：导入 → 解析 → 逐条收下/放弃 → 写 metric_point | ✅ 界面可用 |
 | 开启前弹窗提醒 | 勾选「开启云端解析」先弹三条提醒（① 数据会上传云端 ② 建议先手动隐藏个人信息 ③ 为什么不能自动脱敏——认漏一处就是泄露），点「我已了解」才写 consent；取消勾选仍直接生效 | ✅ CDP 冒烟 9 项全过（`scripts/probe-consent.mjs` 手动跑） |
 | 原生 Agent 面板 | 顶栏「对话」=调起按钮，右侧会话窗口，左缘分隔条可拖拽（业务区默认 65%） | ✅ CDP 实测开关/拖拽/持久化 |
-| Desktop 适配 1.2.2 | `lib/client.js`：runtimeId `wb-dataelement-dsh-lymbell`、legacyWorkbenchIds `[lymbell]`、register/isActive/ownsSession 契约、会话-项目绑定（`.desktop-session-projects.json`，无会话退 localStorage） | ⚠️ 契约+降级已实现；**真机 Desktop 未验证（P2 不得写装机通过）** |
+| Desktop 适配 1.2.2 | `lib/client.js`：runtimeId `wb-xyb-openharness-dsh-plugins-lymphoma-workbench`（与仓库身份一致）、legacyWorkbenchIds `[lymbell, wb-dataelement-dsh-lymbell]`（旧身份可迁移）、register/isActive/ownsSession 契约、会话-项目绑定（`.desktop-session-projects.json`，无会话退 localStorage） | ⚠️ 契约+降级已实现；**真机 Desktop 未验证（P2 不得写装机通过）** |
 
-边界：开场白只填原生草稿不自动发送（autoSend:false）；standalone 模式如实显示空态，不伪造 AI；
-`dsh/index.js` 仍是占位（真机插件打包按 M5）。
+边界：开场白只填原生草稿不自动发送（autoSend:false）；standalone 模式如实显示空态，不伪造 AI。
+
+**M5 已落地（2026-10-20，v0.3.0）**：`dsh/index.js` 不再是占位——`name`/`inject`/`apply` 委托给零依赖的
+`dsh/host.js`（可单测），`Config`（Schemastery schema）单独留在入口。业务库落在宿主分配的目录里，
+资料目录仍由用户在界面上选（存在库里，不靠宿主恢复指针）。前缀规则：接口 `/api/lymphoma-workbench/api/*`、
+页面 `/api/lymphoma-workbench/ui/*`，内部一律剥成独立启动时的形状，路由判断不因宿主分叉。
+页面基址由服务端注入 `WB_API_BASE` 占位符，前端不自己判断跑在哪。
+
+**客户端入口有两个，别合成一个**（这次踩出来的）：
+- `lib/client.js` —— 给**宿主**加载，必须是 `window.__ModuleLoader__.load({...})` 包装。
+  宿主的 renderer 不认原生 ESM，给它 ESM 会报 `Unexpected token 'export'`，
+  宿主还会据此把整个包移出 web profile（plugin-recovery 实测会移除并留恢复备份）。
+  源码在 `src/client.js`，由 `npm run build:client` 注入常量后生成。
+- `lib/bridge.js` —— 给**页面**以原生 ESM 引入（`${apiBase}/bridge.js`），是 Desktop 1.2.2 的桥接。
+
+**面板形态**：标准分栏（`customFrame` 不声明），业务 UI 在 iframe 里指向自己的页面，
+AI 会话栏由宿主管（A 方案的既定结论，见 `docs/UI-DESIGN.md` §6）。
 
 ## 6. 与闸口的关系
 

@@ -10,7 +10,13 @@
  * - 会话 ↔ 档案绑定：有会话写数据根 .desktop-session-projects.json（经 server API），
  *   无会话时最近选择退 localStorage；重启后恢复。
  */
-import { createDesktopBridge, RUNTIME_ID, LEGACY_WORKBENCH_IDS } from '/desktop-bridge.js';
+/**
+ * 桥接模块也由服务端在接口前缀下提供：路径必须带上接口基址，
+ * 否则挂在 DSH 宿主下时会去敲宿主根路径，拿不到文件。
+ * 用动态 import 是因为基址只有运行时才知道（服务端注入到 <html data-api-base>）。
+ */
+const API_BASE = document.documentElement.dataset.apiBase || '';
+const { createDesktopBridge, RUNTIME_ID, LEGACY_WORKBENCH_IDS } = await import(`${API_BASE}/bridge.js`);
 
 const LS_OPEN = 'lymbell.agent.open';
 const LS_WIDTH = 'lymbell.agent.width';

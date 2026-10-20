@@ -1,26 +1,50 @@
 {
   "name": "@lymbell-dsh/lymphoma-workbench",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "小铃铛 LymBell：本机优先的淋巴瘤分型整理、疗效回顾与就诊准备工作台",
   "private": true,
   "type": "module",
   "main": "./dsh/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xyb-openharness-dsh-plugins/lymphoma-workbench"
+  },
   "exports": {
     ".": "./dsh/index.js",
     "./client": "./lib/client.js",
+    "./bridge": "./lib/bridge.js",
+    "./identity": "./lib/identity.js",
     "./version": "./lib/version.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
     "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "dsh-desktop-workbenches"
+      ]
+    }
   },
   "files": [
     "assets",
     "dsh",
     "lib",
+    "public",
     "schema",
+    "knowledge/lymphoma-kb.sqlite",
+    "cordis.patch.yml",
+    "workbench.json",
+    "VERSION",
     "README.md",
     "LICENSE"
   ],
   "scripts": {
     "build:version": "LYMBELL_CHANNEL=beta node scripts/build-version.mjs",
+    "build:client": "node scripts/build-client.mjs",
     "check:version": "node scripts/check-version.mjs",
     "check:schema": "node scripts/check-schema.mjs",
     "check:wording": "node scripts/check-wording.mjs",
@@ -31,7 +55,7 @@
     "kb:check": "node --disable-warning=ExperimentalWarning knowledge/query.mjs --check",
     "kb:trials": "node --disable-warning=ExperimentalWarning knowledge/query.mjs --trials",
     "kb:trials:collect": "node knowledge/trials/collect.mjs",
-    "check": "LYMBELL_CHANNEL=beta node scripts/build-version.mjs --check && node scripts/check-syntax.mjs && node scripts/check-schema.mjs && node scripts/check-wording.mjs && node --disable-warning=ExperimentalWarning --test test/*.test.mjs && node scripts/check-version.mjs",
+    "check": "LYMBELL_CHANNEL=beta node scripts/build-version.mjs --check && node scripts/check-syntax.mjs && node scripts/check-schema.mjs && node scripts/check-wording.mjs && node scripts/build-client.mjs --check && node --disable-warning=ExperimentalWarning --test test/*.test.mjs && node scripts/check-version.mjs",
     "pack:check": "npm pack --dry-run",
     "start": "node --disable-warning=ExperimentalWarning scripts/dev-server.mjs",
     "db:seed": "node --disable-warning=ExperimentalWarning dsh/seed.js",

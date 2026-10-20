@@ -97,13 +97,21 @@ const state = {
 };
 
 /* ---------------- 服务端 ---------------- */
+
+/**
+ * 接口基址。由服务端注入到 <html data-api-base>，独立启动时是空串，
+ * 挂在 DSH 宿主下是宿主前缀（如 /api/lymphoma-workbench）。
+ * 前端只认这一个来源，不自己判断跑在哪。
+ */
+const API_BASE = document.documentElement.dataset.apiBase || '';
+
 async function api(path, body) {
   const init = body === undefined
     ? {}
     : { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(body) };
   let r;
   try {
-    r = await fetch(path, init);
+    r = await fetch(`${API_BASE}${path}`, init);
   } catch {
     throw new Error('连不上本机工作台服务（npm start 是否已启动）');
   }

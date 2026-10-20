@@ -32,6 +32,30 @@ const MIME = {
   '.woff2': 'font/woff2',
 };
 
+/**
+ * 宿主前缀下的路径 → 本服务认识的路径。
+ *
+ * 宿主把 `/api/lymphoma-workbench/**` 整段转给我们，内部要保持原来的 `/api/*` 形状，
+ * 否则几十处路由判断全得改。规则只有三条（与乳腺/卵巢同款）：
+ *
+ * | 宿主来的路径 | 改写后 | 说明 |
+ * | --- | --- | --- |
+ * | `<base>` 或 `<base>/` | `/index.html` | iframe 的 src 就是这里 |
+ * | `<base>/ui/xxx` | `/xxx` | 静态资源（style.css、app.js、图片） |
+ * | `<base>/api/xxx` | `/api/xxx` | 接口，形状与独立启动时完全一致 |
+ *
+ * 独立启动时 `base` 为空串，原样返回，行为不变。
+ */
+export function stripBasePath(pathname, base = '') {
+  const path = String(pathname ?? '/');
+  if (!base || !path.startsWith(base)) return path;
+  const rest = path.slice(base.length);
+  if (!rest || rest === '/') return '/index.html';
+  if (rest === '/ui') return '/index.html';
+  if (rest.startsWith('/ui/')) return rest.slice(3);
+  return rest;
+}
+
 /** Token 只留掩码：前 3 位 + •••• + 后 4 位。明文不落库、不回显。 */
 export function maskToken(token) {
   const s = String(token ?? '').trim();
@@ -45,7 +69,19 @@ export function createWorkbenchServer({
   publicDir = PUBLIC_DIR,
   seed = true,
   today = () => todayISO(),
+  /** 宿主给的前缀；独立启动时为空串。 */
+  basePath = '',
+  /** 注入页面的接口基址，**不含 `/api`**（接口路径自带 `/api`）。 */
+  apiBase = '',
+  /** `standalone` | `host`，只影响页面里那一行运行形态提示。 */
+  runtime = 'standalone',
+  /** 用户选定资料目录后的回调（宿主用来记住位置）。 */
+  onWorkspace = null,
 } = {}) {
+  // 前端调用形如 `${apiBase}/api/xxx`，基址里不能再含 /api
+  const pageApiBase = apiBase || basePath;
+  const pageRuntime = runtime === 'host' ? 'host' : 'standalone';
+  const notifyWorkspace = typeof onWorkspace === 'function' ? onWorkspace : null;
   let db = openDb(dbPath);
   let kb = null;
   try {
@@ -118,7 +154,10 @@ export function createWorkbenchServer({
         patch.root = null; // 显式清空
       }
       if (body.consent !== undefined) patch.consent = Boolean(body.consent);
-      return store.setWorkspace(patch);
+      const saved = store.setWorkspace(patch);
+      // 宿主据此记住位置（重启后恢复）；独立启动时没有回调，什么都不做
+      if (notifyWorkspace && patch.root) notifyWorkspace(patch.root);
+      return saved;
     },
 
     'POST /api/workspace/token': async ({ body }) => {
@@ -254,8 +293,22 @@ export function createWorkbenchServer({
     },
   };
 
+  /**
+   * 把页面里的两个占位换成实际值（`{{WB_API_BASE}}` / `{{WB_RUNTIME}}`）。
+   * 前端因此不用判断自己跑在哪：接口基址由服务端给，运行形态也由服务端给。
+   */
+  function renderPage(html) {
+    return html
+      .split('{{WB_API_BASE}}').join(pageApiBase)
+      .split('{{WB_RUNTIME}}').join(pageRuntime);
+  }
+
   async function handle(req, res) {
-    const url = new URL(req.url ?? '/', 'http://127.0.0.1');
+    const raw = new URL(req.url ?? '/', 'http://127.0.0.1');
+    // 宿主不剥前缀，这里剥；独立启动时 basePath 为空串，行为完全不变
+    const url = basePath
+      ? new URL(`${stripBasePath(raw.pathname, basePath)}${raw.search}`, 'http://127.0.0.1')
+      : raw;
 
     if (url.pathname.startsWith('/api/')) {
       const key = `${req.method} ${url.pathname}`;
@@ -270,14 +323,16 @@ export function createWorkbenchServer({
       }
     }
 
-    /* Desktop 桥接模块：直接服务 lib/client.js（浏览器以 ESM 引入） */
-    if (url.pathname === '/desktop-bridge.js') {
+    /* Desktop 桥接模块：直接服务 lib/bridge.js（浏览器以 ESM 引入）。
+       注意与 lib/client.js 分工：后者是宿主加载的客户端入口（__ModuleLoader__ 包装），
+       不是 ESM，不能给页面 import。 */
+    if (url.pathname === '/bridge.js') {
       try {
-        const buf = await readFile(resolve(publicDir, '..', 'lib', 'client.js'));
+        const buf = await readFile(resolve(publicDir, '..', 'lib', 'bridge.js'));
         res.writeHead(200, { 'content-type': 'text/javascript; charset=utf-8', 'content-length': buf.length, 'cache-control': 'no-cache' });
         return res.end(buf);
       } catch {
-        return json(res, 404, { error: '找不到 lib/client.js' });
+        return json(res, 404, { error: '找不到 lib/bridge.js' });
       }
     }
 
@@ -288,9 +343,11 @@ export function createWorkbenchServer({
     try {
       const st = await stat(file);
       const target = st.isDirectory() ? join(file, 'index.html') : file;
-      const buf = await readFile(target);
+      const type = MIME[extname(target)] ?? 'application/octet-stream';
+      let buf = await readFile(target);
+      if (type.startsWith('text/html')) buf = Buffer.from(renderPage(buf.toString('utf8')), 'utf8');
       res.writeHead(200, {
-        'content-type': MIME[extname(target)] ?? 'application/octet-stream',
+        'content-type': type,
         'content-length': buf.length,
         'cache-control': 'no-cache',
       });
@@ -298,7 +355,8 @@ export function createWorkbenchServer({
     } catch {
       // 单页应用：未知路径回到首页，由前端按 hash 渲染
       try {
-        const buf = await readFile(join(root, 'index.html'));
+        let buf = await readFile(join(root, 'index.html'));
+        buf = Buffer.from(renderPage(buf.toString('utf8')), 'utf8');
         res.writeHead(200, { 'content-type': MIME['.html'], 'content-length': buf.length });
         return res.end(buf);
       } catch {
@@ -309,6 +367,9 @@ export function createWorkbenchServer({
 
   return {
     handle,
+    basePath,
+    apiBase: pageApiBase,
+    runtime: pageRuntime,
     db,
     kb,
     store,

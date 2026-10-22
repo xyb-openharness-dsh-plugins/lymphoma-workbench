@@ -15,6 +15,13 @@ import { fileURLToPath } from 'node:url'
 import { readZip } from '../lib/zip.js'
 
 export const MINERU_BASE_URL = 'https://mineru.net/api/v4'
+/**
+ * 解析模型：统一口径默认 `pipeline`（2026-10-22）。
+ * 本仓原先不传 `model_version`、吃服务端默认值——那等于把口径交给上游，
+ * 换个账号或上游改默认就会漂；现在显式写死 pipeline。
+ * 调用方显式传 `modelVersion: 'vlm'` 仍可覆盖（压平表格用 vlm 还原更稳）。
+ */
+export const MINERU_MODEL_DEFAULT = 'pipeline'
 /** 本地私密文件：已进 .gitignore，不进包（package.json 的 files 不含 .secrets） */
 export const MINERU_SECRET_FILE = fileURLToPath(new URL('../.secrets/mineru.json', import.meta.url))
 
@@ -35,18 +42,21 @@ export function maskToken(token) {
 }
 
 /**
- * Token 解析优先级：显式传入 > 环境变量 `MINERU_TOKEN` > `.secrets/mineru.json`。
+ * Token 解析优先级：显式传入 > `.secrets/mineru.json` > 环境变量 `MINERU_TOKEN`。
+ * 文件优先、env 次之（2026-10-22 统一口径）：界面里保存的 Token 永远生效，
+ * env 只在文件缺失时兜底——否则一条遗留的过期 env 会长期盖住新存的 Token，
+ * 表现为"换了 Token 还是 401"，极难自查。
  * 三处都没有就报 `NO_TOKEN`，**不静默用匿名请求**（那只会得到一个看不懂的 401）。
  */
 export function resolveToken({ token = null, env = process.env, secretFile = MINERU_SECRET_FILE } = {}) {
   if (token?.trim()) return { token: token.trim(), source: 'explicit' }
-  if (env?.MINERU_TOKEN?.trim()) return { token: env.MINERU_TOKEN.trim(), source: 'env:MINERU_TOKEN' }
   try {
     const parsed = JSON.parse(readFileSync(secretFile, 'utf8'))
     if (parsed?.token?.trim()) return { token: parsed.token.trim(), source: `.secrets/mineru.json` }
   } catch {
     /* 文件不存在或不是 JSON 都视为"没配"，不掩盖真正的问题 */
   }
+  if (env?.MINERU_TOKEN?.trim()) return { token: env.MINERU_TOKEN.trim(), source: 'env:MINERU_TOKEN' }
   throw new MineruError(
     'NO_TOKEN',
     '没有 MinerU Token：设置环境变量 MINERU_TOKEN，或写 .secrets/mineru.json（{"token": "sk-..."}）。该文件已在 .gitignore 里。',
@@ -214,7 +224,7 @@ export class MineruClient {
    */
   async parse({
     bytes, filename, dataId = null, intervalMs = 3000, timeoutMs = 300000,
-    enableFormula = true, enableTable = true, language = 'ch', modelVersion = null, pageRanges = null,
+    enableFormula = true, enableTable = true, language = 'ch', modelVersion = MINERU_MODEL_DEFAULT, pageRanges = null,
   }) {
     if (!bytes || bytes.length === 0) throw new MineruError('BAD_INPUT', '文件内容为空，不提交解析')
     if (!filename?.trim()) throw new MineruError('BAD_INPUT', '缺少文件名（MinerU 按扩展名判类型）')

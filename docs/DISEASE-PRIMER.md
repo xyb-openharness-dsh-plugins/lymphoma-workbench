@@ -91,7 +91,7 @@
 - [x] `index.html` 三处引用：`<link rel="stylesheet" href="primer.css">` / `<script src="primer-data.js">` / `<script src="primer.js">`
 - [x] 顶栏出现「?」（模块自动插进 `.top-actions`，未手写按钮）
 - [x] README 的 `## 疾病概要` 四段正文写好，小标题与数据文件一致
-- [x] `node scripts/probe-disease-primer.mjs --url <原型地址>` 全绿
+- [x] `node scripts/probe-disease-primer.mjs --url http://127.0.0.1:8134/prototypes/v0.1/index.html` 全绿
 
 ## 6 验收（P1–P8）
 

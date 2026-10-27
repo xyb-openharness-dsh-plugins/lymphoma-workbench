@@ -1307,8 +1307,7 @@ function render() {
   $('#ver-chip').title = `${APP_INFO.displayVersion} · ${APP_INFO.build} · ${APP_INFO.channel}`;
   const storeOn = Boolean(state.cfg.root);
   $('#ready-store').innerHTML = `<i class="${storeOn ? '' : 'grey'}"></i><span>资料目录</span><b>${storeOn ? '已激活' : '未选择'}</b>`;
-  const agentOpen = document.body.classList.contains('agent-open');
-  $('#ready-session').innerHTML = `<i class="${agentOpen ? '' : 'grey'}"></i><span>小铃铛助手</span><b>${agentOpen ? '已打开' : '未打开'}</b>`;
+  /* 「AI 对话」按钮不在这里渲染：它的开合由 agent.js 驱动，渲染一次就会把实时状态覆盖成旧值。 */
 }
 
 /* ---------------- actions ---------------- */
@@ -1484,7 +1483,7 @@ const ACTIONS = {
       setTimeout(() => location.reload(), 600);
     }).catch((e) => toast(`恢复失败：${e.message}`));
   },
-  'start-session'() { toast('对话会话在接入宿主后启用（计划 M5）；现在资料都记在本机'); },
+  'start-session'() { toast('AI 对话面板没能起来：刷新页面或重新安装宿主插件后再试'); },
   'font-toggle'() { document.body.classList.toggle('large'); $('#font-toggle').setAttribute('aria-pressed', document.body.classList.contains('large')); }
 };
 

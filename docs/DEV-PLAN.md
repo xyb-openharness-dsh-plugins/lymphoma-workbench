@@ -135,8 +135,9 @@
   源码在 `src/client.js`，由 `npm run build:client` 注入常量后生成。
 - `lib/bridge.js` —— 给**页面**以原生 ESM 引入（`${apiBase}/bridge.js`），是 Desktop 1.2.2 的桥接。
 
-**面板形态**：标准分栏（`customFrame` 不声明），业务 UI 在 iframe 里指向自己的页面，
-AI 会话栏由宿主管（A 方案的既定结论，见 `docs/UI-DESIGN.md` §6）。
+**面板形态**：customFrame（2026-10-27 起，此前是标准分栏）。`src/client.js` 负责整页框架：
+顶栏（品牌 + 版本 + 「AI 对话」按钮 + 收起）× 业务 iframe × 宿主原生会话栏（`conversation` prop）
++ 可拖分隔条。业务 UI 仍在 iframe 里指向自己的页面，见 `docs/UI-DESIGN.md` §6。
 
 ## 6. 与闸口的关系
 

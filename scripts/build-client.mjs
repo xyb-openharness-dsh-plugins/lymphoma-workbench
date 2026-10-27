@@ -30,7 +30,8 @@ const pkg = JSON.parse(readFileSync(join(root, 'package.json'), 'utf8'));
 const {
   RUNTIME_ID, LEGACY_WORKBENCH_IDS, API_PREFIX, UI_ENTRY,
 } = await import('../lib/identity.js');
-const { PANEL } = await import('../lib/layout.js');
+const { PANEL, AGENT_PANE, assertPanelConfig } = await import('../lib/layout.js');
+const { version: VERSION } = await import('../lib/version.js');
 
 const repository = typeof pkg.repository === 'string' ? pkg.repository : pkg.repository?.url ?? '';
 const canonical = String(repository)
@@ -39,6 +40,14 @@ const canonical = String(repository)
   .replace(/\.git$/, '')
   .replace(/\/+$/, '');
 
+// 面板参数先过自检：customFrame / 宽度区间 / 业务与会话互补，任一条不成立就别生成产物
+const problems = assertPanelConfig(PANEL, AGENT_PANE);
+if (!pkg.name) problems.push('package.json 缺少 name');
+if (problems.length) {
+  for (const p of problems) console.error(`✗ ${p}`);
+  process.exit(1);
+}
+
 const replacements = {
   '{{PKG_NAME}}': pkg.name,
   '{{RUNTIME_ID}}': RUNTIME_ID,
@@ -46,7 +55,17 @@ const replacements = {
   '{{API_PREFIX}}': API_PREFIX,
   '{{UI_ENTRY}}': UI_ENTRY,
   '{{REPOSITORY}}': canonical,
-  '{{LAYOUT}}': JSON.stringify({ businessSide: PANEL.businessSide, businessWidth: PANEL.businessWidth }),
+  '{{VERSION}}': VERSION,
+  '{{BUSINESS_SIDE}}': PANEL.businessSide,
+  '{{BUSINESS_WIDTH}}': String(PANEL.businessWidth),
+  '{{CUSTOM_FRAME}}': String(PANEL.customFrame === true),
+  // customFrame 下会话面板宽度由工作台自己排版，下面六个值都来自 lib/layout.js
+  '{{AGENT_DEFAULT}}': String(AGENT_PANE.default),
+  '{{AGENT_MIN}}': String(AGENT_PANE.min),
+  '{{AGENT_MAX}}': String(AGENT_PANE.max),
+  '{{AGENT_STEP}}': String(AGENT_PANE.step),
+  '{{NARROW_BELOW}}': String(AGENT_PANE.narrowBelowPx),
+  '{{DRAWER_MAX}}': String(AGENT_PANE.drawerMaxPx),
 };
 
 if (!existsSync(source)) {

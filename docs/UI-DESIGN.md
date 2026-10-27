@@ -111,9 +111,18 @@
 
 ## 6. 布局与响应式
 
-面板参数沿用乳腺 D34：`businessSide=right`、`businessWidth=0.65`、`customFrame=false`，唯一来源 `lib/layout.js`。
+面板参数（2026-10-27 改）：`customFrame=true`、`businessSide=left`、`businessWidth=0.65`，会话栏
+`AGENT_PANE` 默认 0.35、可拖 0.25–0.45，唯一来源 `lib/layout.js`。
 
-**顶栏提示词对本项目的适用性判定（2026-10-20）**：`prompts/DSH-WORKBENCH-TOP-BAR.md` 只适用于 `customFrame=true`（宿主把原生会话节点交给插件排版的形态）。本项目是 A 方案标准分栏，分栏与顶栏由宿主绘制，**没有那条自建顶栏**，因此不套用它的三段式结构；顶栏相关约定按宿主形态执行（页面内顶栏仍遵守下面的换行与 nowrap 规则）。真要换成 B 方案时，才需要按该提示词实现自建顶栏。
+**为什么从标准分栏换成 customFrame**：标准分栏下宿主自己画分栏，工作台里没有任何地方能放
+「AI 对话」入口 —— 页面在 iframe 里够不到宿主会话栏，顶栏按钮只能显示「暂不可用」；分栏方向
+也只能靠 `businessSide` 猜（曾误写成 `right`，整条分栏镜像，业务区被推到右边）。customFrame
+下宿主把**原生会话节点**作为 `conversation` prop 交给客户端的 `Panel` 排版，于是顶栏右上角能常驻
+「AI 对话 / 收起 AI 对话」，分隔条可拖可键盘调，收起不结束会话；入口在框架顶栏而不是页面 iframe 里。
+
+**`prompts/DSH-WORKBENCH-TOP-BAR.md` 自此适用**：本项目已是 `customFrame=true`，框架顶栏由
+`src/client.js` 自绘（品牌 + 版本 + 说明 + 右侧按钮组），须避让 `--dsh-frame-leading-clearance`；
+页面内顶栏仍遵守下面的换行与 nowrap 规则，并在 `data-runtime="host"` 时收起页面自己的会话入口。
 
 - 侧栏 236px；≤900 折成整宽并横向滚动（10 项导航在窄屏变成一行可横滑的 chip）。
 - **看板两列在 ≤1180 收成单列**：936px 业务区下左栏只有约 390px，两列会把指标卡挤成单列；收单列后右栏三张卡自动并排（`minmax(286px,1fr)`）。

@@ -37,6 +37,71 @@ const body = () => document.getElementById('agent-body');
 const stateEl = () => document.getElementById('agent-state');
 
 let open = storage.get(LS_OPEN) === '1';
+let busy = false; // 正在建立/等待宿主返回时，顶栏文案显示「正在连接」
+
+/**
+ * 顶栏「AI 对话」按钮是开合的唯一出口，文案必须实时跟着面板走。
+ * 以前这段写在 app.js 的 render() 里，只有整页重渲染才更新 —— 面板开了，按钮还写「未打开」。
+ * 现在按钮归本模块管，app.js 不再碰它。
+ *
+ * 文案按 workspace 合同 §1 分四态：未打开 / 正在连接 / 已连接 / 暂不可用。
+ * 本机模式单独写「本机模式」而不是「暂不可用」——本机模式下点开确实会打开面板
+ * （面板里如实说没有原生会话），写「暂不可用」会让人以为入口坏了。
+ */
+function chipState() {
+  const host = bridge.available;
+  const standalone = (document.documentElement.dataset.runtime || 'standalone') !== 'host';
+  if (busy) return { label: '正在连接', dot: true };
+  if (standalone) return { label: open ? '本机模式' : '未打开', dot: open };
+  if (!host) return { label: '暂不可用', dot: false };
+  if (!open) return { label: '未打开', dot: false };
+  const owned = bridge.ownsSession(bridge.currentSessionId());
+  return owned ? { label: '已连接', dot: true } : { label: '已打开', dot: true };
+}
+
+function syncChip() {
+  const btn = document.getElementById('ready-session');
+  if (!btn) return;
+  const s = chipState();
+  btn.setAttribute('aria-pressed', open ? 'true' : 'false');
+  btn.setAttribute('aria-label', `AI 对话：${s.label}`);
+  btn.innerHTML = `<i class="${s.dot ? '' : 'grey'}"></i><span>AI 对话</span><b>${s.label}</b>`;
+  const hide = document.getElementById('agent-hide');
+  if (hide) hide.hidden = !open;
+  syncEntryVisibility();
+}
+
+/**
+ * 宿主模式（Desktop 内）下，原生会话栏由宿主自己画在业务区右侧（businessSide:'left'）。
+ * 页面是跑在 iframe 里的，够不到宿主的会话栏，再开一个自建面板只会在业务区内部
+ * 凭空多出一个「开在中间」的对话框。所以宿主模式下把入口收起来，由宿主负责。
+ * 本机模式（standalone）保持原样：入口 + 面板都在页面里，如实说没有原生会话。
+ */
+function syncEntryVisibility() {
+  const group = document.querySelector('.agent-toggle-group');
+  if (!group) return;
+  const inHost = (document.documentElement.dataset.runtime || 'standalone') === 'host';
+  const inert = inHost && !bridge.available;
+  group.style.display = inert ? 'none' : '';
+}
+
+/**
+ * 入口兜底：按钮虽然写在 index.html 里，但宿主/浏览器可能还缓存着旧版页面。
+ * 只要本模块跑起来，就保证顶栏右上角有一个可点的「AI 对话」入口，不会整块消失。
+ */
+function ensureEntry() {
+  if (document.getElementById('ready-session')) return;
+  const actions = document.querySelector('.top-actions');
+  if (!actions) return;
+  const group = document.createElement('span');
+  group.className = 'agent-toggle-group';
+  group.innerHTML =
+    '<button class="status agent-btn" id="ready-session" type="button" aria-pressed="false"'
+    + ' aria-controls="agent-panel" title="打开 / 收起右侧 AI 对话窗口（不结束会话）">'
+    + '<i class="grey"></i><span>AI 对话</span><b>未打开</b></button>'
+    + '<button class="agent-hide" id="agent-hide" type="button" hidden title="收起对话窗口（会话不结束）">隐藏</button>';
+  actions.appendChild(group);
+}
 
 function applyOpen(next, { persist = true } = {}) {
   open = Boolean(next);
@@ -44,18 +109,45 @@ function applyOpen(next, { persist = true } = {}) {
   if (!p) return;
   p.hidden = !open;
   document.body.classList.toggle('agent-open', open);
-  const btn = document.getElementById('ready-session');
-  if (btn) btn.setAttribute('aria-pressed', open ? 'true' : 'false');
+  requestAnimationFrame(syncOverlayTop);
   if (persist) storage.set(LS_OPEN, open ? '1' : '0');
   renderBody();
 }
 
+/* 主工作台必须保住可读性下限；家族基线 620px（低于它就该顶栏换行而不是挤内容） */
+const MIN_MAIN = 620;
+const MIN_PANE = 320;
+const MAX_PANE = 720;
+
+/** 可用宽度 = 视口宽 − 侧边栏（≤900px 时侧栏折叠为顶行，占 0） */
+function paneBounds() {
+  const sb = document.querySelector('.sidebar');
+  const sbVisible = sb && getComputedStyle(sb).display !== 'none';
+  const available = Math.max(0, window.innerWidth - (sbVisible ? Math.round(sb.getBoundingClientRect().width) : 0));
+  return { available, max: Math.min(MAX_PANE, Math.max(MIN_PANE, available - MIN_MAIN)) };
+}
+
 function applyWidth(px) {
-  const max = Math.min(720, Math.floor(window.innerWidth * 0.5));
-  const w = Math.max(300, Math.min(max, Math.round(px)));
+  /* 家族基线：右栏默认占工作区 35%，可拖范围以「主区不低于 620px」为准，
+     不再简单地按窗口 45% 夹 —— 那样在 1000px 上会把主区压到 300px。 */
+  const { max } = paneBounds();
+  const w = Math.max(MIN_PANE, Math.min(max, Math.round(px)));
   document.documentElement.style.setProperty('--agent-w', `${w}px`);
+  document.getElementById('agent-drag')?.setAttribute('aria-valuenow', String(w));
   storage.set(LS_WIDTH, String(w));
 }
+
+/** 浮层态（<1180px）面板从顶栏下沿开始，不能把右上角的 AI 对话 / 隐藏按钮盖住。
+ *  顶栏会换行，高度要现量；字体加载完和每次开合都再量一次，不靠启动时的一次结果。 */
+function syncOverlayTop() {
+  const t = document.querySelector('.topbar');
+  if (!t) return;
+  const bottom = t.getBoundingClientRect().bottom;
+  document.documentElement.style.setProperty('--agent-top', `${Math.round(Math.min(160, Math.max(0, bottom)))}px`);
+}
+[0, 300, 1200].forEach((d) => setTimeout(syncOverlayTop, d));
+document.addEventListener('DOMContentLoaded', syncOverlayTop);
+window.addEventListener('load', syncOverlayTop);
 
 function renderBody() {
   const el = body();
@@ -101,6 +193,7 @@ function renderBody() {
   }
   const s = stateEl();
   if (s) s.textContent = host ? 'Desktop 已连接' : '本机模式';
+  syncChip();
 }
 
 /** 开场白：只填草稿，不自动发送（宿主契约 autoSend:false）。 */
@@ -116,7 +209,13 @@ function openingDraft(pid) {
 
 async function newSession() {
   const projectId = document.body.dataset.profileId ?? null;
-  const result = await bridge.openSession({ projectId, draft: openingDraft(projectId) });
+  busy = true; syncChip();
+  let result;
+  try {
+    result = await bridge.openSession({ projectId, draft: openingDraft(projectId) });
+  } finally {
+    busy = false;
+  }
   if (!result.ok) {
     renderBody();
     toastAgent(result.reason === 'not_in_desktop' ? '本机模式没有原生会话；接入 Desktop 后可用' : `会话未建立：${result.reason}`);
@@ -143,6 +242,10 @@ function toastAgent(text) {
 }
 
 function wire() {
+  // 先保入口：旧缓存页面里可能没有这个按钮，缺了就补一个
+  ensureEntry();
+  syncEntryVisibility();
+
   bridge.register({
     onSessionChange: () => renderBody(),
   });
@@ -156,6 +259,14 @@ function wire() {
     applyOpen(!open);
   }, true);
 
+  // 顶栏的独立隐藏控件：面板内部那个 × 不能是唯一的收起入口
+  document.addEventListener('click', (e) => {
+    if (e.target.closest('#agent-hide')) {
+      e.preventDefault();
+      applyOpen(false);
+    }
+  }, true);
+
   // 关闭按钮（面板头）
   document.addEventListener('click', (e) => {
     if (e.target.closest('#agent-close')) {
@@ -167,6 +278,11 @@ function wire() {
   // 分隔条拖拽：左边缘即手柄
   const drag = document.getElementById('agent-drag');
   if (drag) {
+    const syncAria = () => {
+      drag.setAttribute('aria-valuemin', String(MIN_PANE));
+      drag.setAttribute('aria-valuemax', String(paneBounds().max));
+    };
+    syncAria();
     drag.addEventListener('pointerdown', (e) => {
       e.preventDefault();
       drag.setPointerCapture(e.pointerId);
@@ -180,6 +296,14 @@ function wire() {
       drag.addEventListener('pointermove', move);
       drag.addEventListener('pointerup', up);
     });
+    // 键盘也能调：←/→ 每次 16px，Home/End 到两端
+    drag.addEventListener('keydown', (e) => {
+      const cur = Number(storage.get(LS_WIDTH)) || Math.floor(window.innerWidth * 0.35);
+      const step = { ArrowLeft: 16, ArrowRight: -16, Home: 1e5, End: -1e5 }[e.key];
+      if (step === undefined) return;
+      e.preventDefault();
+      applyWidth(cur + step);
+    });
   }
 
   // 档案切换事件（app.js 在 pick-profile 后派发）
@@ -188,7 +312,13 @@ function wire() {
   // 恢复：宽度 → 开合 → 会话的项目绑定
   const savedW = Number(storage.get(LS_WIDTH));
   if (Number.isFinite(savedW) && savedW > 0) applyWidth(savedW);
-  else applyWidth(Math.floor(window.innerWidth * 0.35)); // 业务区默认 65%
+  else applyWidth(paneBounds().available * 0.35); // 默认占工作区 35%
+  // 视口变化后重新夹一遍：换屏/分屏时不让右栏吃掉主区，浮层起点跟着顶栏走
+  window.addEventListener('resize', () => {
+    applyWidth(Number(storage.get(LS_WIDTH)) || paneBounds().available * 0.35);
+    syncOverlayTop();
+  });
+  syncOverlayTop();
   applyOpen(open, { persist: false });
   bridge.restoreProject().then(({ projectId }) => {
     if (projectId) document.body.dataset.profileId = projectId;

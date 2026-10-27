@@ -437,11 +437,20 @@ dialog::backdrop{background:rgba(46,36,56,.36);backdrop-filter:blur(2px)}
 
 /* ---------------- 原生 Agent 会话窗口（Desktop 1.2.2） ---------------- */
 /* --agent-w 由 agent.js 写在 :root（拖拽持久化），不在这里重定义以免遮蔽 */
+/* 分栏顺序固定为「左侧导航 · 中间工作台 · 最右侧 Agent」：面板永远是最后一个栅格轨道，
+   工作台永远是中间主列，不因为开合而换位置。--agent-w 取值 25%–45%，见 agent.js applyWidth。 */
 body.agent-open .workspace{grid-template-columns:236px minmax(0,1fr) var(--agent-w,35%)}
-.agent-panel{display:flex;flex-direction:column;min-width:0;border-left:1px solid var(--line);background:var(--paper,#fff);position:relative}
+.agent-panel{display:flex;flex-direction:column;min-width:0;border-left:1px solid var(--line);background:var(--paper,#fff);position:relative;grid-column:3;grid-row:1}
 body:not(.agent-open) .agent-panel{display:none}
-.agent-drag{position:absolute;left:-3px;top:0;bottom:0;width:7px;cursor:col-resize;z-index:5}
+.agent-drag{position:absolute;left:-4px;top:0;bottom:0;width:9px;cursor:col-resize;z-index:5}
+.agent-drag::before{content:"";position:absolute;left:3px;top:0;bottom:0;width:2px;background:var(--line-strong);opacity:0}
+.agent-drag:hover::before,.agent-drag.dragging::before,.agent-drag:focus-visible::before{opacity:1}
 .agent-drag:hover,.agent-drag.dragging{background:color-mix(in srgb,var(--accent,#5c4a7a) 22%,transparent)}
+/* 顶栏右上角：AI 对话按钮 + 独立的隐藏控件（不能只有面板内部那个 ×） */
+.agent-toggle-group{display:flex;align-items:center;gap:6px}
+.agent-toggle-group .agent-btn{padding:6px 12px;min-height:0}
+.agent-hide{min-height:0;padding:6px 10px;font-size:12px;border-radius:999px;color:var(--ink-2);background:#fff}
+.agent-hide:hover{background:#faf7ff;border-color:var(--line-strong)}
 .agent-head{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:10px 14px;border-bottom:1px solid var(--line)}
 .agent-head-title{display:flex;flex-direction:column;min-width:0}
 .agent-head-title b{font-size:13.5px}
@@ -454,8 +463,17 @@ body:not(.agent-open) .agent-panel{display:none}
 .agent-hint{color:var(--ink-3,#8a8496)}
 .agent-mount{min-height:120px}
 @media(max-width:1180px){
-  /* 窄屏：业务区保持原网格不动，面板浮层覆盖（不挤占业务区，不显示侧边栏） */
-  .agent-panel{position:fixed;right:0;top:0;bottom:0;width:min(420px,92vw);z-index:60;box-shadow:-12px 0 32px rgba(30,20,50,.14)}
+  /* 这个宽度下三列已经保不住 620px 的主区，改用最右浮层：主区宽度不变、不被挤，
+     面板从顶栏下沿开始（--agent-top 由 agent.js 量测），右上角的控制按钮始终可点。 */
+  .agent-panel{position:fixed;right:0;top:var(--agent-top,64px);bottom:0;width:min(420px,92vw);z-index:60;box-shadow:-12px 0 32px rgba(30,20,50,.14);grid-column:auto;grid-row:auto}
+  /* 双保险：--agent-top 是 JS 量出来的，字体或换行一变就会偏差；
+     顶栏整体抬到浮层之上，保证「AI 对话 / 隐藏」永远点得到，不会被抽屉压住。 */
+  .topbar{position:relative;z-index:70;background:var(--surface,#fff)}
+  body.agent-open .workspace{grid-template-columns:236px minmax(0,1fr)}
+}
+@media(max-width:900px){
+  /* 侧边栏已折叠为单行，栅格只剩一列 */
+  body.agent-open .workspace{grid-template-columns:minmax(0,1fr)}
 }
 
 /* ---------- §2.6 看板状态卡（36 号） ---------- */

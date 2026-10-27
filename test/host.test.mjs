@@ -208,14 +208,22 @@ test('lib/client.js 是宿主认得的形态，且由 src 生成（不是手抄�
   assert.match(out, new RegExp(`RUNTIME_ID = '${RUNTIME_ID}'`));
   assert.match(out, new RegExp(`API_PREFIX = '${API_PREFIX}'`));
   assert.match(out, new RegExp(`UI_ENTRY = '${UI_ENTRY}'`));
-  assert.match(out, /LAYOUT = \{"businessSide":"right","businessWidth":0\.65\}/);
   assert.doesNotMatch(out, /\{\{[A-Z_]+\}\}/, '不允许有未注入的占位符漏到产物里');
 
-  // 标准分栏：register 的入参里不能声明 customFrame（写了 true 才是自建顶栏形态）
-  const registerBlock = out.match(/register\(\{[\s\S]*?\}, BusinessPanel\)/)?.[0] ?? '';
+  // 面板参数由 lib/layout.js 注入，产物里必须是 customFrame=true 的形态
+  assert.match(out, /const BUSINESS_SIDE = 'left';/);
+  assert.match(out, /const BUSINESS_WIDTH = 0\.65;/);
+  assert.match(out, /const CUSTOM_FRAME = true;/);
+
+  const registerBlock = out.match(/register\(\{[\s\S]*?\}, Panel\)/)?.[0] ?? '';
   assert.ok(registerBlock, '产物里要有 register(...) 调用');
-  assert.doesNotMatch(registerBlock, /customFrame/, 'A 方案标准分栏，不声明 customFrame');
-  assert.match(registerBlock, /layout: LAYOUT/);
+  assert.match(registerBlock, /customFrame: CUSTOM_FRAME/, 'customFrame 形态必须显式声明');
+  assert.match(registerBlock, /layout: \{ businessSide: BUSINESS_SIDE, businessWidth: BUSINESS_WIDTH \}/);
+
+  // customFrame 的三条硬约束
+  assert.match(out, /function Panel\(\{ conversation \}\)/, '会话节点由宿主以 conversation prop 交进来');
+  assert.match(out, /role: 'separator'/, '分隔条要带 separator 语义');
+  assert.match(out, /display: paneVisible \? 'flex' : 'none'/, '会话区始终挂载，只切 display（卸载会丢草稿）');
   // 页面用的 ESM 桥接是另一个文件，不能把两者混成一个
   assert.ok(existsSync(join(ROOT, 'lib/bridge.js')), 'lib/bridge.js 必须存在（页面以 ESM 引入）');
   assert.match(readFileSync(join(ROOT, 'package.json'), 'utf8'), /"files":/);

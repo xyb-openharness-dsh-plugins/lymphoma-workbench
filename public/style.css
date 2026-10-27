@@ -457,3 +457,21 @@ body:not(.agent-open) .agent-panel{display:none}
   /* 窄屏：业务区保持原网格不动，面板浮层覆盖（不挤占业务区，不显示侧边栏） */
   .agent-panel{position:fixed;right:0;top:0;bottom:0;width:min(420px,92vw);z-index:60;box-shadow:-12px 0 32px rgba(30,20,50,.14)}
 }
+
+/* ---------- §2.6 看板状态卡（36 号） ---------- */
+.status-card{padding:16px 18px;margin-bottom:14px;display:grid;gap:12px}
+.status-card .sc-head{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.status-card .sc-main{display:flex;align-items:flex-end;gap:20px;flex-wrap:wrap}
+.status-card .sc-day{font-size:28px;font-weight:600;letter-spacing:-1px;color:var(--violet-deep);line-height:1.1;white-space:nowrap}
+.status-card .sc-now{flex:1;min-width:240px;font-size:12.5px;color:var(--ink-2)}
+.status-card .sc-now > b{font-size:13.5px;color:var(--ink)}
+.status-card .sc-now > span{margin-left:8px;font-size:11px;color:var(--muted)}
+.status-card .sc-now small{display:block;margin-top:6px;font-size:11px;color:var(--muted);line-height:1.55}
+.status-card .sc-actions{display:flex;gap:8px;flex-wrap:wrap}
+.status-card .sc-actions button{min-height:38px;font-size:12.5px}
+/* 顶栏「?」：与版本 chip 同排 */
+.top-actions .dp-trigger-inline{min-width:34px;padding:0 8px;border-radius:999px;font-weight:600}
+@media(max-width:600px){
+  .status-card .sc-main{gap:12px}
+  .status-card .sc-day{font-size:24px}
+}

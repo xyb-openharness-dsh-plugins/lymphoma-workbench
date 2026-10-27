@@ -475,6 +475,60 @@ function metricCard(code) {
   </button>`;
 }
 
+/* ---------------- §2.6 看板状态卡 ----------------
+ * 四件结构：卡头（D+N · 距下一阶段）/ 大字第 N 天 / 现状行 / 出口按钮排。
+ * 天数一律由锚点日算出，不手填；锚点 = 档案里最早一次治疗记录。
+ * 副按钮是 36 号疾病概要的入口（data-primer-open 由 primer.js 委托接管）。 */
+function statusCard() {
+  const p = profile();
+  const rows = TREATMENTS.filter((t) => t.from).slice().sort((a, b) => String(a.from).localeCompare(String(b.from)));
+  const anchor = rows[0] ? { date: rows[0].from, label: rows[0].long } : null;
+  const today = Date.parse(DATA_END);
+  const n = anchor ? Math.max(0, Math.round((today - Date.parse(anchor.date)) / 86400000)) : null;
+  const todo = state.tasks.filter((t) => !t.done).slice().sort((a, b) => a.date.localeCompare(b.date));
+  const next = todo[0];
+  const gap = next ? Math.max(0, Math.round((Date.parse(next.date) - today) / 86400000)) : null;
+  const name = (window.DISEASE_PRIMER && window.DISEASE_PRIMER.name) || '淋巴瘤';
+  /* 状态词只取自档案里已有的阶段原文（「 · 」前那一段），不做任何推断。 */
+  const statusLabel = String(p.phase || '').split(' · ')[0] || (p.ww ? '观察等待' : '待补充');
+
+  const primary = p.ww
+    ? go('看观察期安排 →', 'review', '观察等待')
+    : go('看治疗历程（按次）→', 'treatment', '周期与用药');
+  const primerBtn = `<button class="soft" data-primer-open aria-haspopup="dialog" aria-label="疾病概要：${esc(name)}是什么？定义、医学资料与指南情况、治疗全景、发展趋势">疾病概要：${esc(name)}是什么？</button>`;
+
+  if (!anchor) {
+    return `<div class="card status-card">
+      <div class="sc-head"><span class="eyebrow">状态卡 · 待初始化</span>${pill('待初始化', 'grey')}</div>
+      <div class="sc-main">
+        <div class="sc-day">第 <b>—</b> 天</div>
+        <div class="sc-now">
+          <b>还没有可算天数的锚点</b>
+          <span>三步补上：① 选好当前档案 → ② 记下第一次治疗（或第一次评估）的日期 → ③ 回到看板。</span>
+          <small>天数由档案日期算出，不手填；记完再回来看，这里会显示第几天。</small>
+        </div>
+      </div>
+      <div class="sc-actions">${go('去记一次治疗', 'treatment', '周期与用药')}${primerBtn}</div>
+    </div>`;
+  }
+
+  return `<div class="card status-card">
+    <div class="sc-head">
+      <span class="eyebrow">D+${n} 状态卡 · ${gap !== null ? `距下次安排 ${gap} 天` : '暂无后续安排'}</span>
+      ${pill(statusLabel, p.ww ? 'yellow' : 'violet')}
+    </div>
+    <div class="sc-main">
+      <div class="sc-day">第 <b>${n}</b> 天</div>
+      <div class="sc-now">
+        <b>${esc(p.phase)}</b>
+        <span>${next ? `下次：${longDate(next.date)} ${esc(next.title)}` : '暂无后续安排'}</span>
+        <small>锚点 ${longDate(anchor.date)}（${esc(anchor.label)}${p.ww ? '；观察等待画像的天数自档案首个治疗记录起算，观察起点以医院首次评估为准' : ' = Day 0'}）· 由档案日期算出，不手填</small>
+      </div>
+    </div>
+    <div class="sc-actions">${primary}${primerBtn}</div>
+  </div>`;
+}
+
 /* ---------------- pages ---------------- */
 function pageDashboard() {
   const p = profile();
@@ -500,6 +554,7 @@ function pageDashboard() {
   ];
 
   return `${head('看板', SUBTITLES.dashboard)}
+    ${statusCard()}
     <div class="intent"><i>◎</i><span><b>今天不用把所有事做完。</b> 先挑一件最清楚的事开始；其余内容都留在这里，随时再看。</span></div>
     ${p.ww ? `<div class="ww-hero">
       <span class="eyebrow">当前策略 · 由治疗团队确定</span>

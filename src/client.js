@@ -203,6 +203,12 @@ window.__ModuleLoader__.load({
       const id = currentSession();
       return workbenchOwnsSession(id) ? id : null;
     }
+    async function createOwnedSession() {
+      let workspaceId
+      try { workspaceId = bridge?.desktopWorkbenches?.defaultWorkspace?.()?.workspaceId } catch { workspaceId = undefined }
+      return bridge.desktopWorkbenches.newSession(workspaceId)
+    }
+
 
     /* ---------------- 原生草稿：只填入，不发送 ---------------- */
 
@@ -269,8 +275,11 @@ window.__ModuleLoader__.load({
       const dragHostRef = React.useRef(null);
       const frameRef = React.useRef(null);
 
-      const hasConversation = Boolean(conversation);
-      const canOpenSession = typeof bridge?.desktopWorkbenches?.ensureSession === 'function';
+      const [paneTick, setPaneTick] = React.useState(0);
+      const activeSession = ownedSession(); // eslint-disable-line react-hooks/exhaustive-deps -- paneTick 触发重渲染
+      void paneTick;
+      const hasConversation = Boolean(activeSession); // pane-contract-allow
+      const canOpenSession = typeof bridge?.desktopWorkbenches?.newSession === 'function';
 
       // 8 秒没 onLoad 就当没起来：给一个能重试的提示，也不留一块白板。
       // onLoad 成功后必须清掉定时器，否则正在用的页面 8 秒后会被换成兜底页。
@@ -282,7 +291,7 @@ window.__ModuleLoader__.load({
 
       React.useEffect(() => {
         const timer = setInterval(() => { if (flushDraft()) setNote('草稿已填入会话，按回车发送'); }, 500);
-        const unsubscribe = bridge?.desktopWorkbenches?.subscribe?.(() => setNote(''));
+        const unsubscribe = bridge?.desktopWorkbenches?.subscribe?.(() => { setNote(''); setPaneTick((n) => n + 1) });
         return () => { clearInterval(timer); unsubscribe?.(); };
       }, []);
 
@@ -360,7 +369,13 @@ window.__ModuleLoader__.load({
             const res = await fetch(`${API_PREFIX}/api/health`);
             dir = (await res.json())?.dir || null;
           } catch { /* 拿不到目录也照样调起 */ }
-          const id = await bridge.desktopWorkbenches.ensureSession({ folder: dir });
+          let workspaceId
+          try { workspaceId = bridge?.desktopWorkbenches?.defaultWorkspace?.()?.workspaceId } catch { workspaceId = undefined }
+          const id = await createOwnedSession();
+          if (!id) {
+            setNote('已取消资料目录选择，没有创建会话。可以再次点击「AI 对话」重试。')
+            return
+          }
           rememberDraft({ sessionId: id, prompt: prompt || onboardingPrompt(dir) });
           flushDraft();
           setPaneOpen(true);

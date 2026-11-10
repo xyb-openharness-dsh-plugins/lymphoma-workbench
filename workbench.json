@@ -3,7 +3,7 @@
   "id": "wb-xyb-openharness-dsh-plugins-lymphoma-workbench",
   "title": "小铃铛",
   "description": "淋巴瘤的分型、疗效回顾与就诊准备：把检查、治疗与症状放回同一段时间里，整理成就诊时能带着走的问题清单。",
-  "version": "0.3.7",
+  "version": "0.3.8",
   "entry": "./lib/client.js",
   "compatibility": {
     "desktopWorkbenches": "^0.1.0",

@@ -1,6 +1,6 @@
 {
   "name": "@lymbell-dsh/lymphoma-workbench",
-  "version": "0.3.7",
+  "version": "0.3.8",
   "description": "小铃铛 LymBell：本机优先的淋巴瘤分型整理、疗效回顾与就诊准备工作台",
   "private": true,
   "type": "module",
@@ -56,7 +56,7 @@
     "kb:check": "node --disable-warning=ExperimentalWarning knowledge/query.mjs --check",
     "kb:trials": "node --disable-warning=ExperimentalWarning knowledge/query.mjs --trials",
     "kb:trials:collect": "node knowledge/trials/collect.mjs",
-    "check": "LYMBELL_CHANNEL=beta node scripts/build-version.mjs --check && node scripts/check-syntax.mjs && node scripts/check-schema.mjs && node scripts/check-wording.mjs && node scripts/build-client.mjs --check && node --disable-warning=ExperimentalWarning --test test/*.test.mjs && node scripts/check-version.mjs && node scripts/check-primer-links.mjs --data prototypes/v0.1/primer-data.js",
+    "check": "LYMBELL_CHANNEL=beta node scripts/build-version.mjs --check && node scripts/check-syntax.mjs && node scripts/check-schema.mjs && node scripts/check-wording.mjs && node scripts/build-client.mjs --check && node --disable-warning=ExperimentalWarning --test test/*.test.mjs && node scripts/check-version.mjs && node scripts/check-primer-links.mjs --data prototypes/v0.1/primer-data.js && node scripts/check-agent-pane-contract.mjs .",
     "pack:check": "npm pack --dry-run",
     "start": "node --disable-warning=ExperimentalWarning scripts/dev-server.mjs",
     "db:seed": "node --disable-warning=ExperimentalWarning dsh/seed.js",
